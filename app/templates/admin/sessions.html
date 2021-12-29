@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='admin/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr class="thead-dark">
+          <th scope="col">User Account</th>
+          <th scope="col">Access Level</th>
+          <th scope="col">Created At</th>
+          <th scope="col">Last Accessed</th>
+          <th scope="col" style="text-align: center;">Terminate</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in sessions %}
+      <tr>
+          <th scope="row"><strong>{{ session[0] }}</strong></th>
+          <td>{{ session[1] }}</td>
+          <td>{{ session[2] }}</td>
+          <td>{{ session[3] }}</td>
+          <td style="text-align: center;"><form class='csrf-req' action="/terminate_session" method="POST"> <input name="session-id" type="hidden" value="{{ session[4] }}"> <input type="submit" class="btn btn-warning" value="Terminate"> </form></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

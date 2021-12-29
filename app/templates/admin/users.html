@@ -1,0 +1,81 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='admin/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="cover-box text-muted">
+    <h1 class="pl-3 py-3 text-light text-center">Manage Users</h1>
+    <hr class="bg-light mb-3">
+
+  <h3 class="text-muted pl-3">Create a new user</h3>
+
+  <form class='csrf-req' class="form-horizontal" action="create_user" method="POST">
+  <fieldset>
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="Username">Username</label>
+    <div class="col-md-4">
+    <input id="username" name="username" type="text" placeholder="Enter a Username" class="form-control input-md" required="">
+
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="password">Password</label>
+    <div class="col-md-4">
+      <input id="password" name="password" type="password" placeholder="Enter a Password" class="form-control input-md" required="">
+
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="auth-level">Access Level</label>
+    <div class="col-md-4">
+      <select id="auth-level" name="auth-level" class="form-control">
+        <option value="1">1 - User</option>
+        <option value="2">2 - Analyst</option>
+        <option value="3">3 - Admin</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="submit"></label>
+    <div class="col-md-4">
+        <input id="submit" type="submit" class="btn btn-success"/>
+    </div>
+  </div>
+
+  </fieldset>
+  </form>
+
+  <hr class="bg-light">
+  <h3>Current Users</h3>
+  <br>
+  <table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr class="thead-dark">
+        <th scope="col">ID #</th>
+        <th scope="col">Username</th>
+        <th scope="col">Access Level</th>
+        <th scope="col" style="text-align: center;">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <th>{{ user[0] }}</th>
+        <td><strong>{{ user[1] }}</strong></td>
+        <td>{{ user[2] }}</td>
+        {% if user[1] == session.name %}
+        <td style="text-align: center;"><form class='csrf-req' action="/delete_user" method="POST"> <input name="user-id" type="hidden" value="{{ user[0] }}"> <input type="submit" class="btn btn-danger" value="Delete" disabled> </form></td>
+        {% else %}
+        <td style="text-align: center;"><form class='csrf-req' action="/delete_user" method="POST"> <input name="user-id" type="hidden" value="{{ user[0] }}"> <input type="submit" class="btn btn-danger" value="Delete"> </form></td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

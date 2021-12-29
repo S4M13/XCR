@@ -1,0 +1,43 @@
+{% macro navbarSection(session, title, auth_level_req, links, top=False, csrf=False) %}
+{% if session.auth_level >= auth_level_req %}
+{% if top %}
+        <p class="text-secondary font-weight-bold text-uppercase px-3 small pb-4 mb-0">{{ title }}</p>
+{% else %}
+        <p class="text-secondary font-weight-bold text-uppercase px-3 small py-4 mb-0">{{ title }}</p>
+{% endif %}
+        <ul class="nav flex-column bg-dark mb-0">
+{% for item in links %}
+    {% if request.base_url.endswith(item[1]) %}
+            {% if csrf %}
+                <li class="nav-item selected">
+                    <form class='csrf-req' action="{{ item[1] }}" id="{{ item[0] }}-form" method="POST">
+                        <button type="submit" form="{{ item[0] }}-form" class="nav-link text-light font-italic bg-secondary border-left nav-link-submit text-left">{{ item[0] }}</button>
+                    </form>
+                </li>
+            {% else %}
+                <li class="nav-item selected">
+                    <a href="{{ item[1] }}" class="nav-link text-light font-italic bg-secondary border-left">
+                        {{ item[0] }}
+                    </a>
+                </li>
+            {% endif %}
+    {% else %}
+            {% if csrf %}
+                <li class="nav-item">
+                    <form class='csrf-req' action="{{ item[1] }}" id="{{ item[0] }}-form" method="POST">
+                        <button type="submit" form="{{ item[0] }}-form" class="nav-link text-light font-italic nav-link-submit text-left">{{ item[0] }}</button>
+                    </form>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href="{{ item[1] }}" class="nav-link text-light font-italic">
+                        {{ item[0] }}
+                    </a>
+                </li>
+            {% endif %}
+    {% endif%}
+{% endfor %}
+        </ul>
+
+{% endif %}
+{% endmacro %}

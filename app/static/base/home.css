@@ -1,0 +1,58 @@
+.card {
+    height: 45vh;
+    width: 24%;
+    min-width: 230px;
+}
+
+.icon {
+    font-size: calc(100px + 3vw);
+    color: white;
+}
+
+.text {
+    font-size: calc(12px + 1.5vw);
+    text-align: center;
+    color: white;
+}
+
+.mini-text {
+    font-size: calc(8px + 0.25vw);
+    text-align: center;
+    color: grey;
+}
+
+.cover-box {
+    transition: box-shadow ease 0.5s, padding-bottom ease 0.5s;
+}
+
+.cover-box:not(.muted):hover {
+  -moz-box-shadow:  0 0 20px #000000;
+  -webkit-box-shadow: 0 0 20px #000000;
+  box-shadow: 0 0 20px #000000;
+  padding-bottom: 2em;
+  transition: box-shadow ease 0.5s, padding-bottom ease 0.5s;
+}
+
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-submit {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    width: 100%
+}
+
+.page-content {
+    padding-top: 15px !important;
+}
+
+.muted {
+    border-color: #6b696b;
+    text-color: grey; !important
+}

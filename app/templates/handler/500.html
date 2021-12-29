@@ -1,0 +1,92 @@
+{% from "macros/popups.html" import successNotification with context %}
+{% from "macros/popups.html" import failureNotification with context %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Online Register</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Google icons addon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Sentry -->
+	<script
+	  src="https://browser.sentry-cdn.com/5.22.3/bundle.min.js"
+	  integrity="sha384-A1qzcXXJWl+bzYr+r8AdFzSaLbdcbYRFmG37MEDKr4EYjtraUyoZ6UiMw31jHcV9"
+	  crossorigin="anonymous"
+	></script>
+
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='handler/style.css') }}">
+    <script src="{{ url_for('static', filename='base/base.js') }}"></script>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+</head>
+
+<body>
+	<!-- Start container -->
+
+	<div class="container-fluid">
+		{% if sentry_event_id %}
+		<script>
+		  Sentry.init({ dsn: "https://856572d34eac4df094ae709f46bee757@o418385.ingest.sentry.io/5320913" });
+		  Sentry.showReportDialog({ eventId: "{{ sentry_event_id }}" });
+		</script>
+		{% endif %}
+
+		<!-- End Content -->
+
+		<!-- Popups -->
+
+		<!-- Success Modal -->
+		<div id="success" class="modal fade">
+		  <div class="modal-dialog modal-confirm">
+			<div class="modal-content">
+			  <div class="modal-header" id="success-header">
+				<div class="icon-box">
+				  <i class="material-icons spin">&#xE876;</i>
+				</div>
+			  </div>
+			  <div class="modal-body text-center">
+				<h4>Success</h4>
+				<br />
+				<p id="success-message"></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Failure Modal -->
+		<div id="failure" class="modal fade">
+		  <div class="modal-dialog modal-confirm">
+			<div class="modal-content">
+			  <div class="modal-header" id="failure-header">
+				<div class="icon-box">
+				  <i class="material-icons spin">&#xe15b;</i>
+				</div>
+			  </div>
+			  <div class="modal-body text-center">
+				<h4>Failure</h4>
+				<br />
+				<p id="failure-message"></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- End Popups -->
+	</div>
+	<!-- End container -->
+</body>
+
+</html>

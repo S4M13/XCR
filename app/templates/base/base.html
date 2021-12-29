@@ -1,0 +1,136 @@
+{% from "macros/popups.html" import successNotification with context %}
+{% from "macros/popups.html" import failureNotification with context %}
+{% from "macros/sidebar.html" import navbarSection with context %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Online Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{{ session.raw_csrf_token }}">
+	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Google icons addon -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Base CSS/JS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='base/style.css') }}">
+	<script src="{{ url_for('static', filename='base/base.js') }}"></script>
+
+	<!-- Custom CSS/JS -->
+	{% block header %}{% endblock %}
+</head>
+
+<body>
+	<!-- Start container -->
+	
+	<div class="container-fluid">
+
+
+		<!-- Start navbar -->
+		<div class="vertical-nav bg-dark" id="sidebar">
+			<div class="py-3 px-3 mb-4 bg-dark border-bottom border-secondary text-light">
+				<div class="media-body col">
+					<h5 class="m-0">Extra Curricular Register</h5>
+					<p class="font-weight-light text-secondary mb-0">{{ version }}</p>
+				</div>
+			</div>
+
+			<div class="overflow">
+				{{ navbarSection(session, "Register", 1, [("Landing Page", "/"), ("Register a class", "/register_class"), ("Register an individual", "/register_one"), ("View records", "/view_records")], top=True) }}
+
+				{{ navbarSection(session, "Analysis", 2, [("Overall", "/overall"), ("Student", "/student"), ("Club", "/club")]) }}
+
+				{{ navbarSection(session, "Account", 1, [("Logout", "/deauth")], csrf=True) }}
+
+				{{ navbarSection(session, "Admin", 3, [("Users", "/users"), ("Sessions", "/sessions"), ("Data", "/data"), ("Logs", "/logs")]) }}
+			</div>
+
+			<div class="py-3 px-3 user-info bg-dark border-top border-secondary text-light">
+				<div class="media-body col">
+					<h5 class="m-0">Welcome, <b><i>{{ session.name }}</i></b></h5>
+					<p class="font-weight-light text-secondary mb-0">{{ session.auth_name }}</p>
+				</div>
+			</div>
+		</div>
+		<!-- End navbar -->
+
+		<div class="copyright">
+			<p class="text-dark fs-1">Copyright XCR 2020 &copy;</p>
+		</div>
+
+
+		<!-- Page content holder -->
+		<div class="page-content p-5" id="content">
+			<!-- Start Content -->
+			{% block content %}{% endblock %}
+
+			{% with errors = get_flashed_messages(category_filter=["error"]) %}
+			{% with success = get_flashed_messages(category_filter=["success"]) %}
+
+			{% if errors %}
+			{{ failureNotification( errors[-1] ) }}
+			{% endif %}
+
+
+			{% if success and not errors %}
+			{{ successNotification( success[-1] ) }}
+			{% endif %}
+
+			{% endwith %}
+			{% endwith %}
+
+			<!-- End Content -->
+			<!-- Popups -->
+
+			<!-- Success Modal -->
+			<div id="success" class="modal fade">
+			  <div class="modal-dialog modal-confirm">
+				<div class="modal-content">
+				  <div class="modal-header" id="success-header">
+					<div class="icon-box">
+					  <i class="material-icons spin">&#xE876;</i>
+					</div>
+				  </div>
+				  <div class="modal-body text-center">
+					<h4>Success</h4>
+					<br />
+					<p id="success-message"></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			<!-- Failure Modal -->
+			<div id="failure" class="modal fade">
+			  <div class="modal-dialog modal-confirm">
+				<div class="modal-content">
+				  <div class="modal-header" id="failure-header">
+					<div class="icon-box">
+					  <i class="material-icons spin">&#xe15b;</i>
+					</div>
+				  </div>
+				  <div class="modal-body text-center">
+					<h4>Failure</h4>
+					<br />
+					<p id="failure-message"></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- End Popups -->
+		</div>
+
+	</div>
+	<!-- End container -->
+</body>
+
+</html>

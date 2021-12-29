@@ -1,0 +1,88 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<script src="{{ url_for('static', filename='register/jquery.autocomplete.min.js') }}"></script>
+<script src="{{ url_for('static', filename='register/register_class.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='register/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="col justify-content-center">
+	<div class="row justify-content-center px-1 py-1">
+		<div class="cover-box text-muted">
+            <!-- Form Name -->
+            <h1 class="pl-3 py-3 text-light text-center">Register a class</h1>
+            <hr class="bg-light mb-3">
+            <h3 class="text-muted pl-3">Add a student to the register</h3>
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-xl-4 col-md-9 control-label" for="date">Date</label>
+                <div class="col-xl-4 col-md-9">
+                    <input id="date" name="date" type="date" class="form-control input-md" value="{{ current_date }}" required="">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-xl-6 col-md-12 control-label" for="club">Club</label>
+                <div class="col-xl-6 col-md-12">
+                    <input id="club" name="club" type="text" placeholder="Club Name" class="form-control input-md" required="">
+                    <input id="club-id" name="club-id" type="hidden" >
+                    <span class="help-block pl-1">Begin typing to see a list of suggestions</span>
+                </div>
+            </div>
+            <form id="add-name-form">
+                <fieldset>
+					<!-- Text input-->
+					<div class="form-group mb-3">
+                        <label class="col-xl-6 col-md-12 control-label" for="name">Student Name</label>
+                        <div class="col-xl-6 col-md-12">
+                            <div class="input-group mb-1">
+                                <input id="name" name="name" type="text" placeholder="Student's Name" class="form-control" required="">
+                                <div class="input-group-append">
+                                    <input id="submit" type="submit" value="Add" class="btn btn-success"/>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input id="name-id" name="name-id" type="hidden" >
+                                <span class="help-block pl-1">Begin typing to see a list of suggestions</span>
+                            </div>
+                        </div>
+                    </div>
+				</fieldset>
+			</form>
+
+            <hr class="bg-light">
+            <h3 class="text-muted pl-3">Current register</h3>
+            <form id="register-all" class="register-all">
+                <input type="submit" class="btn btn-info" value="Register All">
+            </form>
+            <br>
+            <table id="register" class="table table-dark table-striped table-hover">
+                <thead>
+                    <tr class="thead-dark">
+                        <th width="15%" scope="col">ID #</th>
+                        <th width="55%" scope="col">Name</th>
+                        <th width="15%" scope="col" style="text-align: center;">Register Now</th>
+                        <th width="15%" scope="col" style="text-align: center;">Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="RegisterHolder">
+                {% for id, name in persistent_register %}
+                <tr>
+                    <td id="StudentID"><strong>{{ id }}</strong></td>
+                    <td id="StudentName"><strong>{{ name }}</strong></td>
+                    <td style="text-align: center;"><form class="register-now"> <input type="submit" class="btn btn-info" value="Register Now"> </form></td>
+                    <td style="text-align: center;"><form class="remove"> <input type="submit" class="btn btn-danger" value="Remove"> </form></td>
+                </tr>
+                {% endfor %}
+                {% if length == 0 %}
+                <tr id="terminal-row">
+                    <td colspan="4" class="text-muted text-center">No current entries</td>
+                </tr>
+                {% endif %}
+                </tbody>
+            </table>
+		</div>
+	</div>
+</div>
+{% endblock %}

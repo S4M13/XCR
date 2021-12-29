@@ -1,0 +1,5 @@
+/* Copyright (C) Sam Allen- All Rights Reserved ©
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary
+ * Written by Sam Allen <samallen0213@gmail.com>, 2020
+ */

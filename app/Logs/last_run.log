@@ -1,0 +1,278 @@
+[2021-12-28 12:29:48,736] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin'
+[2021-12-28 13:06:31,839] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:123} WARNING - admin[ac1b09bd-3041-4d49-b195-078d4a6a0118] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-28 13:07:39,623] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:123} WARNING - admin[184d133b-4ffd-4196-b474-bcb1753e792c] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-28 13:34:23,233] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:123} WARNING - admin[e8ab8dbc-2cc0-4aca-941d-0f051b2afd0c] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-28 13:46:25,398] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[cdc86bbf-58f6-4d60-a933-f3cfa924adcb] successfully logged in
+[2021-12-28 13:46:29,896] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[cdc86bbf-58f6-4d60-a933-f3cfa924adcb] successfully logged out
+[2021-12-28 13:48:12,247] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[23749b71-246b-4ab7-a18f-29e7049b173e] successfully logged in
+[2021-12-28 13:48:18,170] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 13:50:24,999] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:104} WARNING - A GET request was submitted to 'student_weekly_attendance' which was missing the 'name' field and was subsequently rejected
+[2021-12-28 13:55:15,526] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[23749b71-246b-4ab7-a18f-29e7049b173e] successfully logged out
+[2021-12-28 13:55:19,655] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2cc9e628-7a9f-4f9a-ac7c-d5b2f16cbc19] successfully logged in
+[2021-12-28 13:55:28,380] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[2cc9e628-7a9f-4f9a-ac7c-d5b2f16cbc19] successfully logged out
+[2021-12-28 13:55:34,082] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[da7e1edc-1f15-4f3c-8ec7-1ff53a5133cf] successfully logged in
+[2021-12-28 13:55:37,867] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[da7e1edc-1f15-4f3c-8ec7-1ff53a5133cf] successfully logged out
+[2021-12-28 13:55:42,487] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[0939a11b-837a-4c9f-a086-96414550cff6] successfully logged in
+[2021-12-28 13:55:48,544] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:125} INFO - admin[0939a11b-837a-4c9f-a086-96414550cff6] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
+[2021-12-28 13:56:26,073] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:149} WARNING - admin[0939a11b-837a-4c9f-a086-96414550cff6] attempted to delete a logfile but a PermissionError occurred['C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log'][Raw Query:'last_run.log'] - the file is likely the active log file
+[2021-12-28 14:01:28,160] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 14:28:09,857] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a51d0cfc-d55d-4384-b476-e0247a654d9a] successfully logged in
+[2021-12-28 14:28:19,692] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 14:28:31,698] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[a51d0cfc-d55d-4384-b476-e0247a654d9a] successfully logged out
+[2021-12-28 14:29:37,739] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'Admin'
+[2021-12-28 14:29:41,422] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[c930865c-af62-4563-99f6-24f2c83c708f] successfully logged in
+[2021-12-28 14:30:11,025] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[c930865c-af62-4563-99f6-24f2c83c708f] successfully logged out
+[2021-12-28 14:34:04,785] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'Bob' [IP::127.0.0.1]
+[2021-12-28 14:34:11,131] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2169ec60-1852-42d6-a57b-0154506b8d9a::127.0.0.1] successfully logged in
+[2021-12-28 14:34:24,226] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 14:34:30,511] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[2169ec60-1852-42d6-a57b-0154506b8d9a::127.0.0.1] successfully logged out
+[2021-12-28 14:47:05,365] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:47:09,171] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:47:12,766] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:47:15,658] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:47:19,249] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:47:22,288] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-28 14:47:28,750] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-28 14:48:04,594] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-28 14:48:12,187] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-28 14:48:38,698] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[1a50e317-7a58-459d-8d93-5740418c65db::127.0.0.1] successfully logged in
+[2021-12-28 14:49:14,924] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[1a50e317-7a58-459d-8d93-5740418c65db::127.0.0.1] successfully logged out
+[2021-12-28 14:52:56,145] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:53:06,004] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-28 14:53:11,095] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3d690d68-a1fa-4e66-947a-e13bf2fab007::127.0.0.1] successfully logged in
+[2021-12-28 14:53:16,516] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:10:58,948] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[73c25caf-bbd1-4b50-9b9b-dad385e0bca1::127.0.0.1] successfully logged in
+[2021-12-28 15:13:49,822] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bdd710a9-3f20-4329-a1bc-c1a12c6efc8a::127.0.0.1] successfully logged in
+[2021-12-28 15:14:59,281] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8fe88214-8cfa-47e7-8af7-8e2938bc9270::127.0.0.1] successfully logged in
+[2021-12-28 15:15:44,241] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[32f08f3f-0761-4b4d-889d-c2e35b7ea843::127.0.0.1] successfully logged in
+[2021-12-28 15:16:30,410] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[863cee78-b8f0-4bb0-8f9d-69b3bd4f8025::127.0.0.1] successfully logged in
+[2021-12-28 15:17:21,920] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[092801ac-2f3e-4dd7-af10-9c159edbb77d::127.0.0.1] successfully logged in
+[2021-12-28 15:19:17,848] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ad64b22d-ce53-4696-bf47-f3ef0cc87776::127.0.0.1] successfully logged in
+[2021-12-28 15:19:41,775] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3745fec1-5be8-4fa2-819d-03b580ea13f3::127.0.0.1] successfully logged in
+[2021-12-28 15:23:03,498] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:26:47,812] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:27:18,769] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:27:39,816] {C:\Users\samdo\Desktop\XCR\app\main.py:96} INFO - Overriding DEBUG session logout
+[2021-12-28 15:27:39,816] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - DEBUG[1a4e71e5-5ebd-4be3-962c-ae632416c07a::0.0.0.0] successfully logged out
+[2021-12-28 15:27:48,282] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4e34a6cc-55f6-4956-b5db-4a5ff03ddbea::127.0.0.1] successfully logged in
+[2021-12-28 15:28:05,432] {C:\Users\samdo\Desktop\XCR\app\main.py:96} INFO - Overriding DEBUG session logout
+[2021-12-28 15:28:05,432] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - DEBUG[1a4e71e5-5ebd-4be3-962c-ae632416c07a::0.0.0.0] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-28 15:28:10,663] {C:\Users\samdo\Desktop\XCR\app\main.py:96} INFO - Overriding DEBUG session logout
+[2021-12-28 15:28:10,663] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - DEBUG[1a4e71e5-5ebd-4be3-962c-ae632416c07a::0.0.0.0] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-28 15:31:26,234] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:35:11,203] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:35:13,601] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:35:19,629] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:35:25,967] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:35:31,982] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:35:38,297] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:35:44,319] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:38:43,236] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:38:47,215] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:38:49,561] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:38:55,578] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:04,202] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:10,240] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:16,585] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:22,621] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:28,965] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:35,002] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:49,718] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:53,562] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:74} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:39:56,048] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:39:56,632] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:02,375] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:02,646] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:08,387] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:08,962] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:12,037] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:14,714] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:14,988] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:18,362] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:40:20,740] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:48:41,959] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:51:48,688] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:51:51,647] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:51:55,018] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:52:01,310] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:52:08,617] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:52:14,646] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:52:20,985] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:52:27,017] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:53:24,583] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:53:30,930] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:53:36,952] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:53:43,288] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:53:49,327] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:55:55,785] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:56:14,895] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:56:20,933] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:56:27,299] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:56:33,352] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:56:39,692] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:56:45,723] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:57:09,588] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:57:15,922] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:57:21,948] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:57:28,298] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:57:34,347] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:59:15,040] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[60382d06-ff3a-4c84-89ec-a1ac6dbcca63::127.0.0.1] successfully logged in
+[2021-12-28 15:59:44,693] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:59:47,284] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 15:59:51,012] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 15:59:57,035] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:00:03,378] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:00:09,410] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:00:15,770] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:00:21,808] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:01:43,265] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 16:01:45,765] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:01:51,789] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:06,086] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:12,137] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:18,617] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:24,648] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:31,010] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:02:37,033] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'club_weekly_attendance' which was missing the 'club' field and was subsequently rejected
+[2021-12-28 16:04:28,102] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 16:07:28,764] {C:\Users\samdo\Desktop\XCR\app\main.py:96} INFO - Overriding DEBUG session logout
+[2021-12-28 16:07:28,765] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - DEBUG[202e3879-949b-4e1b-b1c1-fcdd3844420b::0.0.0.0] successfully logged out
+[2021-12-28 16:07:33,880] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[432659f4-d370-431d-b0c2-b85439263de8::127.0.0.1] successfully logged in
+[2021-12-28 16:08:35,009] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 16:12:20,510] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[448706e3-ae5f-4ef9-bd1e-3df0f40f2d22::127.0.0.1] successfully logged in
+[2021-12-28 16:12:27,506] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 16:14:34,169] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[f8fb63c3-8194-49bf-82aa-a5f190ea998c::127.0.0.1] successfully logged in
+[2021-12-28 16:15:09,659] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9aca8050-1b91-4e88-8721-a471287b2c03::127.0.0.1] successfully logged in
+[2021-12-28 16:17:09,567] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 16:45:38,190] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[068679d0-cd9b-42ae-a3fc-47fc84f3e7b6::127.0.0.1] successfully logged in
+[2021-12-28 17:16:20,139] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5e00e07b-0341-4cb4-aff1-b500fcdaa73d::127.0.0.1] successfully logged in
+[2021-12-28 17:45:49,484] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5e00e07b-0341-4cb4-aff1-b500fcdaa73d::127.0.0.1] successfully logged out
+[2021-12-28 17:45:54,768] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4757b415-143e-433a-864e-8e26391cd7ae::127.0.0.1] successfully logged in
+[2021-12-28 17:49:32,764] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 17:52:06,246] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[4757b415-143e-433a-864e-8e26391cd7ae::127.0.0.1] successfully logged out
+[2021-12-28 17:52:09,648] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[842a05dd-018e-483c-93a0-d06547902892::127.0.0.1] successfully logged in
+[2021-12-28 17:52:13,727] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:73} WARNING - user[842a05dd-018e-483c-93a0-d06547902892::127.0.0.1] attempted to access 'overall' view with insufficient permissions
+[2021-12-28 17:54:37,446] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[842a05dd-018e-483c-93a0-d06547902892::127.0.0.1] successfully logged out
+[2021-12-28 17:54:41,110] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ed35f952-1f2d-4745-803d-7fe303233efe::127.0.0.1] successfully logged in
+[2021-12-28 18:00:42,206] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[23beeab8-c5fc-45c3-8206-f28fbbf385b2::127.0.0.1] successfully logged in
+[2021-12-28 18:02:51,947] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 18:08:12,058] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[23beeab8-c5fc-45c3-8206-f28fbbf385b2::127.0.0.1] successfully logged out
+[2021-12-28 18:08:16,475] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[fb0e0f69-4c39-47a8-b029-cb59a02dc1fb::127.0.0.1] successfully logged in
+[2021-12-28 18:08:50,310] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[fb0e0f69-4c39-47a8-b029-cb59a02dc1fb::127.0.0.1] successfully logged out
+[2021-12-28 18:08:56,831] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[ddec637e-87f5-42da-ad98-4458bc3af87e::127.0.0.1] successfully logged in
+[2021-12-28 18:09:01,028] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[ddec637e-87f5-42da-ad98-4458bc3af87e::127.0.0.1] successfully logged out
+[2021-12-28 18:09:04,750] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[77c5097c-67f6-4ac9-9918-363c12b7cafb::127.0.0.1] successfully logged in
+[2021-12-28 18:09:07,749] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[77c5097c-67f6-4ac9-9918-363c12b7cafb::127.0.0.1] successfully logged out
+[2021-12-28 18:09:12,423] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[7ae85c1b-9127-4ee7-9c91-f8aae0ea3e6c::127.0.0.1] successfully logged in
+[2021-12-28 18:09:14,163] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:73} WARNING - user[7ae85c1b-9127-4ee7-9c91-f8aae0ea3e6c::127.0.0.1] attempted to access 'club' view with insufficient permissions
+[2021-12-28 18:11:32,752] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:73} WARNING - user[7ae85c1b-9127-4ee7-9c91-f8aae0ea3e6c::127.0.0.1] attempted to access 'overall' view with insufficient permissions
+[2021-12-28 18:11:34,563] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[7ae85c1b-9127-4ee7-9c91-f8aae0ea3e6c::127.0.0.1] successfully logged out
+[2021-12-28 18:11:39,787] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6c8f26ca-3e85-40a2-9897-4f8a43862908::127.0.0.1] successfully logged in
+[2021-12-28 18:15:32,337] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[29be06fa-ec88-4b94-b21f-11ff422cce28::127.0.0.1] successfully logged in
+[2021-12-28 18:15:53,786] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[29be06fa-ec88-4b94-b21f-11ff422cce28::127.0.0.1] successfully logged out
+[2021-12-28 18:15:58,948] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[c3037715-1d96-46d5-b6a8-362fc20263cf::127.0.0.1] successfully logged in
+[2021-12-28 18:16:01,558] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[c3037715-1d96-46d5-b6a8-362fc20263cf::127.0.0.1] successfully logged out
+[2021-12-28 18:27:35,246] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4b743157-e6fb-45be-ae4a-a4bddc5a095b::127.0.0.1] successfully logged in
+[2021-12-28 18:35:30,537] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[4b743157-e6fb-45be-ae4a-a4bddc5a095b::127.0.0.1] successfully logged out
+[2021-12-28 18:35:34,460] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[49fb8c8e-7de1-4134-93ea-4fd816627ebe::127.0.0.1] successfully logged in
+[2021-12-28 19:05:38,738] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[d59ea141-df94-47aa-ae69-c9dc73987358::127.0.0.1] successfully logged in
+[2021-12-28 19:05:47,429] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[d59ea141-df94-47aa-ae69-c9dc73987358::127.0.0.1] successfully logged out
+[2021-12-28 19:05:51,657] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[cc9c4cb2-d5b6-4203-9ac2-1ce1cb70bd83::127.0.0.1] successfully logged in
+[2021-12-28 19:07:21,422] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[cc9c4cb2-d5b6-4203-9ac2-1ce1cb70bd83::127.0.0.1] successfully logged out
+[2021-12-28 19:07:25,415] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[0ef4ceeb-3a89-40a4-a197-ecb21ce2da58::127.0.0.1] successfully logged in
+[2021-12-28 19:07:29,967] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[0ef4ceeb-3a89-40a4-a197-ecb21ce2da58::127.0.0.1] successfully logged out
+[2021-12-28 19:07:34,280] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[22452514-23b6-4a53-9e99-4a51a47a82d8::127.0.0.1] successfully logged in
+[2021-12-28 19:10:58,193] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[22452514-23b6-4a53-9e99-4a51a47a82d8::127.0.0.1] successfully logged out
+[2021-12-28 19:11:04,037] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ec9b245a-55b0-46ad-ab7f-b19e3bebe16f::127.0.0.1] successfully logged in
+[2021-12-28 19:14:42,640] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 19:24:45,003] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[add49bc8-8c67-47ab-8832-6c6dfad4592c::127.0.0.1] successfully logged in
+[2021-12-28 19:29:26,352] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[560394c6-d41c-4591-8a32-edd75e16c06f::127.0.0.1] successfully logged in
+[2021-12-28 19:59:56,120] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[016f991c-d950-41a2-b964-31bc25fe339d::127.0.0.1] successfully logged in
+[2021-12-28 20:00:40,083] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[7bcc33f1-b2c1-4650-b764-62d054fc0704::127.0.0.1] successfully logged in
+[2021-12-28 20:02:50,533] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[7bcc33f1-b2c1-4650-b764-62d054fc0704::127.0.0.1] successfully logged out
+[2021-12-28 20:02:54,543] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'user' [IP::127.0.0.1]
+[2021-12-28 20:02:58,171] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[8770ce02-9ebd-41a8-9f2d-2f82f4564c7a::127.0.0.1] successfully logged in
+[2021-12-28 20:03:08,852] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[8770ce02-9ebd-41a8-9f2d-2f82f4564c7a::127.0.0.1] successfully logged out
+[2021-12-28 20:03:15,134] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[7dce8339-8845-469b-9cbc-a3abdaaea706::127.0.0.1] successfully logged in
+[2021-12-28 20:03:19,525] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-28 20:06:07,820] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[7dce8339-8845-469b-9cbc-a3abdaaea706::127.0.0.1] successfully logged out
+[2021-12-28 20:06:11,687] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[b3b1f935-3224-4814-8c92-7f93f3bd51c1::127.0.0.1] successfully logged in
+[2021-12-28 20:06:20,978] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[b3b1f935-3224-4814-8c92-7f93f3bd51c1::127.0.0.1] successfully logged out
+[2021-12-28 20:06:36,574] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[15f34e69-58bb-42ec-8902-39595282adfe::127.0.0.1] successfully logged in
+[2021-12-29 11:53:45,813] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[e18f2478-be8d-4560-a204-59599a25072e::127.0.0.1] successfully logged in
+[2021-12-29 11:54:07,793] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[e18f2478-be8d-4560-a204-59599a25072e::127.0.0.1] successfully logged out
+[2021-12-29 11:54:13,634] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[59f5d80c-4e6c-431e-909f-7c21cdc6a086::127.0.0.1] successfully logged in
+[2021-12-29 11:54:23,745] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-29 11:55:49,297] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[59f5d80c-4e6c-431e-909f-7c21cdc6a086::127.0.0.1] successfully logged out
+[2021-12-29 11:55:55,904] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ea22ad61-efc2-481e-aa82-0d87862b68df::127.0.0.1] successfully logged in
+[2021-12-29 11:56:28,639] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[ea22ad61-efc2-481e-aa82-0d87862b68df::127.0.0.1] successfully logged out
+[2021-12-29 11:58:37,549] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6c437df1-4b17-42fb-a195-0237da48944c::127.0.0.1] successfully logged in
+[2021-12-29 12:04:35,037] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-29 12:09:17,181] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4e8cff4b-f6dd-4c75-84d5-3477d7bcca48::127.0.0.1] successfully logged in
+[2021-12-29 12:14:25,518] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-29 12:26:22,587] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-29 12:30:19,862] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:75} INFO - Reloaded the database analysis statistics
+[2021-12-29 12:33:10,521] {C:\Users\samdo\Desktop\XCR\app\main.py:96} INFO - Overriding DEBUG session logout
+[2021-12-29 12:33:10,521] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - DEBUG[7550e4ae-442a-452a-9d31-e8752bca18c2::0.0.0.0] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 12:39:40,753] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9af2433d-0e8a-4d54-90c5-0de087839628::127.0.0.1] successfully logged in
+[2021-12-29 12:39:43,039] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 12:39:44,666] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 12:56:51,429] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[7c770e66-ffb0-4e42-b42a-48a45369f701::127.0.0.1] successfully logged in
+[2021-12-29 12:57:45,690] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[d954e08c-fe55-4303-bcc3-dbb9693b47fa::127.0.0.1] successfully logged in
+[2021-12-29 13:02:57,786] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - admin[d954e08c-fe55-4303-bcc3-dbb9693b47fa::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 13:03:03,503] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[f26a72b0-812a-4898-82c2-3851418e830e::127.0.0.1] successfully logged in
+[2021-12-29 13:03:12,557] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - admin[f26a72b0-812a-4898-82c2-3851418e830e::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 13:03:50,484] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8819488d-9797-4a90-ab7f-c2531e602830::127.0.0.1] successfully logged in
+[2021-12-29 13:04:34,561] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - admin[8819488d-9797-4a90-ab7f-c2531e602830::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 13:05:00,378] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[aa393460-4067-4763-914e-7fddf934a159::127.0.0.1] successfully logged in
+[2021-12-29 13:05:31,001] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - admin[aa393460-4067-4763-914e-7fddf934a159::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 13:05:36,527] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[61a4a43a-a058-4827-86b7-d000a8586c4b::127.0.0.1] successfully logged in
+[2021-12-29 13:05:42,190] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:122} WARNING - admin[61a4a43a-a058-4827-86b7-d000a8586c4b::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2021-12-29 13:05:50,513] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8296109e-f8e1-4818-81c4-7fee39f57b20::127.0.0.1] successfully logged in
+[2021-12-29 13:07:07,162] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:07:13,185] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:07:19,522] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:07:25,569] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:07:31,916] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:07:37,943] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:08:42,608] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:09:30,358] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'fetch_records' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 13:36:32,422] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[469f81ca-00db-480d-9cde-0839fbb0a33e::127.0.0.1] successfully logged in
+[2021-12-29 13:49:59,751] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[92b9d9aa-6508-4458-9410-f5ed7e036028::127.0.0.1] successfully logged in
+[2021-12-29 14:49:26,910] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4d1dd7cb-a2bc-4958-a0cd-f8193d80bb8b::127.0.0.1] successfully logged in
+[2021-12-29 14:50:10,059] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:50:32,594] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:51:28,331] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:51:41,907] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:53:27,629] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:54:59,244] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'delete_record' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-29 14:56:00,757] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[014d1083-d3c5-47ad-85f6-1824fa7f8b41::127.0.0.1] successfully logged in
+[2021-12-29 14:56:40,353] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a7d8bb53-a425-4469-bb62-7dc3cd5379de::127.0.0.1] successfully logged in
+[2021-12-29 14:57:18,613] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[78fad1f5-8a56-4f9f-825f-a169afe59359::127.0.0.1] successfully logged in
+[2021-12-29 14:57:38,455] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[662aa986-3f69-46c8-96e6-156dddd8e8e1::127.0.0.1] successfully logged in
+[2021-12-29 14:59:04,645] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[44974992-859b-4e61-85ac-8c38f01b4fc0::127.0.0.1] successfully logged in
+[2021-12-29 14:59:14,903] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[65f1ec44-8f74-49bb-a55e-da603e9596b7::127.0.0.1] successfully logged in
+[2021-12-29 15:03:58,060] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[45ab186a-2a51-4762-adf1-3d15d972f7dc::127.0.0.1] successfully logged in
+[2021-12-29 15:05:03,616] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ebafbe54-3a2a-4fbe-8833-1258a8d64020::127.0.0.1] successfully logged in
+[2021-12-29 15:05:36,879] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bd4d54fc-e2f9-4f86-a029-0264a456eeb1::127.0.0.1] successfully logged in
+[2021-12-29 15:30:54,350] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4a8f5175-8834-4a2c-98f9-94164c76816f::127.0.0.1] successfully logged in
+[2021-12-29 15:49:02,177] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 15:51:40,975] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[b6bbfce2-af50-4d4f-8cce-4381694e251f::127.0.0.1] successfully logged in
+[2021-12-29 15:52:30,356] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[b6bbfce2-af50-4d4f-8cce-4381694e251f::127.0.0.1] successfully logged out
+[2021-12-29 17:36:17,157] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[b34a9a47-9684-49fa-aaf4-5adc6886365b::127.0.0.1] successfully logged in
+[2021-12-29 17:36:38,439] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[b34a9a47-9684-49fa-aaf4-5adc6886365b::127.0.0.1] successfully logged out
+[2021-12-29 17:36:45,991] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[76d0a3da-d564-42ee-bd2e-e9107333c5b8::127.0.0.1] successfully logged in
+[2021-12-29 17:36:51,218] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 17:39:54,038] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[76d0a3da-d564-42ee-bd2e-e9107333c5b8::127.0.0.1] successfully logged out
+[2021-12-29 17:40:03,071] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6eeafc04-153d-48af-b9de-5d25d2747744::127.0.0.1] successfully logged in
+[2021-12-29 17:40:16,765] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:89} INFO - admin[6eeafc04-153d-48af-b9de-5d25d2747744::127.0.0.1] created User Anna[ID:4]
+[2021-12-29 17:40:19,096] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[6eeafc04-153d-48af-b9de-5d25d2747744::127.0.0.1] successfully logged out
+[2021-12-29 17:40:22,707] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'anna' [IP::127.0.0.1]
+[2021-12-29 17:40:28,771] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - Anna[70991d82-34ba-4e29-86de-631962f19fe3::127.0.0.1] successfully logged in
+[2021-12-29 17:40:38,341] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - Anna[70991d82-34ba-4e29-86de-631962f19fe3::127.0.0.1] successfully logged out
+[2021-12-29 17:40:42,166] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] successfully logged in
+[2021-12-29 17:40:47,479] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:61} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] deleted User Anna[ID:4]
+[2021-12-29 17:41:04,457] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:125} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
+[2021-12-29 17:41:38,330] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] successfully logged out
+[2021-12-29 17:42:17,606] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[01a338dd-9d70-4eeb-ba47-e1c0899c1d9d::127.0.0.1] successfully logged in
+[2021-12-29 17:43:06,821] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics

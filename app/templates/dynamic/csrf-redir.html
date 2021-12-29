@@ -1,0 +1,26 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='dynamic/style.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<form name="auto-form" action="{{ redir_url }}" method="POST">
+    {% for key, value in input_form.items() %}
+        <input type="hidden" name="{{key}}" value="{{value}}">
+    {% endfor %}
+    <input type="hidden" name="anti-csrf-token" value="{{ session.raw_csrf_token }}">
+    <input class="submit-btn" type="submit" value="Submit" />
+</form>
+
+<script type="text/javascript">
+window.onload=function(){
+    var auto = setTimeout(function(){ submitForm(); }, 7);
+
+    function submitForm(){
+      document.forms["auto-form"].submit();
+    }
+}
+</script>
+{% endblock %}

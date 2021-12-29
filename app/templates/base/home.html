@@ -1,0 +1,120 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='base/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-around holder">
+    <a href="/register_class" class="cover-box card justify-content-around">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">groups</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Register a class of individuals</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Allows you to add multiple individuals to a list, then register them all at one time</p>
+        </div>
+    </a>
+
+    <a href="/view_records" class="cover-box card justify-content-around">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">person</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>View and manage records</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Allows you to view and manage all the attendances of an individual in a list-like format.</p>
+        </div>
+    </a>
+
+    <form class='csrf-req cover-box card justify-content-around' action="/deauth" id="deauth-form" method="POST">
+        <button class='nav-link-submit' type="submit" form="deauth-form">
+                <div class="row row-4 justify-content-center">
+                    <span class="material-icons icon md-128 md-light">logout</span>
+                </div>
+                <div class="row row-7 justify-content-center text px-3">
+                    <p>Logout</p>
+                </div>
+                <div class="row row-1 justify-content-center mini-text px-5 pt-5">
+                    <p>Logout from your account and end your current session.</p>
+                </div>
+        </button>
+    </form>
+    {% if session.auth_level >= 2 %}
+    <a href="/overall" class="cover-box card justify-content-around">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">pie_chart</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Overall analysis for entire data set</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance of the entire school to clubs.</p>
+        </div>
+    </a>
+    <a href="/club" class="cover-box card justify-content-around">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">sports_tennis</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Analysis for clubs</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance to a specific club.</p>
+        </div>
+    </a>
+    <a href="/student" class="cover-box card justify-content-around">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">sports_handball</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Analysis for students</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance of a specific individual.</p>
+        </div>
+    </a>
+    {% else %}
+    <div class="cover-box card justify-content-around muted">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">pie_chart</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Overall analysis for entire data set</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance of the entire school to clubs.</p>
+            <p class="py-0" style="color:red;">Insufficient permission to access this</p>
+        </div>
+    </div>
+    <div class="cover-box card justify-content-around muted">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">sports_tennis</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Analysis for clubs</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance to a specific club.</p>
+            <p class="py-0" style="color:red;">Insufficient permission to access this</p>
+        </div>
+    </div>
+    <div class="cover-box card justify-content-around muted">
+        <div class="row row-4 justify-content-center">
+            <span class="material-icons icon md-128 md-light">sports_handball</span>
+        </div>
+        <div class="row row-7 justify-content-center text px-3">
+            <p>Analysis for students</p>
+        </div>
+        <div class="row row-1 justify-content-center mini-text px-5">
+            <p>Get an at-a-glance overview of the attendance of a specific individual.</p>
+            <p class="py-0" style="color:red;">Insufficient permission to access this</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<script src="{{ url_for('static', filename='base/home.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<script src="{{ url_for('static', filename='register/jquery.autocomplete.min.js') }}"></script>
+<script src="{{ url_for('static', filename='register/register_one.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='register/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="col justify-content-center">
+	<div class="row justify-content-center px-1 py-1">
+		<div class="cover-box text-muted">
+			<form id="register-one-form" class="form-horizontal" action="register_one_form" method="POST">
+				<fieldset>
+					<!-- Form Name -->
+					<h1 class="pl-3 py-3 text-light text-center">Register an individual</h1>
+    				<hr class="bg-light mb-3">
+					<h3 class="text-muted pl-3">Attendance details</h3>
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-xl-4 col-md-9 control-label" for="date">Date</label>
+						<div class="col-xl-4 col-md-9">
+							<input id="date" name="date" type="date" class="form-control input-md" value="{{ current_date }}" required="">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xl-6 col-md-12 control-label" for="club">Club</label>
+						<div class="col-xl-6 col-md-12">
+							<input id="club" name="club" type="text" placeholder="Club Name" class="form-control input-md" required="">
+							<input id="club-id" name="club-id" type="hidden" >
+							<span class="help-block pl-1">Begin typing to see a list of suggestions</span>
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xl-6 col-md-12 control-label" for="name">Student Name</label>
+						<div class="col-xl-6 col-md-12">
+							<input id="name" name="name" type="text" placeholder="Student Name" class="form-control input-md" required="">
+							<input id="name-id" name="name-id" type="hidden" >
+							<span class="help-block pl-1">Begin typing to see a list of suggestions</span>
+						</div>
+					</div>
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xl-6 col-md-12 control-label" for="submit"></label>
+						<div class="col-xl-6 col-md-12">
+							<input id="submit" type="submit" class="btn btn-success"/>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

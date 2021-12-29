@@ -1,0 +1,94 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='admin/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="cover-box text-muted">
+    <h1 class="pl-3 py-3 text-light text-center">Datastore Management</h1>
+    <hr class="bg-light mb-3">
+    <h3 class="text-muted pl-3">Current student datastores</h3>
+    <br>
+    <table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr class="thead-dark">
+            <th scope="col">Datastore Filename</th>
+            <th scope="col">Loaded?</th>
+            <th scope="col" style="text-align: center;">Download</th>
+            <th scope="col" style="text-align: center;">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for datastore in student_datastores %}
+    <tr>
+        <td>{{ datastore[1] }}</td>
+        <td><strong>{{ datastore[2] }}</strong></td>
+        <td style="text-align: center;">
+            <a href="/download_student_datastore?id={{ datastore[0] }}">
+                <button class="btn btn-info">Download</button>
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <form class='csrf-req' action="/delete_student_datastore" method="POST">
+                <input name="datastore-id" type="hidden" value="{{ datastore[0] }}">
+                <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+
+    <div class="row justify-content-around">
+        <div class="col col-12">
+            <form class='csrf-req' action="/reload_student_datastore" method="POST">
+                <input type="submit" style="width: 100%;" class="btn btn-success" value="Reload Student Datastore">
+            </form>
+        </div>
+    </div>
+
+    <hr class="bg-light">
+    <h3 class="text-muted pl-3">Current clubs datastores</h3>
+    <br>
+
+    <table class="table table-dark table-striped table-hover">
+        <thead>
+            <tr class="thead-dark">
+                <th scope="col">Datastore Filename</th>
+                <th scope="col">Loaded?</th>
+                <th scope="col" style="text-align: center;">Download</th>
+                <th scope="col" style="text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for datastore in club_datastores %}
+        <tr>
+            <td>{{ datastore[1] }}</td>
+            <td><strong>{{ datastore[2] }}</strong></td>
+            <td style="text-align: center;">
+                <a href="/download_club_datastore?id={{ datastore[0] }}">
+                    <button class="btn btn-info">Download</button>
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <form class='csrf-req' action="/delete_club_datastore" method="POST">
+                    <input name="datastore-id" type="hidden" value="{{ datastore[0] }}">
+                    <input type="submit" class="btn btn-danger" value="Delete">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-around">
+        <div class="col col-12">
+            <form class='csrf-req' action="/reload_club_datastore" method="POST">
+                <input type="submit" style="width: 100%;" class="btn btn-success" value="Reload Club Datastore">
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

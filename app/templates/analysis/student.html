@@ -1,0 +1,82 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='analysis/analysis.css') }}">
+<script src="{{ url_for('static', filename='register/jquery.autocomplete.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row text-white cover-box justify-content-center"><h1>Individual Student Analysis</h1></div>
+
+<div class="cover-box text-muted">
+    <form id="student-select" class="form-horizontal">
+        <fieldset>
+            <!-- Text input-->
+            <div class="form-group mb-3">
+                <label class="col-xl-6 col-md-12 control-label" for="name">Student Name</label>
+                <div class="col-xl-6 col-md-12">
+                    <div class="input-group mb-1">
+                        <input id="name" name="name" type="text" placeholder="Student's Name" class="form-control" required="">
+                        <div class="input-group-append">
+                            <input id="submit" type="submit" class="btn btn-success"/>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input id="name-id" name="name-id" type="hidden" >
+                        <span class="help-block">Begin typing to see a list of suggestions</span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+
+<div class="hidden" style="display: none;">
+    <div class="row justify-content-around">
+        <div class="col col">
+            <div id="Attendance-Holder" class="cover-box" style="height: 50vh;">
+                <canvas id="Attendance"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col col-6">
+            <div id="ClubBreakdown-Holder" class="cover-box" style="height: 50vh;">
+                <canvas id="ClubBreakdown"></canvas>
+            </div>
+        </div>
+        <div class="col col-6 text-white">
+            <div class="row cover-box" style="height: 16vh;">
+                <p style="font-size: 2vw;"><strong class="student-name">Student Name</strong> has attended a club <strong id="FlashOne">0</strong> time(s)</p>
+            </div>
+            <div class="row cover-box" style="height: 16vh;">
+                <p style="font-size: 2vw;"><strong class="student-name">Student Name</strong> has attended <strong id="FlashTwo">0</strong> different club(s)</p>
+            </div>
+            <div class="row cover-box" style="height: 16vh;">
+                <p style="font-size: 2vw;"><strong class="student-name">Student Name</strong> has attended <strong id="FlashThree">0</strong> club(s) more than five times</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col col">
+            <div id="ClubBarChart-Holder" class="cover-box" style="height: 50vh;">
+                <canvas id="ClubBarChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col col-12">
+            <a id="generate-analysis" href="/generate-student">
+                <button style="width: 100%;" class="btn btn-success mt-2 mb-3 ml-2">Download Analysis Spreadsheet</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='analysis/student.js') }}"></script>
+{% endblock %}

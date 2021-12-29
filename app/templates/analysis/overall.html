@@ -1,0 +1,63 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='analysis/analysis.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row text-white cover-box justify-content-center"><h1>Overall Analysis</h1></div>
+
+<div class="row justify-content-around">
+    <div class="col col">
+        <div class="cover-box" style="height: 50vh;">
+            <canvas id="PercentageAttendance"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-around">
+    <div class="col col-6">
+        <div class="cover-box" style="height: 50vh;">
+            <canvas id="ClubBreakdown"></canvas>
+        </div>
+    </div>
+    <div class="col col-6 text-white">
+        <div class="row cover-box" style="height: 16vh;">
+            <p style="font-size: 2vw;"><strong id="OneAttendance">0%</strong> of all students have attended at least one club</p>
+        </div>
+        <div class="row cover-box" style="height: 16vh;">
+            <p style="font-size: 2vw;"><strong id="ThreeAttendance">0%</strong> of all students have attended more than three different clubs</p>
+        </div>
+        <div class="row cover-box" style="height: 16vh;">
+            <p style="font-size: 2vw;"><strong id="FiveAttendance">0%</strong> of all students have attended more than five different clubs</p>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-around">
+    <div class="col col">
+        <div class="cover-box" style="height: 75vh;">
+            <canvas id="PercentageAttendanceByClub"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-around">
+    <div class="col col">
+        <div class="cover-box" style="height: 50vh;">
+            <canvas id="PercentageOnceAttendance"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-around">
+    <div class="col col-12">
+        <a href="/generate-overall">
+            <button style="width: 100%;" class="btn btn-success mt-2 mb-3 ml-2">Download Analysis Spreadsheet</button>
+        </a>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='analysis/overall.js') }}"></script>
+{% endblock %}

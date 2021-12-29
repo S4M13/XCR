@@ -1,0 +1,70 @@
+{% from "macros/popups.html" import successNotification with context %}
+{% from "macros/popups.html" import failureNotification with context %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Online Register</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Google icons addon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='handler/style.css') }}">
+    <script src="{{ url_for('static', filename='base/base.js') }}"></script>
+	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+</head>
+
+<body>
+	<!-- Start container -->
+
+	<div class="container-fluid">
+
+        <script>
+            $(window).on('load',function(){
+                $('#failure-message').text("Failed to find the page you are looking for. If you believe this is an error please contact a network administrator.")
+                $('#failure').modal('show');
+            });
+        </script>
+
+
+		<!-- End Content -->
+
+
+		<!-- Popups -->
+
+		<!-- Failure Modal -->
+		<div id="failure" class="modal fade">
+		  <div class="modal-dialog modal-confirm">
+			<div class="modal-content">
+			  <div class="modal-header" id="failure-header">
+				<div class="icon-box">
+				  <i class="material-icons spin">&#xe15b;</i>
+				</div>
+			  </div>
+			  <div class="modal-body text-center">
+				<h4>Failure</h4>
+				<br />
+				<p id="failure-message"></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- End Popups -->
+	</div>
+	<!-- End container -->
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{% macro successNotification(message) %}
+<!-- Success script -->
+<script type="text/javascript">
+$(window).on('load',function(){
+    SuccessPopup('{{message}}', 1500)
+});
+</script>
+{% endmacro %}
+
+
+{% macro failureNotification(message) %}
+<!-- Failure script -->
+<script type="text/javascript">
+$(window).on('load',function(){
+    FailurePopup('{{message}}', 1500)
+});
+</script>
+{% endmacro %}

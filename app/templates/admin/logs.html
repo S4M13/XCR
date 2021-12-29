@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="{{ url_for('static', filename='admin/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr class="thead-dark">
+          <th scope="col">Name</th>
+          <th scope="col">Last Modified</th>
+          <th scope="col">Size</th>
+          <th scope="col" style="text-align: center;">Download</th>
+          <th scope="col" style="text-align: center;">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in data %}
+      <tr>
+          <th scope="row"><strong>{{ entry[0] }}</strong></th>
+          <td>{{ entry[2] }}</td>
+          <td>{{ entry[3] }}</td>
+          <td style="text-align: center;"><a href="/download_log_file?file={{ entry[0] }}"><button class="btn btn-warning">Download</button></a>   </td>
+          <td style="text-align: center;"><form class='csrf-req' action="/delete_log_file" method="POST"> <input name="file-name" type="hidden" value="{{ entry[0] }}"> <input type="submit" class="btn btn-danger" value="Delete"> </form></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

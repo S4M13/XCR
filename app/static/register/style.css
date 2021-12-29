@@ -1,0 +1,82 @@
+hr {
+  background-color: grey;
+}
+
+.partial-date-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 1.5rem;
+  color: white;
+
+  border-bottom: solid 1px grey;
+
+  text-align: center;
+  outline: none;
+
+  transition: all 0.2s;
+}
+
+.help-block {
+    font-size: 0.75rem;
+}
+
+.partial-date-input:focus {
+  border-bottom: solid 1px white;
+}
+
+.date-partition {
+  text-align: center;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.class-input {
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+
+  border-bottom: solid 1px grey;
+
+  text-align: center;
+  outline: none;
+
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.class-input:focus {
+  border-bottom: solid 1px white;
+}
+
+.student-input {
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+
+  border-bottom: solid 1px grey;
+
+  text-align: center;
+  outline: none;
+
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.student-input:focus {
+  border-bottom: solid 1px white;
+}
+
+#register-all {
+  position: absolute;
+  right: 2em;
+  top: 33.25em;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
