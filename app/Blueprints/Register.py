@@ -5,12 +5,12 @@ from flask import jsonify
 if __name__ == "__main__":
     from ..Util import Auth
     from ..Util import Helper
-    from ..Util import GlobalContext
+    from ..Util.GlobalContext import GlobalContext
     from ..Util import Database
 else:
     from Util import Auth
     from Util import Helper
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
     from Util import Database
 
 import datetime

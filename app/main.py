@@ -17,7 +17,7 @@ import json
 from Util import Datastore
 from Util import Auth
 from Util import Helper
-from Util import GlobalContext
+from Util.GlobalContext import GlobalContext
 from Util import Database
 
 from Blueprints.Authenticate import Authenticate
@@ -36,8 +36,9 @@ with open(Settings.SERVER_CONFIG) as fp:
 
 # Attempt to fetch server name
 GlobalContext.SERVER_NAME = "Anonymous"
-if "server_name" in GlobalContext.CONFIG:
-    GlobalContext.SERVER_NAME = GlobalContext.CONFIG["server_name"]
+
+if GlobalContext.CONFIG.get('server_name') is not None:
+    GlobalContext.SERVER_NAME = GlobalContext.CONFIG.get("server_name")
 
 # Config Sentry SDK
 """
@@ -82,12 +83,13 @@ env = Environment(autoescape=select_autoescape(
 ))
 
 # Init datastore
-GlobalContext.STUDENTS_DATASTORE = Datastore.Datastore()
-GlobalContext.CLUBS_DATASTORE = Datastore.Datastore()
+TEMP_DS = Datastore.Datastore()
+TEMP_DS.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
+GlobalContext.CLUBS_DATASTORE = TEMP_DS
 
-GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
-GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
-
+TEMP_DS = Datastore.Datastore()
+TEMP_DS.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
+GlobalContext.STUDENTS_DATASTORE = TEMP_DS
 if __name__ == "__main__":
     # Create an debug session
     debug_session = Auth.Session("DEBUG", 999, '0.0.0.0')

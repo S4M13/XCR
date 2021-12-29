@@ -9,11 +9,11 @@ from flask import jsonify
 if __name__ == "__main__":
     from ..App import Settings
     import Database
-    import GlobalContext
+    from GlobalContext import GlobalContext
 else:
     import Settings
     from Util import Database
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
 
 import time
 import uuid

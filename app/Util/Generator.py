@@ -5,12 +5,12 @@ import datetime
 if __name__ == "__main__":
     from ..app import Settings
     import Database
-    import GlobalContext
+    from GlobalContext import GlobalContext
     import Database
 else:
     import Settings
     from Util import Database
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
     from Util import Database
 
 

@@ -10,13 +10,13 @@ if __name__ == "__main__":
     from ..Util import Auth
     from ..Util import Helper
     from ..Util import Database
-    from ..Util import GlobalContext
+    from ..Util.GlobalContext import GlobalContext
 else:
     import Settings
     from Util import Auth
     from Util import Helper
     from Util import Database
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
 
 import datetime
 import os
@@ -357,8 +357,10 @@ def delete_club_datastore(session, id_uf):
 @Auth.auth_required(3)
 @Auth.csrf_required()
 def reload_student_datastore(session):
-    GlobalContext.STUDENTS_DATASTORE.purge_memory()
-    GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
+    temp = GlobalContext.STUDENTS_DATASTORE
+    temp.purge_memory()
+    temp.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
+    GlobalContext.STUDENTS_DATASTORE = temp
 
     current_app.logger.info(f"{session} reloaded the student datastore")
 
@@ -370,8 +372,10 @@ def reload_student_datastore(session):
 @Auth.auth_required(3)
 @Auth.csrf_required()
 def reload_club_datastore(session):
-    GlobalContext.CLUBS_DATASTORE.purge_memory()
-    GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
+    temp = GlobalContext.CLUBS_DATASTORE
+    temp.purge_memory()
+    temp.load_directory(Settings.CLUBS_DATASTORE)
+    GlobalContext.CLUBS_DATASTORE = temp
 
     current_app.logger.info(f"{session} reloaded the club datastore")
 

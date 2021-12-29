@@ -7,13 +7,13 @@ if __name__ == "__main__":
     from ...app import Settings
     from ..Util import Auth
     from ..Util import Helper
-    from ..Util import GlobalContext
+    from ..Util.GlobalContext import GlobalContext
     from ..Util import Database
 else:
     import Settings
     from Util import Auth
     from Util import Helper
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
     from Util import Database
 
 import functools
@@ -87,35 +87,35 @@ def custom_analysis_cache():
 @Auth.auth_required(2, api=True)
 @custom_analysis_cache()
 def overall_weekly_attendance(session):
-    return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance"]
+    return GlobalContext.DATABASE_ANALYSIS.get("overall_weekly_attendance")
 
 
 @API.route("/overall/weekly-attendance-by-club", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @custom_analysis_cache()
 def overall_weekly_attendance_by_club(session):
-    return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_by_club"]
+    return GlobalContext.DATABASE_ANALYSIS.get("overall_weekly_attendance_by_club")
 
 
 @API.route("/overall/club-breakdown", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @custom_analysis_cache()
 def club_breakdown(session):
-    return GlobalContext.DATABASE_ANALYSIS["club_breakdown"]
+    return GlobalContext.DATABASE_ANALYSIS.get("club_breakdown")
 
 
 @API.route("/overall/weekly-attendance-once", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @custom_analysis_cache()
 def overall_weekly_attendance_once(session):
-    return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_once"]
+    return GlobalContext.DATABASE_ANALYSIS.get("overall_weekly_attendance_once")
 
 
 @API.route("/overall/flash-cards", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @custom_analysis_cache()
 def flash_cards(session):
-    return GlobalContext.DATABASE_ANALYSIS["flash_cards"]
+    return GlobalContext.DATABASE_ANALYSIS.get("flash_cards")
 
 
 @API.route("/student/fetch_records", methods=["GET"])

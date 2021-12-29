@@ -9,13 +9,13 @@ if __name__ == "__main__":
     from ..Util import Auth
     from ..Util import Helper
     from ..Util import Generator
-    from ..Util import GlobalContext
+    from ..Util.GlobalContext import GlobalContext
 else:
     import Settings
     from Util import Auth
     from Util import Helper
     from Util import Generator
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
 
 Analysis = Blueprint("Analysis", __name__)
 

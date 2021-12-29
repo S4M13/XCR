@@ -276,3 +276,30 @@
 [2021-12-29 17:41:38,330] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] successfully logged out
 [2021-12-29 17:42:17,606] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[01a338dd-9d70-4eeb-ba47-e1c0899c1d9d::127.0.0.1] successfully logged in
 [2021-12-29 17:43:06,821] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:09:46,222] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[c98c44c6-a280-4388-804a-9d51f722d5eb::127.0.0.1] successfully logged in
+[2021-12-29 21:10:15,820] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[57a60ea0-95e5-424a-9f71-ec7ec7f44138::127.0.0.1] successfully logged in
+[2021-12-29 21:11:41,281] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e9a58adc-4e23-4506-be5a-656d2456bf8c::127.0.0.1] successfully logged in
+[2021-12-29 21:11:44,080] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[e9a58adc-4e23-4506-be5a-656d2456bf8c::127.0.0.1] successfully logged out
+[2021-12-29 21:11:47,032] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e49add51-9e1c-41a1-95a9-9b3654a4453f::127.0.0.1] successfully logged in
+[2021-12-29 21:13:21,869] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8e30a780-47cf-482d-80f0-82c3c4c03d68::127.0.0.1] successfully logged in
+[2021-12-29 21:15:35,390] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[83c6d510-9a76-40cd-aef6-dc01ae58a552::127.0.0.1] successfully logged in
+[2021-12-29 21:15:42,098] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:16:59,094] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e278523b-a315-42b3-b494-3d2bca72afe6::127.0.0.1] successfully logged in
+[2021-12-29 21:17:04,627] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:20:36,021] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[39692ee2-ca31-409c-95f2-0fc62e8c9960::127.0.0.1] successfully logged in
+[2021-12-29 21:20:42,254] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:50:12,869] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4eecc25e-bbe4-48de-a50d-c28ac6879441::127.0.0.1] successfully logged in
+[2021-12-29 21:50:21,593] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:50:21,604] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:51:02,107] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:363} INFO - admin[4eecc25e-bbe4-48de-a50d-c28ac6879441::127.0.0.1] reloaded the student datastore
+[2021-12-29 21:53:18,905] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'as' [IP::127.0.0.1]
+[2021-12-29 21:53:24,078] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'as' [IP::127.0.0.1]
+[2021-12-29 21:53:27,243] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:30,847] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:34,144] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:37,676] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:41,096] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:44,752] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:47,842] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:51,819] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:54,950] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]

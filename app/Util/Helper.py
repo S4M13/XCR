@@ -8,12 +8,12 @@ from flask import current_app
 if __name__ == "__main__":
     from ...app import Settings
     import Auth
-    import GlobalContext
+    from GlobalContext import GlobalContext
     import Database
 else:
     import Settings
     from Util import Auth
-    from Util import GlobalContext
+    from Util.GlobalContext import GlobalContext
     from Util import Database
 
 import functools
@@ -251,6 +251,7 @@ def update_database_analysis():
     """
 
     records = Database.Record.query.all()  # Collect all records from the database for analysis
+    temp = {}
 
     # Define all the analysis records
     percentage_attendance_analysis = {}
@@ -413,7 +414,7 @@ def update_database_analysis():
          }
     ]
 
-    GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance"] = percentage_attendance_analysis_formatting
+    temp["overall_weekly_attendance"] = percentage_attendance_analysis_formatting
 
     percentage_attendance_club_analysis_formatting = {}
     percentage_attendance_club_analysis_formatting["success"] = True
@@ -436,7 +437,7 @@ def update_database_analysis():
              }
         )
 
-    GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_by_club"] = percentage_attendance_club_analysis_formatting
+    temp["overall_weekly_attendance_by_club"] = percentage_attendance_club_analysis_formatting
 
     club_breakdown_analysis_formatting = {}
     club_breakdown_analysis_formatting["success"] = True
@@ -453,7 +454,7 @@ def update_database_analysis():
          }
     ]
 
-    GlobalContext.DATABASE_ANALYSIS["club_breakdown"] = club_breakdown_analysis_formatting
+    temp["club_breakdown"] = club_breakdown_analysis_formatting
 
     percentage_attendance_once_analysis_formatting = {}
     percentage_attendance_once_analysis_formatting["success"] = True
@@ -479,7 +480,7 @@ def update_database_analysis():
          }
     ]
 
-    GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_once"] = percentage_attendance_once_analysis_formatting
+    temp["overall_weekly_attendance_once"] = percentage_attendance_once_analysis_formatting
 
     flash_cards = {
         "success": True,
@@ -488,4 +489,6 @@ def update_database_analysis():
         "five": attended_five_count
     }
 
-    GlobalContext.DATABASE_ANALYSIS["flash_cards"] = flash_cards
+    temp["flash_cards"] = flash_cards
+
+    GlobalContext.DATABASE_ANALYSIS = temp
