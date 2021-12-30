@@ -6,6 +6,8 @@ from tornado.ioloop import IOLoop
 from tornado.web import FallbackHandler, RequestHandler, Application
 from tornado.httpserver import HTTPServer
 
+from waitress import serve
+
 import Settings
 from main import app
 
@@ -32,6 +34,11 @@ def HTTP_server():
     print("[+]Starting insecure server...")
     http_server.listen(80, address='0.0.0.0')
     IOLoop.instance().start()
+
+
+def waitress_server():
+    serve(app, host='0.0.0.0', port=80)
+
 
 
 HTTPS_server()

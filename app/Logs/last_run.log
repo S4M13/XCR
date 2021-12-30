@@ -276,3 +276,171 @@
 [2021-12-29 17:41:38,330] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[98915c61-9548-4e35-9dce-cdffcfcf2b2e::127.0.0.1] successfully logged out
 [2021-12-29 17:42:17,606] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[01a338dd-9d70-4eeb-ba47-e1c0899c1d9d::127.0.0.1] successfully logged in
 [2021-12-29 17:43:06,821] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:09:46,222] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[c98c44c6-a280-4388-804a-9d51f722d5eb::127.0.0.1] successfully logged in
+[2021-12-29 21:10:15,820] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[57a60ea0-95e5-424a-9f71-ec7ec7f44138::127.0.0.1] successfully logged in
+[2021-12-29 21:11:41,281] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e9a58adc-4e23-4506-be5a-656d2456bf8c::127.0.0.1] successfully logged in
+[2021-12-29 21:11:44,080] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[e9a58adc-4e23-4506-be5a-656d2456bf8c::127.0.0.1] successfully logged out
+[2021-12-29 21:11:47,032] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e49add51-9e1c-41a1-95a9-9b3654a4453f::127.0.0.1] successfully logged in
+[2021-12-29 21:13:21,869] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8e30a780-47cf-482d-80f0-82c3c4c03d68::127.0.0.1] successfully logged in
+[2021-12-29 21:15:35,390] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[83c6d510-9a76-40cd-aef6-dc01ae58a552::127.0.0.1] successfully logged in
+[2021-12-29 21:15:42,098] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:16:59,094] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e278523b-a315-42b3-b494-3d2bca72afe6::127.0.0.1] successfully logged in
+[2021-12-29 21:17:04,627] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:20:36,021] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[39692ee2-ca31-409c-95f2-0fc62e8c9960::127.0.0.1] successfully logged in
+[2021-12-29 21:20:42,254] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:50:12,869] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4eecc25e-bbe4-48de-a50d-c28ac6879441::127.0.0.1] successfully logged in
+[2021-12-29 21:50:21,593] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:50:21,604] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 21:51:02,107] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:363} INFO - admin[4eecc25e-bbe4-48de-a50d-c28ac6879441::127.0.0.1] reloaded the student datastore
+[2021-12-29 21:53:18,905] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'as' [IP::127.0.0.1]
+[2021-12-29 21:53:24,078] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'as' [IP::127.0.0.1]
+[2021-12-29 21:53:27,243] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:30,847] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:34,144] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:37,676] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:41,096] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:44,752] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:47,842] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:51,819] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 21:53:54,950] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-29 22:04:34,922] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e930b897-ce22-451f-821a-623feb216ee6::127.0.0.1] successfully logged in
+[2021-12-29 23:05:45,531] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a629b527-3d7e-48e3-8711-ed08298602f1::127.0.0.1] successfully logged in
+[2021-12-29 23:05:53,992] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:06:07,726] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[13f26899-749c-4ebc-9976-7c406f18a214::127.0.0.1] successfully logged in
+[2021-12-29 23:06:15,828] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:28:08,577] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[f55f25fa-e2c7-4ccb-a7f8-6ada3ca37964::127.0.0.1] successfully logged in
+[2021-12-29 23:28:20,921] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:31:48,217] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e3916436-adce-454b-b4a2-d21a4a092446::127.0.0.1] successfully logged in
+[2021-12-29 23:34:52,359] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a6833962-0756-484a-9c72-cb942861f4de::127.0.0.1] successfully logged in
+[2021-12-29 23:35:28,625] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3a1387b9-57ae-4ee0-b122-95226e3c1df5::127.0.0.1] successfully logged in
+[2021-12-29 23:36:40,740] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9ef004fd-3b52-4a36-aba0-d4af625133aa::127.0.0.1] successfully logged in
+[2021-12-29 23:36:53,931] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[05d627c9-ddeb-403d-b93a-91db34214697::127.0.0.1] successfully logged in
+[2021-12-29 23:37:42,728] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[e3916436-adce-454b-b4a2-d21a4a092446::127.0.0.1] successfully logged out
+[2021-12-29 23:37:45,933] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3f81810b-64ca-46a3-afa0-558cd44139f7::127.0.0.1] successfully logged in
+[2021-12-29 23:38:37,051] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[7dd32268-cf75-449d-b934-9b239e0f80e7::127.0.0.1] successfully logged in
+[2021-12-29 23:38:48,199] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9698833e-8bc7-4bcb-abb8-a224a3494296::127.0.0.1] successfully logged in
+[2021-12-29 23:42:37,778] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[89f41e25-27c8-4471-b045-a5819b26b71c::127.0.0.1] successfully logged in
+[2021-12-29 23:42:44,318] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[cc8b1756-bc74-4ba4-a56e-7e96ad27ea18::127.0.0.1] successfully logged in
+[2021-12-29 23:43:06,204] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[20f393b8-ab1b-44d2-9e6c-4ae761d07dfd::127.0.0.1] successfully logged in
+[2021-12-29 23:44:12,173] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8e688438-0172-4f61-bd5a-637e34ccadaa::127.0.0.1] successfully logged in
+[2021-12-29 23:44:58,261] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[28343da8-a60f-4f0b-a637-5594df232f6b::127.0.0.1] successfully logged in
+[2021-12-29 23:45:04,417] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[94bf26a2-42a7-416e-9685-4847c98a9821::127.0.0.1] successfully logged in
+[2021-12-29 23:45:04,636] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e7f4f65d-2da8-43d6-85f3-b73ecff09b49::127.0.0.1] successfully logged in
+[2021-12-29 23:45:10,846] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[81eb5d40-3ec2-4fea-a479-0318fd5420f8::127.0.0.1] successfully logged in
+[2021-12-29 23:45:11,263] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:45:17,007] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,502] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[dd82743d-5733-49f7-9485-facbe84baf33::127.0.0.1] successfully logged in
+[2021-12-29 23:49:26,589] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9ccb278a-33b1-4b25-99f6-460834dae8db::127.0.0.1] successfully logged in
+[2021-12-29 23:49:26,661] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5214fd73-06e8-4dde-beaf-c4a7a95d1812::127.0.0.1] successfully logged in
+[2021-12-29 23:49:26,733] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4fc72b87-8444-43b0-a63b-9093ce6ad6a2::127.0.0.1] successfully logged in
+[2021-12-29 23:49:26,818] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[66c3c7a1-b42c-4b84-872d-6a5e84cfbe66::127.0.0.1] successfully logged in
+[2021-12-29 23:49:26,820] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,842] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,845] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,848] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,892] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,897] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,901] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,910] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,917] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,923] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,935] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,960] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,964] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,971] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,978] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:26,984] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,000] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,037] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,047] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,055] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,069] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,079] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,104] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,109] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,124] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,128] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,136] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,171] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,182] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,207] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,235] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,238] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,254] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,258] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,265] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,269] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,285] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,320] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,325] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,362] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,366] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,384] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,405] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,434] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,496] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,500] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,606] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,629] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,634] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,638] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,676] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,681] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,685] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,691] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,703] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,708] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,711] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,778] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,802] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,815] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,830] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,844] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,904] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,908] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,914] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,937] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,948] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,954] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,967] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:27,971] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,016] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,021] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,078] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,155] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,165] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,184] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,204] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,239] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,246] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,264] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,270] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,285] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,309] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,313] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,321] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,327] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,331] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,337] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,365] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,369] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,377] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,385] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,399] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,415] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:49:28,433] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2021-12-29 23:51:21,171] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ccc5ff3b-1a4c-4ea2-a255-423999ca803d::127.0.0.1] successfully logged in
+[2021-12-29 23:51:26,758] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:51:48,783] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[07dec5c5-9562-4b34-a463-63824c3e4554::127.0.0.1] successfully logged in
+[2021-12-29 23:51:53,606] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-29 23:53:15,592] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[49bf5491-2272-418e-b1b9-da7a2023b58a::127.0.0.1] successfully logged in
+[2021-12-29 23:53:21,649] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 00:01:05,490] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[2632ba8c-4df7-45bf-bdaf-b7d694441e77::127.0.0.1] successfully logged in
+[2021-12-30 00:01:10,099] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 00:01:42,553] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[84a2b3a8-753c-4760-80d1-4065d35803a8::127.0.0.1] successfully logged in
+[2021-12-30 00:01:50,109] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 00:01:53,151] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[91bfe65f-f0b9-4165-9e80-3f7e0cb41f57::127.0.0.1] successfully logged in
+[2021-12-30 00:01:59,798] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 00:02:09,561] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[e22335cb-7f74-4e0f-913a-db326ddccb8b::127.0.0.1] successfully logged in
+[2021-12-30 00:02:17,605] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[a4832dcf-1ca6-49ef-bce0-99ec1e9c84b1::127.0.0.1] successfully logged in
+[2021-12-30 00:02:48,875] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[753cb725-963c-42bd-99a4-8c469ac9b1c1::127.0.0.1] successfully logged in

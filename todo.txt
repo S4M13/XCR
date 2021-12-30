@@ -1,0 +1,43 @@
+-Make state safe - add proper backend to manage multiple threads
+	-Add backend
+	-Reqork Auth
+
+
+
+
+
+
+
+-SESSION RATE LIMITS FOR HEAVY ENDPOINTS/FUNCTIONS? maybe
+|->
+
+-add another service that works in the background
+	-Refresh db statistics independently
+	-Ensures the service is up and running
+	-Can send warning emails and what not
+	-Check in with the main server and what not
+	-see diagram app>client
+
+
+add the control panel functionality
+	-add ability to shutdown/restart service
+	-add general powers like all log out/lock down service
+	-lock down app is decent idea/prevent all logins
+	
+	-brainstorm other ideas for this
+	
+
+	
+
+wrap product for deployment
+	-Setup installation software, auto update from server, create everything as needed
+	
+	
+add auto updating for software?
+	-possible temp server setup?
+	-ensure is secure? - product key
+	-see test files on desktop - appears to be relatively easy................. ohno why did you do this?
+
+
+
+

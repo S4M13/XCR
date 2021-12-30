@@ -1,0 +1,5 @@
+pwd: C8mOlUi)H^HLsWAkfbfQ
+
+
+Gunicorn command:
+sudo gunicorn -w 1 --threads 16 --certfile ../Keys/ca.crt --keyfile ../Keys/private.key --log-level DEBUG --chdir app -b 0.0.0.0:443 main:app
