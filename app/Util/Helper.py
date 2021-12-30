@@ -260,14 +260,14 @@ def update_database_analysis():
     weekly_multi_attendance_analysis = {}
     multi_attendance_analysis = {}
 
-    GlobalContext.DATABASE_WARNING = False
+    GlobalContext.DATABASE_ANALYSIS["WARNING"] = False
     now = datetime.datetime.now()
     for entry in records:  # Loop all the records and carry out the analysis
         iso_stamp = entry.attendance_date.isocalendar()
         weekly_stamp = f"{str(iso_stamp[1]).zfill(2)}-{iso_stamp[0]}"  # Get the weekly stamp for the record
 
         if (now - entry.attendance_date).days > 365:
-            GlobalContext.DATABASE_WARNING = True
+            GlobalContext.DATABASE_ANALYSIS["WARNING"] = True
 
         # Add the records into the overall attendance records
         if weekly_stamp in percentage_attendance_analysis.keys():

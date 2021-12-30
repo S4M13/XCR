@@ -62,58 +62,32 @@ def clubs(session, query):
     return jsonify(data)
 
 
-def custom_analysis_cache():
-    def inner(func):
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            if (time.time() - GlobalContext.DATABASE_LAST_ANALYSIS) > Settings.DATABASE_ANALYSIS_REFRESH_RATE:
-                if not GlobalContext.DATABASE_ANALYZING:
-                    GlobalContext.DATABASE_ANALYZING = True
-                    Helper.update_database_analysis()
-                    GlobalContext.DATABASE_LAST_ANALYSIS = time.time()
-                    GlobalContext.DATABASE_ANALYZING = False
-
-                    current_app.logger.info("Reloaded the database analysis statistics")
-                else:
-                    while GlobalContext.DATABASE_ANALYZING:
-                        time.sleep(0.5)
-
-            return func(*args, **kwargs)
-        return wrapper
-    return inner
-
-
 @API.route("/overall/weekly-attendance", methods=["GET"])
 @Auth.auth_required(2, api=True)
-@custom_analysis_cache()
 def overall_weekly_attendance(session):
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance"]
 
 
 @API.route("/overall/weekly-attendance-by-club", methods=["GET"])
 @Auth.auth_required(2, api=True)
-@custom_analysis_cache()
 def overall_weekly_attendance_by_club(session):
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_by_club"]
 
 
 @API.route("/overall/club-breakdown", methods=["GET"])
 @Auth.auth_required(2, api=True)
-@custom_analysis_cache()
 def club_breakdown(session):
     return GlobalContext.DATABASE_ANALYSIS["club_breakdown"]
 
 
 @API.route("/overall/weekly-attendance-once", methods=["GET"])
 @Auth.auth_required(2, api=True)
-@custom_analysis_cache()
 def overall_weekly_attendance_once(session):
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_once"]
 
 
 @API.route("/overall/flash-cards", methods=["GET"])
 @Auth.auth_required(2, api=True)
-@custom_analysis_cache()
 def flash_cards(session):
     return GlobalContext.DATABASE_ANALYSIS["flash_cards"]
 

@@ -20,6 +20,7 @@ from Util import Auth
 from Util import Helper
 from Util import GlobalContext
 from Util import Database
+from Util import Background
 
 from Blueprints.Authenticate import Authenticate
 from Blueprints.Register import Register
@@ -95,10 +96,17 @@ GlobalContext.CLUBS_DATASTORE = Datastore.Datastore()
 GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
 GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
 
+# Start background tasks
+Background.scheduler.init_app(app)
+Background.scheduler.start()
+
+
+
 # Perform initial analysis
 with app.app_context():
     GlobalContext.DATABASE_LAST_ANALYSIS = time.time()
     Helper.update_database_analysis()
+
 
 if __name__ == "__main__":
     # Create an debug session

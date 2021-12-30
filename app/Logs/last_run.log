@@ -476,3 +476,15 @@
 [2021-12-30 15:24:47,761] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2e1c644b-1c99-4fed-8cd2-cfff040ded2a::127.0.0.1] successfully logged in
 [2021-12-30 15:55:03,675] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2869aa78-48e1-4e74-a982-87cf0b4b7c32::127.0.0.1] successfully logged in
 [2021-12-30 15:55:39,714] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 16:35:36,737] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9552950e-5340-429c-ae27-4605fec7ac53::127.0.0.1] successfully logged in
+[2021-12-30 16:38:10,214] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:38:11,948] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:38:15,501] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:38:30,999] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[835f9af0-2bfa-415c-adb2-16abbfb94b3d::127.0.0.1] successfully logged in
+[2021-12-30 16:38:45,964] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:38:48,293] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:39:06,532] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:39:24,629] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-30 16:39:28,976] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[977f195c-778b-4b77-b96b-3d7ae002858b::127.0.0.1] successfully logged in
+[2021-12-30 16:40:11,662] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 16:40:15,402] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
