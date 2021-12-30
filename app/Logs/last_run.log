@@ -488,3 +488,5 @@
 [2021-12-30 16:39:28,976] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[977f195c-778b-4b77-b96b-3d7ae002858b::127.0.0.1] successfully logged in
 [2021-12-30 16:40:11,662] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
 [2021-12-30 16:40:15,402] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
+[2021-12-30 18:27:02,982] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e1e9bc36-6934-415f-9e3e-272931b5b5d4::127.0.0.1] successfully logged in
+[2021-12-30 18:29:24,957] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5c4f7a2a-fe6b-46e0-82b7-1a067b7cb212::127.0.0.1] successfully logged in

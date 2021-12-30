@@ -7,52 +7,49 @@
 {% endblock %}
 
 {% block content %}
-<div class="col justify-content-center">
-	<div class="row justify-content-center px-1 py-1">
-		<div class="cover-box text-muted">
-			<h1 class="pl-3 py-3 text-light text-center">View and Manage Records</h1>
-			<hr class="bg-light mb-3">
+
+<div class="row text-white cover-box justify-content-center"><h1>View and Manage Records</h1></div>
+
+<div class="row justify-content-left cover-box text-muted">
+	<!-- Text input-->
+	<form id="student-select" class="col-12 form-horizontal">
+		<fieldset>
 			<!-- Text input-->
-			<form id="student-select" class="form-horizontal">
-				<fieldset>
-					<!-- Text input-->
-					<div class="form-group mb-3">
-						<label class="col-xl-6 col-md-12 control-label" for="name">Select a student</label>
-						<div class="col-xl-6 col-md-12">
-							<div class="input-group mb-1">
-								<input id="name" name="name" type="text" placeholder="Student's Name" class="form-control" required="">
-								<div class="input-group-append">
-									<input id="submit" type="submit" value="Fetch Records" class="btn btn-success"/>
-								</div>
-							</div>
-							<div class="mb-3">
-								<input id="name-id" name="name-id" type="hidden" >
-								<span class="help-block">Begin typing to see a list of suggestions</span>
-							</div>
+			<div class="form-group mb-3">
+				<label class="col-xl-6 col-md-12 control-label" for="name">Select a student</label>
+				<div class="col-xl-6 col-md-12">
+					<div class="input-group mb-1">
+						<input id="name" name="name" type="text" placeholder="Student's Name" class="form-control" required="">
+						<div class="input-group-append">
+							<input id="submit" type="submit" value="Fetch Records" class="btn btn-success"/>
 						</div>
 					</div>
-				</fieldset>
-			</form>
-
-			<div class="hidden" style="display: none;">
-			<hr class="bg-light">
-			<h3 class="text-muted pl-3 mb-4">Records</h3>
-
-			<table class="table table-dark table-striped table-hover">
-				<thead>
-				  <tr class="thead-dark">
-					  <th scope="col" width="10%">ID #</th>
-					  <th scope="col" width="20%">Week of attendance</th>
-					  <th scope="col" width="20%">Time registered</th>
-					  <th scope="col" width="40">Club attended</th>
-					  <th scope="col" width="10%" style="text-align: center;">Delete</th>
-				  </tr>
-				</thead>
-				<tbody id="records">
-				</tbody>
-				</table>
+					<div class="mb-3">
+						<input id="name-id" name="name-id" type="hidden" >
+						<span class="help-block">Begin typing to see a list of suggestions</span>
+					</div>
+				</div>
 			</div>
-		</div>
+		</fieldset>
+	</form>
+
+	<div class="col-12 hidden" style="display: none;">
+		<hr class="bg-light">
+		<h3 class="text-muted pl-3 mb-4">Records</h3>
+
+		<table class="col table table-dark table-striped table-hover">
+			<thead>
+			  <tr class="thead-dark">
+				  <th scope="col" width="10%">ID #</th>
+				  <th scope="col" width="20%">Week of attendance</th>
+				  <th scope="col" width="20%">Time registered</th>
+				  <th scope="col" width="40">Club attended</th>
+				  <th scope="col" width="10%" style="text-align: center;">Delete</th>
+			  </tr>
+			</thead>
+			<tbody id="records">
+			</tbody>
+		</table>
 	</div>
 </div>
 {% endblock %}
