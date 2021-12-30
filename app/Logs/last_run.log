@@ -448,3 +448,31 @@
 [2021-12-30 13:59:15,303] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - UAdmin[1a03c027-ade2-4d2a-aeab-8b395a0c054a] successfully logged in
 [2021-12-30 14:10:02,983] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4767213f-cb80-4626-906e-beb9eaa83712::127.0.0.1] successfully logged in
 [2021-12-30 14:10:18,188] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:13:33,114] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:16:43,883] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:19:48,571] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:24:24,249] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:27:53,184] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:32:00,693] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:35:35,773] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:39:10,463] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:40:41,492] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8b0dfd14-7e53-406a-897c-2c12b8926849::127.0.0.1] successfully logged in
+[2021-12-30 14:42:26,535] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:45:51,547] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:49:36,574] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:52:49,682] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 14:56:00,464] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:01:38,885] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[30a4aef6-10ee-4b0a-b7f9-3a4cee9e1b84::127.0.0.1] successfully logged in
+[2021-12-30 15:02:33,612] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[fa592b3e-4761-43fb-841a-3918fab50849::127.0.0.1] successfully logged in
+[2021-12-30 15:02:39,675] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:05:43,668] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9bd4683b-2e06-458e-9efc-566970f400aa::127.0.0.1] successfully logged in
+[2021-12-30 15:05:49,188] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:10:07,720] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:17:13,483] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:17:33,099] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[9bd4683b-2e06-458e-9efc-566970f400aa::127.0.0.1] successfully logged out
+[2021-12-30 15:17:38,327] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[36175b8e-9fab-4b1f-9aa4-55203c7af2c3::127.0.0.1] successfully logged in
+[2021-12-30 15:22:51,953] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[fb9c41a7-832a-4d13-b331-f771f21b3024::127.0.0.1] successfully logged in
+[2021-12-30 15:22:57,059] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics
+[2021-12-30 15:24:47,761] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2e1c644b-1c99-4fed-8cd2-cfff040ded2a::127.0.0.1] successfully logged in
+[2021-12-30 15:55:03,675] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2869aa78-48e1-4e74-a982-87cf0b4b7c32::127.0.0.1] successfully logged in
+[2021-12-30 15:55:39,714] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics

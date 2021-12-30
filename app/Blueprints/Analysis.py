@@ -23,19 +23,19 @@ Analysis = Blueprint("Analysis", __name__)
 @Analysis.route("/overall", methods=["GET"])
 @Auth.auth_required(2)
 def overall(session):
-    return Helper.render_base_template(session, "analysis/overall.html")
+    return Helper.render_base_template(session, "analysis/overall.html", warning=GlobalContext.DATABASE_WARNING)
 
 
 @Analysis.route("/student", methods=["GET"])
 @Auth.auth_required(2)
 def student(session):
-    return Helper.render_base_template(session, "analysis/student.html")
+    return Helper.render_base_template(session, "analysis/student.html", warning=GlobalContext.DATABASE_WARNING)
 
 
 @Analysis.route("/club", methods=["GET"])
 @Auth.auth_required(2)
 def club(session):
-    return Helper.render_base_template(session, "analysis/club.html")
+    return Helper.render_base_template(session, "analysis/club.html", warning=GlobalContext.DATABASE_WARNING)
 
 
 @Analysis.route("/generate-overall", methods=["GET"])

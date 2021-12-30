@@ -7,6 +7,13 @@
 {% endblock %}
 
 {% block content %}
+{% if warning %}
+<div class="row alert-overall alert alert-danger text-justify" role="alert">
+    <div class="inner-alert">
+        <i><strong>Warning!</strong> Some of the data saved is over a year old and may cause errors. Please advise the administrator to refresh the database yearly and archive old records.</i>
+    </div>
+</div>
+{% endif %}
 <div class="row text-white cover-box justify-content-center"><h1>Individual Student Analysis</h1></div>
 
 <div class="cover-box text-muted">

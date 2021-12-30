@@ -13,6 +13,7 @@ from sentry_sdk.integrations.tornado import TornadoIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import os
 import json
+import time
 
 from Util import Datastore
 from Util import Auth
@@ -93,6 +94,11 @@ GlobalContext.CLUBS_DATASTORE = Datastore.Datastore()
 
 GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
 GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
+
+# Perform initial analysis
+with app.app_context():
+    GlobalContext.DATABASE_LAST_ANALYSIS = time.time()
+    Helper.update_database_analysis()
 
 if __name__ == "__main__":
     # Create an debug session
