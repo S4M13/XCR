@@ -444,3 +444,7 @@
 [2021-12-30 00:02:09,561] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[e22335cb-7f74-4e0f-913a-db326ddccb8b::127.0.0.1] successfully logged in
 [2021-12-30 00:02:17,605] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[a4832dcf-1ca6-49ef-bce0-99ec1e9c84b1::127.0.0.1] successfully logged in
 [2021-12-30 00:02:48,875] {/mnt/c/Users/samdo/Desktop/XCR/app/Blueprints/Authenticate.py:83} INFO - admin[753cb725-963c-42bd-99a4-8c469ac9b1c1::127.0.0.1] successfully logged in
+[2021-12-30 13:57:18,709] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-30 13:59:15,303] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - UAdmin[1a03c027-ade2-4d2a-aeab-8b395a0c054a] successfully logged in
+[2021-12-30 14:10:02,983] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4767213f-cb80-4626-906e-beb9eaa83712::127.0.0.1] successfully logged in
+[2021-12-30 14:10:18,188] {C:\Users\samdo\Desktop\XCR\app\Blueprints\API.py:76} INFO - Reloaded the database analysis statistics

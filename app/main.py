@@ -57,6 +57,12 @@ app.config.from_object(Config)
 # Init DB
 Database.db.init_app(app)
 
+try:
+    with app.app_context():
+        Database.db.create_all()
+except Exception as e:
+    print(e)
+
 # Init Logger
 formatter = logging.Formatter("[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
 handler = RotatingFileHandler(Settings.LOG_FILE_LOCATION, maxBytes=5000000, backupCount=5)
