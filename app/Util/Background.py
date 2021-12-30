@@ -16,7 +16,7 @@ scheduler = APScheduler()
 def db_refresh():
     with scheduler.app.app_context():
         Helper.update_database_analysis()
-        current_app.logger.info("Database successfully refreshed")
+        current_app.logger.debug("Database successfully refreshed")
 
 
 

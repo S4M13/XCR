@@ -14,6 +14,7 @@ from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import os
 import json
 import time
+import flask_apscheduler
 
 from Util import Datastore
 from Util import Auth
@@ -99,8 +100,6 @@ GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
 # Start background tasks
 Background.scheduler.init_app(app)
 Background.scheduler.start()
-
-
 
 # Perform initial analysis
 with app.app_context():
