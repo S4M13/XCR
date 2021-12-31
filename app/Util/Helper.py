@@ -4,6 +4,7 @@ from flask import redirect
 from flask import render_template
 from flask import flash
 from flask import current_app
+from flask import jsonify
 
 if __name__ == "__main__":
     from ...app import Settings
@@ -68,7 +69,9 @@ def request_form(*params, emtpy_invalid: bool = True):
 
             current_app.logger.warning(f"A form was submitted to '{func.__name__}' which was missing the"
                                        f" '{missing_param}' field and was subsequently rejected")
-            return "Invalid form"  # TODO : Implement a send back to previous page with error message
+
+            flash("An invalid form was submitted. Please ensure all fields have been filled out.", "error")
+            return redirect(session.last_visited)
 
         return wrapper
 
@@ -86,7 +89,7 @@ def request_args(*params, emtpy_invalid: bool = True):
 
     def inner(func):
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(session, *args, **kwargs):
 
             param_values = []
 
@@ -100,14 +103,73 @@ def request_args(*params, emtpy_invalid: bool = True):
                 else:
                     param_values.append(request.args[parameter])
             else:
-                return func(*args, *param_values, **kwargs)
+                return func(session, *args, *param_values, **kwargs)
 
             current_app.logger.warning(f"A GET request was submitted to '{func.__name__}' which was missing the"
                                        f" '{missing_param}' field and was subsequently rejected")
-            return "Invalid form"  # TODO : Implement a send back to previous page with error message
+
+            flash("An invalid form was submitted. Please ensure all fields have been filled out.", "error")
+            return redirect(session.last_visited)
 
         return wrapper
 
+    return inner
+
+
+def ensure_valid_student_id(argument: int, api: bool = False):
+    """
+    Checks the argument in the given argument index is indeed a valid student ID.
+
+    :param argument: The given argument index to check. Taken from the list of the form. NOT ZERO INDEXED.
+    :param api: If the given view is a API endpoint and whether and API response should be given
+    :return: Wrapper function
+    """
+    def inner(func):
+        @wraps(func)
+        def wrapper(session, *args, **kwargs):
+            student_id = args[argument-1]
+            records = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)
+
+            if len(records) == 1:
+                return func(session, *args, **kwargs)
+
+            if not api:
+                flash("Invalid student ID submitted. Please contact the administrator if this error persists.", "error")
+                return redirect(session.last_visited)
+
+            return jsonify({"success": False, "error": "Invalid student ID submitted. Please contact the administrator if "
+                                               "this error persists."})
+
+        return wrapper
+
+    return inner
+
+
+def ensure_valid_club_id(argument: int, api: bool = False):
+    """
+    Checks the argument in the given argument index is indeed a valid student ID.
+
+    :param argument: The given argument index to check
+    :param api: If the given view is a API endpoint and whether and API response should be given
+    :return: Wrapper function
+    """
+    def inner(func):
+        @wraps(func)
+        def wrapper(session, *args, **kwargs):
+            club_id = args[argument-1]
+
+            records = GlobalContext.CLUBS_DATASTORE.return_specific_entries("UID", club_id)
+
+            if len(records) == 1:
+                return func(session, *args, **kwargs)
+
+            if not api:
+                flash("Invalid club ID submitted. Please contact the administrator if this error persists.", "error")
+                return redirect(session.last_visited)
+
+            return jsonify({"success": False, "error": "Invalid club ID submitted. Please contact the administrator if "
+                                               "this error persists."})
+        return wrapper
     return inner
 
 

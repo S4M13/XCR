@@ -28,6 +28,8 @@ def register_one(session):
 @Auth.auth_required(1, api=True)
 @Auth.csrf_required()
 @Helper.request_form("name", "name-id", "club", "club-id", "date")
+@Helper.ensure_valid_student_id(2, api=True)
+@Helper.ensure_valid_club_id(4, api=True)
 def register_one_form(session, student, student_id, club, club_id, date):
     student_entry = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)[0]
     student_entry_name = student_entry[1] + " " + student_entry[2]
@@ -93,6 +95,7 @@ def register_class(session):
 @Auth.auth_required(1, api=True)
 @Auth.csrf_required()
 @Helper.request_form("club", "club-id", "date")
+@Helper.ensure_valid_club_id(2, api=True)
 def register_class_form(session, club, club_id, date):
     students_uf = request.form.getlist("students[]")
     student_ids_uf = request.form.getlist("student-ids[]")
@@ -106,7 +109,17 @@ def register_class_form(session, club, club_id, date):
             student_ids.append(student_id)
 
     for student, student_id in zip(students, student_ids):
-        student_entry = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)[0]
+        student_entry_records = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)
+
+        if len(student_entry_records) != 1:
+            data = {"success": False,
+                    "error": f"Failed to register {student} as given ID is not a valid ID within the database "
+                             f"records - please contact a network administrator. "
+                    }
+
+            return jsonify(data)
+
+        student_entry = student_entry_records[0]
         student_entry_name = student_entry[1] + " " + student_entry[2]
 
         if not (student == student_entry_name):

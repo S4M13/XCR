@@ -45,7 +45,7 @@ def club(session):
 
 
 @Analysis.route("/generate-overall", methods=["GET"])
-@Auth.auth_required(2)
+@Auth.auth_required(2, page=False)
 def download_overall(session):
     file_name = Generator.generate_overall_analysis()
 
@@ -58,14 +58,10 @@ def download_overall(session):
 
 
 @Analysis.route("/generate-student", methods=["GET"])
-@Auth.auth_required(2)
+@Auth.auth_required(2, page=False)
 @Helper.request_args("student-id")
+@Helper.ensure_valid_student_id(1)
 def download_student(session, student_id):
-    record = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)
-    if len(record) != 1:
-        flash("Invalid student ID, failed to generate the analysis file.")
-        return redirect("/student")
-
     file_name = Generator.generate_student_analysis(student_id)
 
     current_app.logger.info(f"{session} downloaded the analysis file for a student with the ID {student_id}")
@@ -77,12 +73,13 @@ def download_student(session, student_id):
 
 
 @Analysis.route("/generate-club", methods=["GET"])
-@Auth.auth_required(2)
+@Auth.auth_required(2, page=False)
 @Helper.request_args("club-id")
+@Helper.ensure_valid_club_id(1)
 def download_club(session, club_id):
     record = GlobalContext.CLUBS_DATASTORE.return_specific_entries("UID", club_id)
     if len(record) != 1:
-        flash("Invalid club ID, failed to generate the analysis file.")
+        flash("Invalid club ID, failed to generate the analysis file.", "error")
         return redirect("/club")
 
     file_name = Generator.generate_club_analysis(club_id)

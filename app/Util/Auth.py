@@ -23,12 +23,14 @@ from functools import wraps
 from sentry_sdk import configure_scope
 
 
-def auth_required(level: int, api: bool = False):
+def auth_required(level: int, api: bool = False, page: bool =True):
     """
     Ensures the accessing person has a session and the session has a **authentication level** above or equal to `level`
 
     :param level: The required level to access the endpoint
     :param api: If true, it returns a JSON error code rather than a 302 with an error message. Default is False
+    :param page: If true, will record this in the users session as the last visited page. Not required if already
+    indicated it is an endpoint.
     :return: A wrapper function
     """
 
@@ -76,6 +78,9 @@ def auth_required(level: int, api: bool = False):
                 return "403", 403  # TODO : Redirect to 403 page, possibly ask to switch account
 
             # All checks passed, configure the scope and respond with the request
+            if (not api) and page:
+                session.last_visited = request.path
+
             with configure_scope() as scope:
                 scope.user = {"username": session.name,
                               "id": session.session_id,
@@ -168,6 +173,7 @@ class Session:
         self.raw_csrf_token = base64.urlsafe_b64encode(self.csrf_token.bytes).decode("utf-8")
 
         self.last_accessed = time.time()
+        self.last_visited = ""
         self.created = time.time()
         self.session_data = {}
 

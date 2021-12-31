@@ -540,3 +540,94 @@
 [2021-12-31 14:48:15,860] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:125} INFO - admin[9d7cf687-b059-4627-a9e4-17be5e9a0c6a::127.0.0.1] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
 [2021-12-31 15:39:07,895] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[58e92684-78a8-4b10-afa1-a67e5888e8cd::127.0.0.1] successfully logged in
 [2021-12-31 15:42:34,343] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[58e92684-78a8-4b10-afa1-a67e5888e8cd::127.0.0.1] successfully logged out
+[2021-12-31 16:45:42,312] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[20b76943-63d5-4c34-8cd9-f4bfecd00a29::127.0.0.1] successfully logged in
+[2021-12-31 17:16:24,882] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[74f4c1aa-7eee-49a3-8fc2-f3ab0d9160ee::127.0.0.1] successfully logged in
+[2021-12-31 17:25:11,807] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[74f4c1aa-7eee-49a3-8fc2-f3ab0d9160ee::127.0.0.1] successfully logged out
+[2021-12-31 17:25:55,031] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6f4e090c-e50e-4126-9466-e9e725adfe92::127.0.0.1] successfully logged in
+[2021-12-31 19:19:16,140] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[de17bd7d-15ef-45ab-a78a-79ef64e02aee::127.0.0.1] successfully logged in
+[2021-12-31 21:26:03,885] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5b9df2f3-2eb1-45f6-a165-cd51c0b4f84d::127.0.0.1] successfully logged in
+[2021-12-31 21:28:43,230] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5b9df2f3-2eb1-45f6-a165-cd51c0b4f84d::127.0.0.1] successfully logged out
+[2021-12-31 21:28:51,019] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-31 21:28:55,426] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ebb97330-0ab9-4273-bb3b-7a09ac0ff5ff::127.0.0.1] successfully logged in
+[2021-12-31 21:29:12,350] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[ebb97330-0ab9-4273-bb3b-7a09ac0ff5ff::127.0.0.1] successfully logged out
+[2021-12-31 21:29:15,768] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[a4f29429-6c0a-4e6c-a5ba-26b3e4e74444::127.0.0.1] successfully logged in
+[2021-12-31 21:29:21,364] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:73} WARNING - user[a4f29429-6c0a-4e6c-a5ba-26b3e4e74444::127.0.0.1] attempted to access 'overall' view with insufficient permissions
+[2021-12-31 21:29:45,310] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[a4f29429-6c0a-4e6c-a5ba-26b3e4e74444::127.0.0.1] successfully logged out
+[2021-12-31 21:29:48,951] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8c4830f9-972e-4e33-9005-6885a71c2f4b::127.0.0.1] successfully logged in
+[2021-12-31 22:08:56,919] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[69e096fb-8b5d-48fc-91ce-c12f76c8011f::127.0.0.1] successfully logged in
+[2021-12-31 22:42:14,656] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[02161e41-a23d-479b-889e-b8c8be0f7c61::127.0.0.1] successfully logged in
+[2021-12-31 22:42:17,204] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[02161e41-a23d-479b-889e-b8c8be0f7c61::127.0.0.1] successfully logged out
+[2021-12-31 22:42:22,344] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[cb347e83-8450-48eb-9d88-574ee85b964f::127.0.0.1] successfully logged in
+[2021-12-31 22:42:55,713] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3e853832-0659-4338-8bc5-95f483331a1b::127.0.0.1] successfully logged in
+[2021-12-31 22:44:06,408] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[b8bc6829-ff68-4f4f-a406-b3cc51d7b9ab::127.0.0.1] successfully logged in
+[2021-12-31 22:48:42,215] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[cee55c6d-564b-473a-9ab2-ed5b7590b092::127.0.0.1] successfully logged in
+[2021-12-31 22:51:13,695] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2021-12-31 22:51:17,481] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[dbb21c20-914a-476a-8369-eea6e6a1a626::127.0.0.1] successfully logged in
+[2021-12-31 22:51:49,047] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3ab4a0c8-0b29-47a1-9348-b3a9b6208caa::127.0.0.1] successfully logged in
+[2021-12-31 22:51:55,061] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:55,316] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:55,629] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:55,896] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:55,942] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,209] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,255] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,537] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,568] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,866] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:56,881] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,180] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,197] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,496] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,509] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,817] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:57,826] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:58,148] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:58,415] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:51:59,502] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:00,008] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:00,452] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:00,706] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:00,770] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,032] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,095] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,348] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,411] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,677] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,739] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:01,990] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,052] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,305] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,368] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,644] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,707] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:02,959] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:03,022] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:03,273] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:08,355] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:08,638] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:08,953] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,217] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,281] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,536] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,597] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,868] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:09,913] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:10,213] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:10,228] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:10,545] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:10,581] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:10,907] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,156] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,236] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,474] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,553] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,802] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:52:11,878] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:105} WARNING - A GET request was submitted to 'download_student' which was missing the 'student-id' field and was subsequently rejected
+[2021-12-31 22:56:31,371] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[751c7c78-5ac4-4170-ae56-c5bd84116767::127.0.0.1] successfully logged in
+[2021-12-31 22:58:26,984] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[91ba4797-6366-4402-9b70-759e7acc4c89::127.0.0.1] successfully logged in
+[2021-12-31 23:06:19,720] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[357fa781-5358-424b-a9de-9c598fd6f71f::127.0.0.1] successfully logged in
+[2021-12-31 23:07:12,613] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[320f4771-3a33-45ee-89a6-5e04f3897f34::127.0.0.1] successfully logged in
+[2021-12-31 23:08:58,252] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[f9121128-9f05-44ef-b0c9-951a0a878260::127.0.0.1] successfully logged in
+[2021-12-31 23:09:37,802] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bcf6b3c6-2539-4659-9371-e30f86af6d8a::127.0.0.1] successfully logged in
+[2021-12-31 23:10:08,398] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2d1f676d-86a6-48df-b3b1-38397fd20b35::127.0.0.1] successfully logged in
+[2021-12-31 23:11:13,900] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[33d527f3-930c-4e61-b282-075539c4a31b::127.0.0.1] successfully logged in

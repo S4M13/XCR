@@ -37,7 +37,7 @@ def users(session):
 
 
 @Admin.route("/delete_user", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("user-id")
 def delete_user(session, user_id):
@@ -65,7 +65,7 @@ def delete_user(session, user_id):
 
 
 @Admin.route("/create_user", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("username", "password", "auth-level")
 def create_user(session, username, password, auth_level):
@@ -109,7 +109,7 @@ def logs(session):
 
 
 @Admin.route("/download_log_file", methods=["GET"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Helper.request_args("file")
 def download_log_file(session, filename):
     location = os.path.join(Settings.LOG_FILE_DIRECTORY, filename)
@@ -129,7 +129,7 @@ def download_log_file(session, filename):
 
 
 @Admin.route("/delete_log_file", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("file-name")
 def delete_log_file(session, filename):
@@ -177,7 +177,7 @@ def sessions(session):
 
 
 @Admin.route("/terminate_session", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("session-id")
 def terminate_session(session, session_id):
@@ -234,7 +234,7 @@ def data(session):
 
 
 @Admin.route("/download_student_datastore", methods=["GET"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Helper.request_args("id")
 def download_student_datastore(session, id_uf):
     try:
@@ -258,7 +258,7 @@ def download_student_datastore(session, id_uf):
 
 
 @Admin.route("/download_club_datastore", methods=["GET"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Helper.request_args("id")
 def download_club_datastore(session, id_uf):
     try:
@@ -282,7 +282,7 @@ def download_club_datastore(session, id_uf):
 
 
 @Admin.route("/delete_student_datastore", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_student_datastore(session, id_uf):
@@ -318,7 +318,7 @@ def delete_student_datastore(session, id_uf):
 
 
 @Admin.route("/delete_club_datastore", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_club_datastore(session, id_uf):
@@ -354,7 +354,7 @@ def delete_club_datastore(session, id_uf):
 
 
 @Admin.route("/reload_student_datastore", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_student_datastore(session):
     GlobalContext.STUDENTS_DATASTORE.purge_memory()
@@ -367,7 +367,7 @@ def reload_student_datastore(session):
 
 
 @Admin.route("/reload_club_datastore", methods=["POST"])
-@Auth.auth_required(3)
+@Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_club_datastore(session):
     GlobalContext.CLUBS_DATASTORE.purge_memory()

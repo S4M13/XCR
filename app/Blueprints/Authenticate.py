@@ -33,7 +33,7 @@ def login(session):
 
 
 @Authenticate.route("/auth", methods=["POST"])
-@Auth.auth_required(0)
+@Auth.auth_required(0, page=False)
 @Helper.request_form("username", "password")
 def auth(session, username, password):
     if session is not None:
@@ -85,7 +85,7 @@ def auth(session, username, password):
 
 
 @Authenticate.route("/deauth", methods=["POST", "GET"])  # TODO: remote get once working
-@Auth.auth_required(1)
+@Auth.auth_required(1, page=False)
 @Auth.csrf_required()
 def deauth(session):
     session.logout()
