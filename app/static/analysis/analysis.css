@@ -12,24 +12,29 @@ body, html, .container-fluid, .page-content {
   top: 0;
   left: 17rem;
 
-  width: 100%;
-  z-index: 999;
+  width: calc(100% - 17rem);
+  z-index: 2;
 
   border-radius: 0px;
   transition: all ease 0.5s;
 }
 
+.alert-overall.active {
+    left: 0;
+    width: calc(100%);
+}
+
 @media (max-width: 768px) {
   .alert-overall {
     left: 0;
+    width: calc(100%);
   }
 }
 
 .inner-alert {
     position: static;
     width: 100%;
-
-    text-align: center;
+    z-index: 3;
 }
 
 

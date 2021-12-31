@@ -21,6 +21,19 @@ body {
   overflow-x: hidden;
 }
 
+#canvas {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    touch-action: none;
+    width: calc(100% - 2px); /* for borders */
+    height: calc(100% - 2px); /* for borders */
+    border: 1px dashed;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
 .login {
   margin-top: auto;
   margin-bottom: auto;

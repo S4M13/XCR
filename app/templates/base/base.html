@@ -31,7 +31,7 @@
 
 <body>
 	<!-- Start container -->
-	
+
 	<div class="container-fluid p-0">
 
 
@@ -43,6 +43,8 @@
 					<p class="font-weight-light text-secondary mb-0">{{ version }}</p>
 				</div>
 			</div>
+
+			<button class="close-button"><span class="material-icons">menu_open</span></button>
 
 			<div class="overflow">
 				{{ navbarSection(session, "Register", 1, [("Landing Page", "/"), ("Register a class", "/register_class"), ("Register an individual", "/register_one"), ("View records", "/view_records")], top=True) }}
@@ -131,6 +133,7 @@
 
 	</div>
 	<!-- End container -->
+	<canvas id="canvas"></canvas>
 </body>
 
 </html>

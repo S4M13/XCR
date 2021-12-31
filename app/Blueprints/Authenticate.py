@@ -109,3 +109,8 @@ def deauth(session):
 def base_dir(session):
     return Helper.render_base_template(session, "base/home.html")
 
+
+@Authenticate.route("/unsupported")
+def unsupported():
+    return render_template("authenticate/unsupported.html")
+

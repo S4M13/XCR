@@ -1,33 +1,3 @@
-function SuccessPopup(message, time) {
-    $('#success-message').text(message)
-    $('#success').modal('show');
-    setTimeout(function () {
-        $('#success').modal('hide');
-    }, time);
-}
-
-function FailurePopup(message, time) {
-    $('#failure-message').text(message)
-    $('#failure').modal('show');
-    setTimeout(function () {
-        $('#failure').modal('hide');
-    }, time);
-}
-
-function toggleSidebar() {
-    if ($('#sidebar').hasClass('active')) {
-        $('#sidebar').removeClass('active');
-        $('#content').removeClass('active');
-        $('.alert-overall').removeClass('active');
-        $('.close-button').removeClass('active');
-    } else {
-        $('#sidebar').addClass('active');
-        $('#content').addClass('active');
-        $('.alert-overall').addClass('active');
-        $('.close-button').addClass('active');
-    }
-}
-
 function animateCanvas() {
     // Library code, taken from https://codepen.io/LeonGr/pen/yginI
     var canvas = document.getElementById("canvas"),
@@ -134,19 +104,8 @@ function detect_mobile() {
    return (window.innerWidth <= 800 || window.innerHeight <= 600)
 }
 
+
 $(document).ready(function(){
-    $('.csrf-req').each(function(i, obj) {
-        $('<input>').attr({
-            type: 'hidden',
-            name: 'X-CSRF-TOKEN',
-            value: $('meta[name=csrf-token]').attr('content')
-        }).appendTo(obj)
-    });
-
-    $('.close-button').click(function() {
-        toggleSidebar();
-    });
-
     animateCanvas();
 
     if (detect_mobile()) {

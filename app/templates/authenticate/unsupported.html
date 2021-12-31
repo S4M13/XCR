@@ -10,7 +10,7 @@
 
 	<title>Online Register</title>
 
-	<!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,62 +29,19 @@
 
 <body>
 	<!-- Start container -->
-	
-	<div class="container-fluid">
 
-		<!-- Start Content -->
+	<div class="container-fluid" style="height: 100vh;">
 
-		<form method="POST" action="auth" autocomplete="off">
-
-			<div class="login">
-
-				<div class="row justify-content-center">
-					<span class="material-icons md-light padlock spin">lock</span>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col col-3 justify-content-center">
-						<div class="wrap-input validate-input" data-validate="Enter username">
-							<input class="input" type="username" name="username" required>
-							<span class="focus-input" data-placeholder="Username"></span>
-						</div>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col col-3 justify-content-center">
-						<div class="wrap-input validate-input" data-validate="Enter password">
-							<input class="input" type="password" name="password" required>
-							<span class="focus-input" data-placeholder="Password"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<center>
-				<input type="submit" class="btn btn-dark submit-btn" value="Login"></button>
-			</center>
-
-		</form>
-
-		<!-- End Content -->
-
-		{% with errors = get_flashed_messages(category_filter=["error"]) %}
-		{% with success = get_flashed_messages(category_filter=["success"]) %}
-
-		{% if errors %}
-		{{ failureNotification( errors[-1] ) }}
-		{% endif %}
-
-
-		{% if success and not errors %}
-		{{ successNotification( success[-1] ) }}
-		{% endif %}
-
-		{% endwith %}
-		{% endwith %}
-
-		<!-- Popups -->
+        <h1 class="text-center text-light align-center">
+            <br>
+            Sorry, but your device is not supported currently.
+            <br>
+            <br>
+            <br>
+            <br>
+            <small>Please switch to another device with a larger screen.</small>
+        </h1>
+        <p class="text-center text-light align-center">Sorry for any inconvenience.</p>
 
 		<!-- Success Modal -->
 		<div id="success" class="modal fade">
@@ -124,21 +81,15 @@
 		<!-- End Popups -->
 	</div>
 	<!-- End container -->
+<script>
+    function detect_mobile() {
+        return (window.innerWidth <= 800 || window.innerHeight <= 600)
+    }
 
-	<!-- Custom JS -->
-	<script>
-	$('.input').each(function(){
-        $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })
-    })
-    </script>
-	<canvas id="canvas"></canvas>
+    if (!detect_mobile()) {
+        window.location.replace("/");
+    }
+</script>
 </body>
 
 </html>

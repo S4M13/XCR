@@ -9,6 +9,20 @@
 html, body {
     height: 100%;
 }
+
+#canvas {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    touch-action: none;
+    width: calc(100% - 2px); /* for borders */
+    height: calc(100% - 2px); /* for borders */
+    border: 1px dashed;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
 .container-fluid {
     height: 100%;
     overflow-y: auto;
@@ -23,6 +37,9 @@ html, body {
   left: 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
+  z-index: 8;
+
+  will-change: left;
 }
 
 
@@ -34,6 +51,8 @@ html, body {
   overflow-y: auto;
 
   transition: all 0.4s;
+
+  will-change: margin-left;
 }
 
 .overflow {
@@ -77,6 +96,37 @@ html, body {
   bottom: 0px;
   border-top: 0px;
   width: 17rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+
+    height: 3rem;
+    width: 3rem;
+
+    will-change: transform;
+
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    text-align: center;
+
+    font-size: 2rem;
+    border-radius: 100%;
+    transition: all ease 0.5s;
+    z-index: 10;
+}
+
+.close-button:focus {
+    outline: none !important;
+}
+
+.close-button.active {
+    transform: rotate(180deg);
+    right: -3rem;
 }
 
 /* for toggle behavior */
@@ -233,12 +283,12 @@ body {
 
   border-radius: 3px;
 
-  border-left: solid 3px #30bf43;
+  border-left: solid 3px #fff;
 
   margin: 10px;
   padding: 10px;
 
-  width: 100%
+  width: 100%;
   z-index: 1;
 }
 

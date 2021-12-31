@@ -490,3 +490,21 @@
 [2021-12-30 16:40:15,402] {C:\Users\samdo\Desktop\XCR\app\Util\Background.py:19} INFO - Database successfully refreshed
 [2021-12-30 18:27:02,982] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e1e9bc36-6934-415f-9e3e-272931b5b5d4::127.0.0.1] successfully logged in
 [2021-12-30 18:29:24,957] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5c4f7a2a-fe6b-46e0-82b7-1a067b7cb212::127.0.0.1] successfully logged in
+[2021-12-30 18:59:35,287] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[8309e1e9-b1e4-4671-a864-d67538be2aab::127.0.0.1] successfully logged in
+[2021-12-30 19:44:20,725] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5d05a74d-fd44-467f-8ea3-0e96147f62cc::127.0.0.1] successfully logged in
+[2021-12-31 12:43:37,196] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6f440e80-ca08-4056-b01c-6c8fb2e06f4d::127.0.0.1] successfully logged in
+[2021-12-31 12:54:18,020] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[6f440e80-ca08-4056-b01c-6c8fb2e06f4d::127.0.0.1] successfully logged out
+[2021-12-31 12:56:01,245] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ba7381b5-cbe9-4dfb-9ba6-89aace2fa877::127.0.0.1] successfully logged in
+[2021-12-31 13:19:30,554] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[ba7381b5-cbe9-4dfb-9ba6-89aace2fa877::127.0.0.1] successfully logged out
+[2021-12-31 13:20:02,584] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6b2ad590-4461-4d6b-8303-ea8499286cef::127.0.0.1] successfully logged in
+[2021-12-31 13:28:23,700] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[aac82715-5936-496e-8cde-c15c528fd275::127.0.0.1] successfully logged in
+[2021-12-31 13:40:49,219] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[aac82715-5936-496e-8cde-c15c528fd275::127.0.0.1] successfully logged out
+[2021-12-31 13:41:35,390] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[503a2587-c39f-45e5-9df7-d636c39e6444::127.0.0.1] successfully logged in
+[2021-12-31 13:44:30,426] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[503a2587-c39f-45e5-9df7-d636c39e6444::127.0.0.1] successfully logged out
+[2021-12-31 13:45:34,792] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5f38d1ca-c126-4344-9067-cee3310ce4bd::192.168.0.101] successfully logged in
+[2021-12-31 13:46:17,095] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[1f84a6be-dd5c-44e2-81ce-9619adc3f477::192.168.0.101] successfully logged in
+[2021-12-31 13:46:54,150] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[b6ad310a-f23d-4f16-a392-78edcd190d52::192.168.0.101] successfully logged in
+[2021-12-31 13:53:36,301] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[61852cb5-1424-4734-82f8-ef1d23527e4b::127.0.0.1] successfully logged in
+[2021-12-31 14:14:04,913] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[61852cb5-1424-4734-82f8-ef1d23527e4b::127.0.0.1] successfully logged out
+[2021-12-31 14:14:09,506] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5051985c-6f27-441b-8fd4-9aa997c921ff::127.0.0.1] successfully logged in
+[2021-12-31 14:15:35,572] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5051985c-6f27-441b-8fd4-9aa997c921ff::127.0.0.1] successfully logged out
