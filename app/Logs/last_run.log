@@ -508,3 +508,35 @@
 [2021-12-31 14:14:04,913] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[61852cb5-1424-4734-82f8-ef1d23527e4b::127.0.0.1] successfully logged out
 [2021-12-31 14:14:09,506] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5051985c-6f27-441b-8fd4-9aa997c921ff::127.0.0.1] successfully logged in
 [2021-12-31 14:15:35,572] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5051985c-6f27-441b-8fd4-9aa997c921ff::127.0.0.1] successfully logged out
+[2021-12-31 14:32:49,901] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ef71445d-b977-4012-9300-9c78becf9dfd::127.0.0.1] successfully logged in
+[2021-12-31 14:32:58,849] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[ef71445d-b977-4012-9300-9c78becf9dfd::127.0.0.1] successfully logged out
+[2021-12-31 14:33:05,454] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'analysis' [IP::127.0.0.1]
+[2021-12-31 14:33:10,853] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'analysis' [IP::127.0.0.1]
+[2021-12-31 14:33:17,119] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'analysis' [IP::127.0.0.1]
+[2021-12-31 14:33:29,336] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[0bdd46fd-711e-4b1f-b22b-57ab57d33a7c::127.0.0.1] successfully logged in
+[2021-12-31 14:33:36,316] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[0bdd46fd-711e-4b1f-b22b-57ab57d33a7c::127.0.0.1] successfully logged out
+[2021-12-31 14:33:42,067] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[51dc6538-2ca4-4156-82ce-635542371068::127.0.0.1] successfully logged in
+[2021-12-31 14:33:48,304] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[51dc6538-2ca4-4156-82ce-635542371068::127.0.0.1] successfully logged out
+[2021-12-31 14:33:52,086] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[a93af624-4c87-429f-b850-9cfe6c385824::127.0.0.1] successfully logged in
+[2021-12-31 14:33:56,161] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[a93af624-4c87-429f-b850-9cfe6c385824::127.0.0.1] successfully logged out
+[2021-12-31 14:36:08,844] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[4a2097c9-a611-4f43-8dac-36dd63ed61e7::127.0.0.1] successfully logged in
+[2021-12-31 14:39:20,532] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[4a2097c9-a611-4f43-8dac-36dd63ed61e7::127.0.0.1] successfully logged out
+[2021-12-31 14:39:33,968] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[2d8cd835-8aab-4e83-a1f8-b62383725387::127.0.0.1] successfully logged in
+[2021-12-31 14:39:40,168] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[2d8cd835-8aab-4e83-a1f8-b62383725387::127.0.0.1] successfully logged out
+[2021-12-31 14:39:47,412] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[92193985-fe09-4e81-8c45-b25229dc3fbb::127.0.0.1] successfully logged in
+[2021-12-31 14:39:56,226] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[92193985-fe09-4e81-8c45-b25229dc3fbb::127.0.0.1] successfully logged out
+[2021-12-31 14:40:06,777] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[b7bc2211-cbe1-4d2a-8dec-fc81a9c1df52::127.0.0.1] successfully logged in
+[2021-12-31 14:43:01,328] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - analyst[b7bc2211-cbe1-4d2a-8dec-fc81a9c1df52::127.0.0.1] downloaded the overall analysis file
+[2021-12-31 14:44:38,119] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:71} INFO - analyst[b7bc2211-cbe1-4d2a-8dec-fc81a9c1df52::127.0.0.1] downloaded the analysis file for a student with the ID 60
+[2021-12-31 14:45:36,631] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[b7bc2211-cbe1-4d2a-8dec-fc81a9c1df52::127.0.0.1] successfully logged out
+[2021-12-31 14:45:46,569] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4d2d2fc2-341c-4f9b-b574-4b1f746a95e3::127.0.0.1] successfully logged in
+[2021-12-31 14:46:33,031] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:89} INFO - admin[4d2d2fc2-341c-4f9b-b574-4b1f746a95e3::127.0.0.1] created User freya[ID:4]
+[2021-12-31 14:46:46,242] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[4d2d2fc2-341c-4f9b-b574-4b1f746a95e3::127.0.0.1] successfully logged out
+[2021-12-31 14:46:54,268] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - freya[84ae8784-7937-4d3e-aea0-56a31d820f44::127.0.0.1] successfully logged in
+[2021-12-31 14:47:10,147] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - freya[84ae8784-7937-4d3e-aea0-56a31d820f44::127.0.0.1] successfully logged out
+[2021-12-31 14:47:19,804] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[9d7cf687-b059-4627-a9e4-17be5e9a0c6a::127.0.0.1] successfully logged in
+[2021-12-31 14:47:27,012] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:61} INFO - admin[9d7cf687-b059-4627-a9e4-17be5e9a0c6a::127.0.0.1] deleted User freya[ID:4]
+[2021-12-31 14:48:04,792] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:363} INFO - admin[9d7cf687-b059-4627-a9e4-17be5e9a0c6a::127.0.0.1] reloaded the student datastore
+[2021-12-31 14:48:15,860] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:125} INFO - admin[9d7cf687-b059-4627-a9e4-17be5e9a0c6a::127.0.0.1] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
+[2021-12-31 15:39:07,895] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[58e92684-78a8-4b10-afa1-a67e5888e8cd::127.0.0.1] successfully logged in
+[2021-12-31 15:42:34,343] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[58e92684-78a8-4b10-afa1-a67e5888e8cd::127.0.0.1] successfully logged out
