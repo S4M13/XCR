@@ -658,3 +658,112 @@
 [2021-12-31 23:57:05,939] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:87} INFO - admin[f7aa76a3-cc89-4b68-bb89-569c7b01c740::127.0.0.1] downloaded the analysis file for a club with the ID 2
 [2021-12-31 23:59:02,408] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[590a2115-0d8e-46e3-9aae-cf5a4a67a793::127.0.0.1] successfully logged in
 [2021-12-31 23:59:13,235] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:87} INFO - admin[590a2115-0d8e-46e3-9aae-cf5a4a67a793::127.0.0.1] downloaded the analysis file for a club with the ID 2
+[2022-01-01 00:06:40,008] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[ef513d38-78ef-456a-953c-c7e5d90145ef::127.0.0.1] successfully logged in
+[2022-01-01 00:25:20,272] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[86e1dd09-9a5a-4fbb-9910-13ad5f7049cb::127.0.0.1] successfully logged in
+[2022-01-01 00:25:50,317] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:196} INFO - admin[86e1dd09-9a5a-4fbb-9910-13ad5f7049cb::127.0.0.1] terminated session admin[86e1dd09-9a5a-4fbb-9910-13ad5f7049cb::127.0.0.1] [Internal ID : 2]
+[2022-01-01 00:25:54,576] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[68757a88-d5bc-4bc3-99b8-e2d5250b6002::127.0.0.1] successfully logged in
+[2022-01-01 00:28:23,023] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:255} INFO - admin[68757a88-d5bc-4bc3-99b8-e2d5250b6002::127.0.0.1] downloaded the student datastore file 'Y7.xlsx'
+[2022-01-01 00:31:19,985] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5fb9f557-241e-440d-b7c9-1c4a4e1c608e::127.0.0.1] successfully logged in
+[2022-01-01 00:31:38,712] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5fb9f557-241e-440d-b7c9-1c4a4e1c608e::127.0.0.1] successfully logged out
+[2022-01-01 00:31:42,233] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[d5bfbc63-da39-4704-ad9d-0fab54467a77::127.0.0.1] successfully logged in
+[2022-01-01 00:47:25,785] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[b9e4f1a5-dc49-4bfe-aa0f-5a83818b8af9::127.0.0.1] successfully logged in
+[2022-01-01 00:47:46,410] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:156} WARNING - admin[b9e4f1a5-dc49-4bfe-aa0f-5a83818b8af9::127.0.0.1] attempted to delete a log file but the log file doesn't exist. It is likely a client side error has occured, or a deliberate action has been taken to alter the path.
+[2022-01-01 00:49:15,525] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:125} INFO - admin[b9e4f1a5-dc49-4bfe-aa0f-5a83818b8af9::127.0.0.1] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\wegkjhbwerg' from the log files
+[2022-01-01 00:51:56,441] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[706980d6-7971-449e-8e98-3fc93fe5bd5c::127.0.0.1] successfully logged in
+[2022-01-01 01:16:08,155] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bed970c7-0aae-4700-8362-a161162f45e0::127.0.0.1] successfully logged in
+[2022-01-01 01:20:57,734] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[eca48551-3d8b-4583-ba1f-83e917dc1e38::127.0.0.1] successfully logged in
+[2022-01-01 01:21:05,993] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[eca48551-3d8b-4583-ba1f-83e917dc1e38::127.0.0.1] successfully logged out
+[2022-01-01 01:21:13,321] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'invalidUser' [IP::127.0.0.1]
+[2022-01-01 01:21:23,221] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:21:27,486] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:21:30,246] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:21:33,423] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:21:36,345] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:21:42,090] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:22:13,045] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[acd94c98-f2a2-4e14-aea4-f230862a8606::127.0.0.1] successfully logged in
+[2022-01-01 01:22:33,335] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[acd94c98-f2a2-4e14-aea4-f230862a8606::127.0.0.1] successfully logged out
+[2022-01-01 01:23:21,626] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[15f1e37a-7637-443a-8736-8cae7eb51237::127.0.0.1] successfully logged in
+[2022-01-01 01:23:36,735] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[15f1e37a-7637-443a-8736-8cae7eb51237::127.0.0.1] successfully logged out
+[2022-01-01 01:23:40,439] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[7066174e-9e3a-4512-87a6-4a7a51a7798f::127.0.0.1] successfully logged in
+[2022-01-01 01:23:46,952] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:75} WARNING - user[7066174e-9e3a-4512-87a6-4a7a51a7798f::127.0.0.1] attempted to access 'users' view with insufficient permissions
+[2022-01-01 01:23:56,821] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[7066174e-9e3a-4512-87a6-4a7a51a7798f::127.0.0.1] successfully logged out
+[2022-01-01 01:24:00,248] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[aae9122e-f8aa-4b91-b66c-2cb045a91960::127.0.0.1] successfully logged in
+[2022-01-01 01:26:57,943] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[3de1ac6a-6790-4513-98d4-67b811e93f27::127.0.0.1] successfully logged in
+[2022-01-01 01:27:01,902] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[3de1ac6a-6790-4513-98d4-67b811e93f27::127.0.0.1] successfully logged out
+[2022-01-01 01:27:11,071] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'invalidUser' [IP::127.0.0.1]
+[2022-01-01 01:27:19,607] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[afd81f5d-b2a6-49b4-9a8e-3c161c250abd::127.0.0.1] successfully logged in
+[2022-01-01 01:27:23,921] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[afd81f5d-b2a6-49b4-9a8e-3c161c250abd::127.0.0.1] successfully logged out
+[2022-01-01 01:27:27,166] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:27:30,474] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:27:33,442] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:27:36,620] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:27:41,273] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:28:08,229] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a5203dca-60ca-4a39-973d-c682de31a2b1::127.0.0.1] successfully logged in
+[2022-01-01 01:29:03,367] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bb9124d3-1dba-4ead-9b99-f4b8813f5c97::127.0.0.1] successfully logged in
+[2022-01-01 01:29:15,219] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[bb9124d3-1dba-4ead-9b99-f4b8813f5c97::127.0.0.1] successfully logged out
+[2022-01-01 01:29:19,055] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[3ad29cd0-f81d-4d96-8e94-2f84f0ad5937::127.0.0.1] successfully logged in
+[2022-01-01 01:29:23,904] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:75} WARNING - user[3ad29cd0-f81d-4d96-8e94-2f84f0ad5937::127.0.0.1] attempted to access 'users' view with insufficient permissions
+[2022-01-01 01:29:31,470] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[3ad29cd0-f81d-4d96-8e94-2f84f0ad5937::127.0.0.1] successfully logged out
+[2022-01-01 01:29:34,729] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[b02685a3-a6fe-4201-b3c7-c0d8ca6da30e::127.0.0.1] successfully logged in
+[2022-01-01 01:30:12,748] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:127} WARNING - admin[b02685a3-a6fe-4201-b3c7-c0d8ca6da30e::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2022-01-01 01:30:36,106] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[5cd21fd1-c5f9-4bb0-b8d5-21a492a96266::127.0.0.1] successfully logged in
+[2022-01-01 01:30:39,731] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[5cd21fd1-c5f9-4bb0-b8d5-21a492a96266::127.0.0.1] successfully logged out
+[2022-01-01 01:31:00,522] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[505f3d8b-72f4-4fd9-a0fe-15a1a8ce3d58::127.0.0.1] successfully logged in
+[2022-01-01 01:31:13,418] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[505f3d8b-72f4-4fd9-a0fe-15a1a8ce3d58::127.0.0.1] successfully logged out
+[2022-01-01 01:31:16,938] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[c5b45958-3cf2-426f-9ebb-90e23c40c189::127.0.0.1] successfully logged in
+[2022-01-01 01:33:12,554] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[c5b45958-3cf2-426f-9ebb-90e23c40c189::127.0.0.1] successfully logged out
+[2022-01-01 01:33:15,738] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[cf60d29c-8919-4f15-9b62-ad9f2a6260b3::127.0.0.1] successfully logged in
+[2022-01-01 01:33:19,822] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[cf60d29c-8919-4f15-9b62-ad9f2a6260b3::127.0.0.1] successfully logged out
+[2022-01-01 01:33:30,468] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'invalidUser' [IP::127.0.0.1]
+[2022-01-01 01:33:40,654] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:33:43,525] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:33:46,985] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:33:49,774] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:33:54,153] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:34:08,314] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:52} INFO - IP address [127.0.0.1] exceeded the maximum login attempts for the 'admin' account and was temporarily blocked from logging in
+[2022-01-01 01:34:29,639] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[154b6702-c19b-4647-9f54-82871491ebbd::127.0.0.1] successfully logged in
+[2022-01-01 01:35:19,140] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[eb803804-3e17-4bce-b1d4-ceef378d17ad::127.0.0.1] successfully logged in
+[2022-01-01 01:35:26,728] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[eb803804-3e17-4bce-b1d4-ceef378d17ad::127.0.0.1] successfully logged out
+[2022-01-01 01:35:37,971] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[c3b5c5fd-e600-41dd-8cbe-712d0354a14d::127.0.0.1] successfully logged in
+[2022-01-01 01:35:42,645] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:75} WARNING - user[c3b5c5fd-e600-41dd-8cbe-712d0354a14d::127.0.0.1] attempted to access 'users' view with insufficient permissions
+[2022-01-01 01:36:25,811] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:127} WARNING - user[c3b5c5fd-e600-41dd-8cbe-712d0354a14d::127.0.0.1] submitted an incorrect CSRF token, causing their session to expire
+[2022-01-01 01:36:47,145] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[88f7ee71-0999-4115-838b-925c93f3698f::127.0.0.1] successfully logged in
+[2022-01-01 01:36:53,048] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[88f7ee71-0999-4115-838b-925c93f3698f::127.0.0.1] successfully logged out
+[2022-01-01 01:37:14,471] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[1d731bf3-7fec-472d-a299-bef2cee5caad::127.0.0.1] successfully logged in
+[2022-01-01 01:37:39,479] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - admin[1d731bf3-7fec-472d-a299-bef2cee5caad::127.0.0.1] downloaded the overall analysis file
+[2022-01-01 01:37:50,165] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[1d731bf3-7fec-472d-a299-bef2cee5caad::127.0.0.1] successfully logged out
+[2022-01-01 01:39:16,658] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[e332b3d6-eca8-4679-aaf8-8493e4bb769d::127.0.0.1] successfully logged in
+[2022-01-01 01:40:51,643] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:70} WARNING - A form was submitted to 'register_one_form' which was missing the 'club' field and was subsequently rejected
+[2022-01-01 01:42:17,148] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'admin' [IP::127.0.0.1]
+[2022-01-01 01:42:21,071] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[bd401f0c-e5ed-488a-a4a1-d321b20d9a06::127.0.0.1] successfully logged in
+[2022-01-01 01:43:51,090] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:70} WARNING - A form was submitted to 'register_one_form' which was missing the 'club' field and was subsequently rejected
+[2022-01-01 01:47:55,307] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[bd401f0c-e5ed-488a-a4a1-d321b20d9a06::127.0.0.1] successfully logged out
+[2022-01-01 01:48:28,454] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[55ddab7a-be32-4b66-9244-68f5f5bfc9f3::127.0.0.1] successfully logged in
+[2022-01-01 01:48:44,537] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - admin[55ddab7a-be32-4b66-9244-68f5f5bfc9f3::127.0.0.1] downloaded the overall analysis file
+[2022-01-01 01:52:16,719] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[076d6a0e-5ac4-4300-bbbd-359c86c6bd7c::127.0.0.1] successfully logged in
+[2022-01-01 01:52:30,220] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:89} INFO - admin[076d6a0e-5ac4-4300-bbbd-359c86c6bd7c::127.0.0.1] created User newUser[ID:4]
+[2022-01-01 01:52:35,441] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[076d6a0e-5ac4-4300-bbbd-359c86c6bd7c::127.0.0.1] successfully logged out
+[2022-01-01 01:52:42,431] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - newUser[73fa1a5c-1145-4c8b-a4c3-b7adef9fdfc7::127.0.0.1] successfully logged in
+[2022-01-01 01:52:46,791] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - newUser[73fa1a5c-1145-4c8b-a4c3-b7adef9fdfc7::127.0.0.1] successfully logged out
+[2022-01-01 01:52:50,395] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[933b0bab-079c-4e12-bba3-82cb5d4f9f99::127.0.0.1] successfully logged in
+[2022-01-01 01:53:01,991] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:61} INFO - admin[933b0bab-079c-4e12-bba3-82cb5d4f9f99::127.0.0.1] deleted User newUser[ID:4]
+[2022-01-01 01:53:04,469] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[933b0bab-079c-4e12-bba3-82cb5d4f9f99::127.0.0.1] successfully logged out
+[2022-01-01 01:53:09,608] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'newUser' [IP::127.0.0.1]
+[2022-01-01 01:53:14,307] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[81583aa0-08df-41bf-80ea-ac28d3a95140::127.0.0.1] successfully logged in
+[2022-01-01 01:53:37,859] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:89} INFO - admin[81583aa0-08df-41bf-80ea-ac28d3a95140::127.0.0.1] created User adm[ID:4]
+[2022-01-01 01:53:58,348] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:61} INFO - admin[81583aa0-08df-41bf-80ea-ac28d3a95140::127.0.0.1] deleted User adm[ID:4]
+[2022-01-01 01:54:37,653] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:207} INFO - admin[81583aa0-08df-41bf-80ea-ac28d3a95140::127.0.0.1] terminated session admin[81583aa0-08df-41bf-80ea-ac28d3a95140::127.0.0.1] [Internal ID : 2]
+[2022-01-01 01:54:47,333] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[05b057a0-a58f-46f0-85fb-68a51aff4041::127.0.0.1] successfully logged in
+[2022-01-01 01:54:57,939] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[7be605c7-2848-44f7-b8c6-33f494874a64::127.0.0.1] successfully logged in
+[2022-01-01 01:55:09,904] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:207} INFO - admin[7be605c7-2848-44f7-b8c6-33f494874a64::127.0.0.1] terminated session user[05b057a0-a58f-46f0-85fb-68a51aff4041::127.0.0.1] [Internal ID : 2]
+[2022-01-01 01:55:15,758] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:207} INFO - admin[7be605c7-2848-44f7-b8c6-33f494874a64::127.0.0.1] terminated session admin[7be605c7-2848-44f7-b8c6-33f494874a64::127.0.0.1] [Internal ID : 3]
+[2022-01-01 01:55:19,708] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] successfully logged in
+[2022-01-01 01:55:27,700] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:374} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] reloaded the student datastore
+[2022-01-01 01:55:30,080] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:387} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] reloaded the club datastore
+[2022-01-01 01:55:55,964] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:374} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] reloaded the student datastore
+[2022-01-01 01:56:01,066] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:325} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] deleted the student datastore file 'Y9 - Copy.xlsx'
+[2022-01-01 01:56:03,498] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:374} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] reloaded the student datastore
+[2022-01-01 01:56:13,456] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:266} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] downloaded the student datastore file 'Y8.xlsx'
+[2022-01-01 01:57:39,503] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:167} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] deleted 'C:\Users\samdo\Desktop\XCR\app\Logs\test_log.log' from the log files
+[2022-01-01 01:57:48,073] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:153} WARNING - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] attempted to delete a logfile but a PermissionError occurred['C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log'][Raw Query:'last_run.log'] - the file is likely the active log file
+[2022-01-01 01:58:03,876] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:160} WARNING - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] attempted to delete a log file but the log file doesn't exist. It is likely a client side error has occured, or a deliberate action has been taken to alter the path.

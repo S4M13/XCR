@@ -51,7 +51,7 @@ def request_form(*params, emtpy_invalid: bool = True):
 
     def inner(func):
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(session, *args, **kwargs):
 
             param_values = []
 
@@ -65,7 +65,7 @@ def request_form(*params, emtpy_invalid: bool = True):
                 else:
                     param_values.append(request.form[parameter])
             else:
-                return func(*args, *param_values, **kwargs)
+                return func(session, *args, *param_values, **kwargs)
 
             current_app.logger.warning(f"A form was submitted to '{func.__name__}' which was missing the"
                                        f" '{missing_param}' field and was subsequently rejected")

@@ -122,6 +122,10 @@ def download_log_file(session, filename):
         flash("Failed to find the log file to download", "error")
         return redirect("/logs", code=302)
 
+    if not os.path.exists(location):
+        flash("Failed to find the log file to download", "error")
+        return redirect("/logs", code=302)
+
     current_app.logger.info(f"{session} downloaded '{location}' from the log files")
 
     timestamp = datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
@@ -149,8 +153,15 @@ def delete_log_file(session, filename):
         current_app.logger.warning(f"{session} attempted to delete a logfile but a PermissionError "
                                    f"occurred['{location}'][Raw Query:'{filename}'] - "
                                    f"the file is likely the active log file")
-
         flash("Cannot delete this log file as it is currently being used", "error")
+        return redirect("/logs", code=302)
+
+    except FileNotFoundError:
+        current_app.logger.warning(f"{session} attempted to delete a log file but the log file doesn't exist. It is "
+                                   f"likely a client side error has occured, or a deliberate action has been taken to"
+                                   f" alter the path.")
+
+        flash("Cannot delete this log file as it does not exist.", "error")
         return redirect("/logs", code=302)
 
     current_app.logger.info(f"{session} deleted '{location}' from the log files")
@@ -289,7 +300,7 @@ def delete_student_datastore(session, id_uf):
     try:
         ID = int(id_uf)
     except ValueError:
-        flash("Invalid ID submitted - failed to download datastore", "error")
+        flash("Invalid ID submitted - failed to delete datastore", "error")
         return redirect("/data", code=302)
 
     files = os.listdir(Settings.STUDENT_DATASTORE_LOCATION)
@@ -298,7 +309,7 @@ def delete_student_datastore(session, id_uf):
     try:
         file = files[ID]
     except IndexError:
-        flash("Invalid ID submitted - failed to download datastore", "error")
+        flash("Invalid ID submitted - failed to delete datastore", "error")
         return redirect("/data", code=302)
 
     location = os.path.join(Settings.STUDENT_DATASTORE_LOCATION, file)
@@ -325,7 +336,7 @@ def delete_club_datastore(session, id_uf):
     try:
         ID = int(id_uf)
     except ValueError:
-        flash("Invalid ID submitted - failed to download datastore", "error")
+        flash("Invalid ID submitted - failed to delete datastore", "error")
         return redirect("/data", code=302)
 
     files = os.listdir(Settings.CLUBS_DATASTORE_LOCATION)
@@ -334,7 +345,7 @@ def delete_club_datastore(session, id_uf):
     try:
         file = files[ID]
     except IndexError:
-        flash("Invalid ID submitted - failed to download datastore", "error")
+        flash("Invalid ID submitted - failed to delete datastore", "error")
         return redirect("/data", code=302)
 
     location = os.path.join(Settings.CLUBS_DATASTORE_LOCATION, file)
