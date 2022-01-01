@@ -124,7 +124,8 @@ def generate_student_analysis(student_uid):
     clubs = []
 
     for record in records:
-        weekly_stamp = record.attendance_date.strftime("%W-%Y")
+        iso_stamp = record.attendance_date.isocalendar()
+        weekly_stamp = f"{str(iso_stamp[1]).zfill(2)}-{iso_stamp[0]}"  # Get the weekly stamp for the record
 
         if weekly_stamp not in sessions:
             sessions.append(weekly_stamp)
@@ -157,11 +158,14 @@ def generate_student_analysis(student_uid):
     adjusted_clubs = [x[0] for x in GlobalContext.CLUBS_DATASTORE.data]
 
     for record in records:
+        iso_stamp = record.attendance_date.isocalendar()
+        weekly_stamp = f"{str(iso_stamp[1]).zfill(2)}-{iso_stamp[0]}"  # Get the weekly stamp for the record
+
         # Fetch correct column and row
-        column = sessions.index(record.attendance_date.strftime("%W-%Y")) + column_offset
+        column = sessions.index(weekly_stamp) + column_offset
         row = adjusted_clubs.index(record.club_uid) + 2
 
-        if current := sheet.cell(column=column, row=row).value == "":
+        if (current := sheet.cell(column=column, row=row).value) is None:
             sheet.cell(column=column, row=row).value = 1
         else:
             sheet.cell(column=column, row=row).value = int(current) + 1
@@ -208,7 +212,8 @@ def generate_club_analysis(club_uid):
     students = []
 
     for record in records:
-        weekly_stamp = record.attendance_date.strftime("%W-%Y")
+        iso_stamp = record.attendance_date.isocalendar()
+        weekly_stamp = f"{str(iso_stamp[1]).zfill(2)}-{iso_stamp[0]}"  # Get the weekly stamp for the record
 
         if weekly_stamp not in sessions:
             sessions.append(weekly_stamp)
@@ -241,11 +246,14 @@ def generate_club_analysis(club_uid):
     adjusted_students = [x[0] for x in GlobalContext.STUDENTS_DATASTORE.data]
 
     for record in records:
+        iso_stamp = record.attendance_date.isocalendar()
+        weekly_stamp = f"{str(iso_stamp[1]).zfill(2)}-{iso_stamp[0]}"  # Get the weekly stamp for the record
+
         # Fetch correct column and row
-        column = sessions.index(record.attendance_date.strftime("%W-%Y")) + column_offset
+        column = sessions.index(weekly_stamp) + column_offset
         row = adjusted_students.index(record.student_uid) + 2
 
-        if current := sheet.cell(column=column, row=row).value == "":
+        if (current := sheet.cell(column=column, row=row).value) is None:
             sheet.cell(column=column, row=row).value = 1
         else:
             sheet.cell(column=column, row=row).value = int(current) + 1

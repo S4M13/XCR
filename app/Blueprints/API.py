@@ -277,7 +277,7 @@ def student_flash_cards(session, name, student_uid):
 @API.route("/club/weekly-attendance", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @Helper.request_args("club", "club-id")
-@Helper.ensure_valid_club_id(1, api=True)
+@Helper.ensure_valid_club_id(2, api=True)
 def club_weekly_attendance(session, club, club_uid):
     records = Database.Record.query.filter_by(club_uid=club_uid).all()
     attendance_analysis = {}
@@ -314,7 +314,7 @@ def club_weekly_attendance(session, club, club_uid):
 @API.route("/club/flash-cards", methods=["GET"])
 @Auth.auth_required(2, api=True)
 @Helper.request_args("club", "club-id")
-@Helper.ensure_valid_club_id(1, api=True)
+@Helper.ensure_valid_club_id(2, api=True)
 def club_flash_cards(session, club, club_uid):
     records = Database.Record.query.filter_by(club_uid=club_uid).all()
 
