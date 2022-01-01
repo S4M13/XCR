@@ -54,7 +54,8 @@ def download_overall(session):
     return send_from_directory(Settings.EXPORTS,
                                Settings.CURRENT_OVERALL,
                                attachment_filename=file_name,
-                               as_attachment=True)
+                               as_attachment=True,
+                               cache_timeout=0)
 
 
 @Analysis.route("/generate-student", methods=["GET"])
@@ -69,7 +70,8 @@ def download_student(session, student_id):
     return send_from_directory(Settings.EXPORTS,
                                Settings.CURRENT_STUDENT,
                                attachment_filename=file_name,
-                               as_attachment=True)
+                               as_attachment=True,
+                               cache_timeout=0)
 
 
 @Analysis.route("/generate-club", methods=["GET"])
@@ -77,11 +79,6 @@ def download_student(session, student_id):
 @Helper.request_args("club-id")
 @Helper.ensure_valid_club_id(1)
 def download_club(session, club_id):
-    record = GlobalContext.CLUBS_DATASTORE.return_specific_entries("UID", club_id)
-    if len(record) != 1:
-        flash("Invalid club ID, failed to generate the analysis file.", "error")
-        return redirect("/club")
-
     file_name = Generator.generate_club_analysis(club_id)
 
     current_app.logger.info(f"{session} downloaded the analysis file for a club with the ID {club_id}")
@@ -89,4 +86,5 @@ def download_club(session, club_id):
     return send_from_directory(Settings.EXPORTS,
                                Settings.CURRENT_CLUB,
                                attachment_filename=file_name,
-                               as_attachment=True)
+                               as_attachment=True,
+                               cache_timeout=0)

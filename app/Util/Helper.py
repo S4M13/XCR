@@ -556,3 +556,12 @@ def update_database_analysis():
     }
 
     GlobalContext.DATABASE_ANALYSIS["flash_cards"] = flash_cards
+
+
+def empty_exports():
+    """
+    Deletes the temporary files stores in /Export to prevent issues occurring with copying.
+    """
+    files = glob.glob(str(Settings.EXPORTS) + "/*")
+    for f in files:
+        os.remove(f)

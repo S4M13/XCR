@@ -28,7 +28,7 @@ SESSION_COOKIE_NAME = "session_id"
 SESSION_TIMEOUT = 1 * 60 * 30
 
 COOKIE_SAME_SITE = 'Lax'  # TODO: Change to secure for production
-COOKIE_SECURE = True
+COOKIE_SECURE = False  # TODO: Change to true for production
 
 PERMISSION_NAMES = {
     0: "Anonymous",

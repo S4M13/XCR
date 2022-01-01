@@ -23,6 +23,9 @@ def generate_overall_analysis():
     :return: The name of the generated file
     """
 
+    # Refresh exports file
+    Helper.empty_exports()
+
     # Generate the new name
     time_stamp = datetime.datetime.now().strftime("%b %e %H-%M")
     file_name = "Overall Analysis " + time_stamp + ".xlsx"
@@ -35,7 +38,7 @@ def generate_overall_analysis():
     headers = GlobalContext.STUDENTS_DATASTORE.DataHeaders.headers
 
     for club in GlobalContext.CLUBS_DATASTORE.data:
-        headers.append(club[1] + " Attendance")  # TODO : Check UI/Name formatting
+        headers.append(club[1] + " Attendances")  # TODO : Check UI/Name formatting
 
     # Load the XL workbook
     wb = xl.load_workbook(filename=location, data_only=True)
@@ -94,6 +97,9 @@ def generate_student_analysis(student_uid):
     :param student_uid: The UID of the student to analyse. The UID must be checked to ensure it is valid.
     :return: The name of the generated file [or False if the UID is invalid, or returns multiple students]
     """
+
+    # Refresh exports file
+    Helper.empty_exports()
 
     # Get the students information
     student_info = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_uid)
@@ -182,6 +188,9 @@ def generate_club_analysis(club_uid):
     :param club_uid: The UID of the club to analyse. The UID must be checked to ensure it is valid.
     :return: The name of the generated file [or False if the UID is invalid, or returns multiple clubs]
     """
+
+    # Refresh exports file
+    Helper.empty_exports()
 
     # Get the clubs information
     club_info = GlobalContext.CLUBS_DATASTORE.return_specific_entries("UID", club_uid)

@@ -15,6 +15,7 @@ import os
 import json
 import time
 import flask_apscheduler
+import glob
 
 from Util import Datastore
 from Util import Auth
@@ -105,6 +106,9 @@ Background.scheduler.start()
 with app.app_context():
     GlobalContext.DATABASE_LAST_ANALYSIS = time.time()
     Helper.update_database_analysis()
+
+# Refresh exports file
+Helper.empty_exports()
 
 
 if __name__ == "__main__":

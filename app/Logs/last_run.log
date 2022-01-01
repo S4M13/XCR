@@ -767,3 +767,39 @@
 [2022-01-01 01:57:39,503] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:167} INFO - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] deleted 'C:\Users\samdo\Desktop\XCR\app\Logs\test_log.log' from the log files
 [2022-01-01 01:57:48,073] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:153} WARNING - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] attempted to delete a logfile but a PermissionError occurred['C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log'][Raw Query:'last_run.log'] - the file is likely the active log file
 [2022-01-01 01:58:03,876] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:160} WARNING - admin[a373b210-1798-4280-abd2-f3d7dcafa408::127.0.0.1] attempted to delete a log file but the log file doesn't exist. It is likely a client side error has occured, or a deliberate action has been taken to alter the path.
+[2022-01-01 19:01:30,397] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[6f6f5c61-10cf-458b-a349-b45a333b0fcb::81.140.167.238] successfully logged in
+[2022-01-01 19:01:51,243] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[c788463b-b199-4528-80db-80ceb1d94d9d::81.140.167.238] successfully logged in
+[2022-01-01 19:02:07,259] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:69} WARNING - Failed login attempt for user 'udu' [IP::81.140.167.238]
+[2022-01-01 19:25:54,556] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[dbc6df36-9ca3-45b3-a972-8be23f0863c4::81.140.167.238] successfully logged in
+[2022-01-01 19:26:57,635] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[2108aecf-0059-47bf-8a83-58a1c9818500::81.140.167.238] successfully logged in
+[2022-01-01 19:33:01,572] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - admin[2108aecf-0059-47bf-8a83-58a1c9818500::81.140.167.238] downloaded the overall analysis file
+[2022-01-01 19:38:56,958] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:87} INFO - admin[2108aecf-0059-47bf-8a83-58a1c9818500::81.140.167.238] downloaded the analysis file for a club with the ID 16
+[2022-01-01 19:41:20,817] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:89} INFO - admin[2108aecf-0059-47bf-8a83-58a1c9818500::81.140.167.238] created User Anna[ID:4]
+[2022-01-01 19:41:29,399] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - admin[2108aecf-0059-47bf-8a83-58a1c9818500::81.140.167.238] successfully logged out
+[2022-01-01 19:41:38,805] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - Anna[353c7d58-4086-429f-bb37-3f6d11b9bdcd::81.140.167.238] successfully logged in
+[2022-01-01 19:43:06,451] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:67} INFO - Anna[353c7d58-4086-429f-bb37-3f6d11b9bdcd::81.140.167.238] downloaded the analysis file for a student with the ID 353
+[2022-01-01 19:45:05,119] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:87} INFO - Anna[353c7d58-4086-429f-bb37-3f6d11b9bdcd::81.140.167.238] downloaded the analysis file for a club with the ID 3
+[2022-01-01 19:56:32,186] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:207} INFO - Anna[353c7d58-4086-429f-bb37-3f6d11b9bdcd::81.140.167.238] terminated session Anna[353c7d58-4086-429f-bb37-3f6d11b9bdcd::81.140.167.238] [Internal ID : 2]
+[2022-01-01 19:56:42,618] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] successfully logged in
+[2022-01-01 19:56:58,614] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:266} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] downloaded the student datastore file 'Y7.xlsx'
+[2022-01-01 19:57:30,684] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:266} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] downloaded the student datastore file 'Y7.xlsx'
+[2022-01-01 19:59:25,005] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] downloaded the overall analysis file
+[2022-01-01 20:00:45,273] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:129} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
+[2022-01-01 20:02:24,244] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - Anna[c84058cd-0e0d-4321-b31f-4dbc53630359::81.140.167.238] successfully logged out
+[2022-01-01 20:02:35,362] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - user[05a9d70a-3b5a-4f1f-8461-5dc4beb37cb4::81.140.167.238] successfully logged in
+[2022-01-01 20:03:24,771] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - user[05a9d70a-3b5a-4f1f-8461-5dc4beb37cb4::81.140.167.238] successfully logged out
+[2022-01-01 20:03:38,836] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - analyst[42abf940-3f3a-4461-a83f-58475326ac25::81.140.167.238] successfully logged in
+[2022-01-01 20:10:39,858] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - analyst[42abf940-3f3a-4461-a83f-58475326ac25::81.140.167.238] successfully logged out
+[2022-01-01 20:15:31,372] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - Anna[2284fea2-e8ef-4ae2-b2de-187f1dec1178::81.140.167.238] successfully logged in
+[2022-01-01 20:41:08,487] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:103} INFO - Anna[2284fea2-e8ef-4ae2-b2de-187f1dec1178::81.140.167.238] successfully logged out
+[2022-01-01 21:00:21,941] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[0b37c951-57dc-48b9-bf5e-f127b1120b2a::86.9.155.100] successfully logged in
+[2022-01-01 21:00:39,171] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[97c337a5-bfa4-4805-8a75-964215f69a7d::86.9.155.100] successfully logged in
+[2022-01-01 21:01:27,697] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[4f3432e3-172c-425b-9708-1d357961b9e0::86.9.155.100] successfully logged in
+[2022-01-01 21:01:41,603] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - admin[4f3432e3-172c-425b-9708-1d357961b9e0::86.9.155.100] downloaded the overall analysis file
+[2022-01-01 21:11:04,591] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[1394da5d-9bd7-4ac7-b3e5-6ab77fa7741d::127.0.0.1] successfully logged in
+[2022-01-01 21:11:15,483] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:52} INFO - admin[1394da5d-9bd7-4ac7-b3e5-6ab77fa7741d::127.0.0.1] downloaded the overall analysis file
+[2022-01-01 21:11:27,379] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:84} INFO - admin[1394da5d-9bd7-4ac7-b3e5-6ab77fa7741d::127.0.0.1] downloaded the analysis file for a club with the ID 2
+[2022-01-01 21:15:25,778] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[d5f604be-4763-456a-9888-36553a56a6ca::127.0.0.1] successfully logged in
+[2022-01-01 21:15:44,046] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:84} INFO - admin[d5f604be-4763-456a-9888-36553a56a6ca::127.0.0.1] downloaded the analysis file for a club with the ID 2
+[2022-01-01 21:18:34,510] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:83} INFO - admin[021bbe0c-80e7-414c-9c3f-87775776f82b::127.0.0.1] successfully logged in
+[2022-01-01 21:18:42,855] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Analysis.py:84} INFO - admin[021bbe0c-80e7-414c-9c3f-87775776f82b::127.0.0.1] downloaded the analysis file for a club with the ID 2
