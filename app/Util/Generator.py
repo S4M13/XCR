@@ -7,11 +7,13 @@ if __name__ == "__main__":
     import Database
     import GlobalContext
     import Database
+    import Helper
 else:
     import Settings
     from Util import Database
     from Util import GlobalContext
     from Util import Database
+    from Util import Helper
 
 
 def generate_overall_analysis():
@@ -35,7 +37,7 @@ def generate_overall_analysis():
     shutil.copyfile(Settings.SPREADSHEETS / Settings.OVERALL_ANALYSIS_SPREADSHEET, location)
 
     # Work out what the headers are
-    headers = GlobalContext.STUDENTS_DATASTORE.DataHeaders.headers
+    headers = GlobalContext.STUDENTS_DATASTORE.DataHeaders.headers.copy()
 
     for club in GlobalContext.CLUBS_DATASTORE.data:
         headers.append(club[1] + " Attendances")  # TODO : Check UI/Name formatting
@@ -235,6 +237,7 @@ def generate_club_analysis(club_uid):
 
     # Work out the headers
     headers = GlobalContext.STUDENTS_DATASTORE.DataHeaders.headers + sessions
+    print(headers)
 
     # Add the headers
     for index, entry in enumerate(headers):

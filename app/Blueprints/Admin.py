@@ -129,7 +129,11 @@ def download_log_file(session, filename):
     current_app.logger.info(f"{session} downloaded '{location}' from the log files")
 
     timestamp = datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S")
-    return send_file(location, mimetype='text/plain', attachment_filename=f"{timestamp}.log", as_attachment=True)
+    return send_file(location,
+                     mimetype='text/plain',
+                     attachment_filename=f"{timestamp}.log",
+                     as_attachment=True,
+                     cache_timeout=0)
 
 
 @Admin.route("/delete_log_file", methods=["POST"])
@@ -265,7 +269,11 @@ def download_student_datastore(session, id_uf):
 
     current_app.logger.info(f"{session} downloaded the student datastore file '{file}'")
 
-    return send_from_directory(Settings.STUDENT_DATASTORE_LOCATION, file, attachment_filename=file, as_attachment=True)
+    return send_from_directory(Settings.STUDENT_DATASTORE_LOCATION,
+                               file,
+                               attachment_filename=file,
+                               as_attachment=True,
+                               cache_timeout=0)
 
 
 @Admin.route("/download_club_datastore", methods=["GET"])
@@ -289,7 +297,11 @@ def download_club_datastore(session, id_uf):
 
     current_app.logger.info(f"{session} downloaded the club datastore file '{file}'")
 
-    return send_from_directory(Settings.CLUBS_DATASTORE_LOCATION, file, attachment_filename=file, as_attachment=True)
+    return send_from_directory(Settings.CLUBS_DATASTORE_LOCATION,
+                               file,
+                               attachment_filename=file,
+                               as_attachment=True,
+                               cache_timeout=0)
 
 
 @Admin.route("/delete_student_datastore", methods=["POST"])

@@ -80,6 +80,8 @@ def auth(session, username, password):
                     secure=Settings.COOKIE_SECURE,
                     expires=expire_date)
 
+    GlobalContext.LOGIN_ATTEMPTS[username] = (time.time(), 0)
+
     current_app.logger.info(f"{new_session} successfully logged in")
     return resp
 
