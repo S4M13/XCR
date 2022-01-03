@@ -86,7 +86,7 @@ def auth(session, username, password):
     return resp
 
 
-@Authenticate.route("/deauth", methods=["POST", "GET"])  # TODO: remote get once working
+@Authenticate.route("/deauth", methods=["POST"])
 @Auth.auth_required(1, page=False)
 @Auth.csrf_required()
 def deauth(session):

@@ -75,7 +75,9 @@ def auth_required(level: int, api: bool = False, page: bool =True):
                 current_app.logger.warning(f"{session} attempted to access '{func.__name__}' view with "
                                            f"insufficient permissions")
 
-                return "403", 403  # TODO : Redirect to 403 page, possibly ask to switch account
+                flash("You do not have permission to access this page. If you believe this is an error please contact "
+                      "an administrator.", "error")
+                return redirect(session.last_visited)
 
             # All checks passed, configure the scope and respond with the request
             if (not api) and page:
@@ -173,7 +175,7 @@ class Session:
         self.raw_csrf_token = base64.urlsafe_b64encode(self.csrf_token.bytes).decode("utf-8")
 
         self.last_accessed = time.time()
-        self.last_visited = ""
+        self.last_visited = "/"
         self.created = time.time()
         self.session_data = {}
 

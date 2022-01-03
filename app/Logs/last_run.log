@@ -2690,3 +2690,5 @@
 [2022-01-02 00:23:19,529] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[887f89e7-12f9-4a46-8adf-c310521989ad::127.0.0.1] successfully logged in
 [2022-01-02 00:23:19,546] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[6e31c09d-cc9d-4ad6-8cb2-8bd5f04035c4::127.0.0.1] successfully logged in
 [2022-01-02 00:23:19,561] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[1858c98c-1627-4a07-a25a-22c6c4dce4a7::127.0.0.1] successfully logged in
+[2022-01-03 17:34:45,548] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - user[1eef48da-899a-46ff-b131-f81211be2423::127.0.0.1] successfully logged in
+[2022-01-03 17:34:54,473] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:75} WARNING - user[1eef48da-899a-46ff-b131-f81211be2423::127.0.0.1] attempted to access 'users' view with insufficient permissions

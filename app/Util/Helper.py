@@ -566,3 +566,53 @@ def empty_exports():
     files = glob.glob(str(Settings.EXPORTS) + "/*")
     for f in files:
         os.remove(f)
+
+
+def create_tables(db):
+    db.engine.execute("""
+    CREATE DATABASE Records;
+    
+    CREATE TABLE Student(
+        StudentID int PRIMARY KEY,
+        StudentName varchar(50)  NOT NULL,
+        StudentInfo varchar(50)
+    );
+    
+    CREATE TABLE Club(
+        ClubID int PRIMARY KEY,
+        ClubName varchar(50) NOT NULL UNIQUE,
+        ClubDescription varchar(200)
+    );
+    
+    CREATE RecordsOfAttendance (
+        ClubID int NOT NULL,
+        StudentUD int NOT NULL,
+        PRIMARY KEY (QuestionID, MemberID),
+        FOREIGN KEY ClubID REFERENCES Club(ClubID),
+        FOREIGN KEY StudentID REFERENCES Student(StudentID)
+    );
+    
+    CREATE DATABASE Users;
+    
+    CREATE AccessLevel(
+        AccessLevelID int PRIMARY KEY,
+        AccessLevelCode int NOT NULL
+    );
+    
+    CREATE User(
+        UserID int PRIMARY KEY,
+        Username varchar(100) NOT NULL,
+        PasswordHash varchar(200) NO NULL,
+        AccessLevelID int,
+        FOREIGN KEY AccessLevelID REFERENCES AccessLevel(AccessLevelID) 
+    );
+    
+    CREATE Session(
+        SessionID int PRIMARY KEY,
+        UserID int NOT NULL,
+        LastAccessed datetime,
+        CreatedAt datetime,
+        SessionData binary(8000),
+        FOREIGN KEY UserID REFERENCES User(UserID)
+    );
+    """)

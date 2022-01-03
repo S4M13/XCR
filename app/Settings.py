@@ -27,8 +27,8 @@ MAX_LOGIN_ATTEMPT_PERIOD = 1 * 60
 SESSION_COOKIE_NAME = "session_id"
 SESSION_TIMEOUT = 1 * 60 * 30
 
-COOKIE_SAME_SITE = 'Lax'  # TODO: Change to secure for production
-COOKIE_SECURE = False  # TODO: Change to true for production
+COOKIE_SAME_SITE = 'Lax'  # TODO: Change to secure for production on deployment
+COOKIE_SECURE = False  # TODO: Change to true for production on deployment
 
 PERMISSION_NAMES = {
     0: "Anonymous",

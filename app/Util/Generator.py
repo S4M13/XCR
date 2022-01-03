@@ -40,7 +40,7 @@ def generate_overall_analysis():
     headers = GlobalContext.STUDENTS_DATASTORE.DataHeaders.headers.copy()
 
     for club in GlobalContext.CLUBS_DATASTORE.data:
-        headers.append(club[1] + " Attendances")  # TODO : Check UI/Name formatting
+        headers.append(club[1] + " Attendances")
 
     # Load the XL workbook
     wb = xl.load_workbook(filename=location, data_only=True)
