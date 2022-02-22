@@ -23,6 +23,12 @@ Analysis = Blueprint("Analysis", __name__)
 @Analysis.route("/overall", methods=["GET"])
 @Auth.auth_required(2)
 def overall(session):
+    """
+    GET endpoint which returns the overall analysis page.
+
+    :return: The rendered page
+    """
+
     return Helper.render_base_template(session,
                                        "analysis/overall.html",
                                        warning=GlobalContext.DATABASE_ANALYSIS["WARNING"])
@@ -31,6 +37,12 @@ def overall(session):
 @Analysis.route("/student", methods=["GET"])
 @Auth.auth_required(2)
 def student(session):
+    """
+    GET endpoint which returns the student analysis page.
+
+    :return: The rendered page
+    """
+
     return Helper.render_base_template(session,
                                        "analysis/student.html",
                                        warning=GlobalContext.DATABASE_ANALYSIS["WARNING"])
@@ -39,6 +51,12 @@ def student(session):
 @Analysis.route("/club", methods=["GET"])
 @Auth.auth_required(2)
 def club(session):
+    """
+    GET endpoint which returns the club analysis page.
+
+    :return: The rendered page
+    """
+
     return Helper.render_base_template(session,
                                        "analysis/club.html",
                                        warning=GlobalContext.DATABASE_ANALYSIS["WARNING"])
@@ -47,6 +65,12 @@ def club(session):
 @Analysis.route("/generate-overall", methods=["GET"])
 @Auth.auth_required(2, page=False)
 def download_overall(session):
+    """
+    GET endpoint which generates and returns an overall analysis Excel file using the generate_overall_analysis function.
+
+    :return: send_file object containing the overall analysis file
+    """
+
     file_name = Generator.generate_overall_analysis()
 
     current_app.logger.info(f"{session} downloaded the overall analysis file")
@@ -63,6 +87,13 @@ def download_overall(session):
 @Helper.request_args("student-id")
 @Helper.ensure_valid_student_id(1)
 def download_student(session, student_id):
+    """
+    GET endpoint which generates and returns an student analysis Excel file using the generate_student_analysis function.
+    
+    :param student_id: The ID code for the associated student
+    :return: send_file object containing the analysis file
+    """
+
     file_name = Generator.generate_student_analysis(student_id)
 
     current_app.logger.info(f"{session} downloaded the analysis file for a student with the ID {student_id}")
@@ -79,6 +110,13 @@ def download_student(session, student_id):
 @Helper.request_args("club-id")
 @Helper.ensure_valid_club_id(1)
 def download_club(session, club_id):
+    """
+    GET endpoint which generates and returns an club analysis Excel file using the generate_club_analysis function.
+    
+    :param club_id: The ID code for the associated club
+    :return: send_file object containing the analysis file
+    """
+
     file_name = Generator.generate_club_analysis(club_id)
 
     current_app.logger.info(f"{session} downloaded the analysis file for a club with the ID {club_id}")

@@ -326,7 +326,8 @@ def download_student_datastore(session, id_uf):
     GET endpoint which downloads a student datastore.
 
     :param session: The current valid user session
-    :return: Rendered view
+    :param id_uf: The associated ID of the student datastore
+    :return: send_file object for the datastore
     """
 
     try:
@@ -357,6 +358,14 @@ def download_student_datastore(session, id_uf):
 @Auth.auth_required(3, page=False)
 @Helper.request_args("id")
 def download_club_datastore(session, id_uf):
+    """
+    GET endpoint which downloads a clubs datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the club datastore
+    :return: send_file object for the datastore
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -386,6 +395,14 @@ def download_club_datastore(session, id_uf):
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_student_datastore(session, id_uf):
+    """
+    POST endpoint which deletes a student datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the student datastore
+    :return: Redirect to /data with flash message
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -422,6 +439,14 @@ def delete_student_datastore(session, id_uf):
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_club_datastore(session, id_uf):
+    """
+    POST endpoint which deletes a club datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the club datastore
+    :return: Redirect to /data with flash message
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -457,6 +482,13 @@ def delete_club_datastore(session, id_uf):
 @Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_student_datastore(session):
+    """
+    POST endpoint which reloads the student datastores into active memory.
+
+    :param session: The current valid user session
+    :return: Redirect to /data with flash message
+    """
+
     GlobalContext.STUDENTS_DATASTORE.purge_memory()
     GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
 
@@ -470,6 +502,13 @@ def reload_student_datastore(session):
 @Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_club_datastore(session):
+    """
+    POST endpoint which reloads the club datastores into active memory.
+
+    :param session: The current valid user session
+    :return: Redirect to /data with flash message
+    """
+
     GlobalContext.CLUBS_DATASTORE.purge_memory()
     GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
 
