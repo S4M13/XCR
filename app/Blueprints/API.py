@@ -28,6 +28,14 @@ API = Blueprint("API", __name__, url_prefix="/api")
 @Auth.auth_required(1, api=True)
 @Helper.request_args("query")
 def names(session, query):
+    """
+    GET API endpoint which returns a JSON list of valid names which match up with the query.
+
+    :param session: The current valid user session
+    :param query: The current partial name to match
+    :return: Associated JSON data of all matching names along with student ID.
+    """
+
     if len(query) < 3:
         current_app.logger.warning(f"{session} submitted an API request to '/api/names' and the 'query' field was under"
                                    f" 3 characters long (Query : '{query}')")
@@ -50,6 +58,14 @@ def names(session, query):
 @Auth.auth_required(1, api=True)
 @Helper.request_args("query")
 def clubs(session, query):
+    """
+    GET API endpoint which returns a JSON list of valid club names which match up with the query.
+
+    :param session: The current valid user session
+    :param query: The current partial club name to match
+    :return: Associated JSON data of all matching names along with club ID.
+    """
+
     data = {"query": "Unit"}
 
     matches = []
@@ -65,30 +81,65 @@ def clubs(session, query):
 @API.route("/overall/weekly-attendance", methods=["GET"])
 @Auth.auth_required(2, api=True)
 def overall_weekly_attendance(session):
+    """
+    GET API endpoint which returns a JSON analysis of the overall weekly attendance.
+
+    :param session: The current valid user session
+    :return: Associated JSON data of the analysis.
+    """
+
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance"]
 
 
 @API.route("/overall/weekly-attendance-by-club", methods=["GET"])
 @Auth.auth_required(2, api=True)
 def overall_weekly_attendance_by_club(session):
+    """
+    GET API endpoint which returns a JSON analysis of the overall weekly attendance by club.
+
+    :param session: The current valid user session
+    :return: Associated JSON data of the analysis.
+    """
+
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_by_club"]
 
 
 @API.route("/overall/club-breakdown", methods=["GET"])
 @Auth.auth_required(2, api=True)
 def club_breakdown(session):
+    """
+    GET API endpoint which returns a JSON analysis of the club breakdown attendance.
+
+    :param session: The current valid user session
+    :return: Associated JSON data of the analysis.
+    """
+
     return GlobalContext.DATABASE_ANALYSIS["club_breakdown"]
 
 
 @API.route("/overall/weekly-attendance-once", methods=["GET"])
 @Auth.auth_required(2, api=True)
 def overall_weekly_attendance_once(session):
+    """
+    GET API endpoint which returns a JSON analysis of the weekly attendance for single or more attendances.
+
+    :param session: The current valid user session
+    :return: Associated JSON data of the analysis.
+    """
+
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_once"]
 
 
 @API.route("/overall/flash-cards", methods=["GET"])
 @Auth.auth_required(2, api=True)
 def flash_cards(session):
+    """
+    GET API endpoint which returns a JSON analysis to create a number of 'flash card' statistics.
+
+    :param session: The current valid user session
+    :return: Associated JSON data of the analysis.
+    """
+
     return GlobalContext.DATABASE_ANALYSIS["flash_cards"]
 
 
@@ -97,6 +148,14 @@ def flash_cards(session):
 @Helper.request_args("student-id")
 @Helper.ensure_valid_student_id(1, api=True)
 def fetch_records(session, student_uid):
+    """
+    GET API endpoint which returns a JSON list of all attendances for a student.
+
+    :param session: The current valid user session
+    :param student_uid: The ID of the associated student
+    :return: Associated JSON data of the analysis.
+    """
+
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
 
     data = []
@@ -120,6 +179,14 @@ def fetch_records(session, student_uid):
 @Auth.csrf_required(api=True)
 @Helper.request_form("student-id", "club-id", "timestamp")
 def delete_record(session, student_uid, club_uid, timestamp):
+    """
+    POST API endpoint which deletes a record from a student's attendances.
+
+    :param session: The current valid user session
+    :param student_uid: The ID of the associated student
+    :param club_uid: The 
+    :return: Associated JSON data of the analysis.
+    """
 
     ts = datetime.datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
 
