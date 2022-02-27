@@ -27,6 +27,13 @@ Admin = Blueprint("Admin", __name__)
 @Admin.route("/users", methods=["GET"])
 @Auth.auth_required(3)
 def users(session):
+    """
+    GET endpoint which returns a rendered user page.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     user_entries = Database.User.query.all()
     user_entries_sanitized = []
 
@@ -41,6 +48,14 @@ def users(session):
 @Auth.csrf_required()
 @Helper.request_form("user-id")
 def delete_user(session, user_id):
+    """
+    POST endpoint which deletes a user from the users' database
+
+    :param session: The current valid user session
+    :param user_id: The id of the user to delete
+    :return: Redirect to /users with a flash message
+    """
+
     user_entry = Database.User.query.filter_by(id=user_id).first()
 
     if user_entry is None:
@@ -69,6 +84,16 @@ def delete_user(session, user_id):
 @Auth.csrf_required()
 @Helper.request_form("username", "password", "auth-level")
 def create_user(session, username, password, auth_level):
+    """
+    POST endpoint which returns a rendered user page.
+
+    :param session: The current valid user session
+    :param username: The username for the new user
+    :param password: The password for the new user
+    :param auth_level: The associated access level for the user
+    :return: Redirect to /users with a flash message
+    """
+
     try:
         int(auth_level)
     except ValueError:
@@ -95,6 +120,13 @@ def create_user(session, username, password, auth_level):
 @Admin.route("/logs", methods=["GET"])
 @Auth.auth_required(3)
 def logs(session):
+    """
+    GET endpoint which returns a rendered logs page.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     data = []
     logs = os.listdir(Settings.LOG_FILE_DIRECTORY)
     for entry in logs:
@@ -112,6 +144,14 @@ def logs(session):
 @Auth.auth_required(3, page=False)
 @Helper.request_args("file")
 def download_log_file(session, filename):
+    """
+    GET endpoint which returns a download for a log file.
+
+    :param session: The current valid user session
+    :param filename: The filename of the log file to download
+    :return: send_file object for the log file
+    """
+
     location = os.path.join(Settings.LOG_FILE_DIRECTORY, filename)
     location = os.path.abspath(location)
 
@@ -141,6 +181,14 @@ def download_log_file(session, filename):
 @Auth.csrf_required()
 @Helper.request_form("file-name")
 def delete_log_file(session, filename):
+    """
+    POST endpoint which deletes a log file.
+
+    :param session: The current valid user session
+    :param filename: The filename of the log file to delete
+    :return: Redirect to /logs with a flash message
+    """
+
     location = os.path.join(Settings.LOG_FILE_DIRECTORY, filename)
     location = os.path.abspath(location)
 
@@ -177,6 +225,13 @@ def delete_log_file(session, filename):
 @Admin.route("/sessions", methods=["GET"])
 @Auth.auth_required(3)
 def sessions(session):
+    """
+    GET endpoint which returns a rendered sessions page.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     sessions = []
 
     for session in Auth.Session.CURRENT_ACTIVE_SESSIONS:
@@ -196,6 +251,14 @@ def sessions(session):
 @Auth.csrf_required()
 @Helper.request_form("session-id")
 def terminate_session(session, session_id):
+    """
+    POST endpoint which terminates a current active session.
+
+    :param session: The current valid user session
+    :param session_id: The associated session_id for the session which will be terminated
+    :return: Redirect to /sessions with a flash message
+    """
+
     terminated_session = None
     for s in Auth.Session.CURRENT_ACTIVE_SESSIONS:
         if str(s.id) == session_id:
@@ -216,6 +279,13 @@ def terminate_session(session, session_id):
 @Admin.route("/data", methods=["GET"])
 @Auth.auth_required(3)
 def data(session):
+    """
+    GET endpoint which returns a rendered data page.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     student_datastores = []
 
     files = os.listdir(Settings.STUDENT_DATASTORE_LOCATION)
@@ -252,6 +322,14 @@ def data(session):
 @Auth.auth_required(3, page=False)
 @Helper.request_args("id")
 def download_student_datastore(session, id_uf):
+    """
+    GET endpoint which downloads a student datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the student datastore
+    :return: send_file object for the datastore
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -280,6 +358,14 @@ def download_student_datastore(session, id_uf):
 @Auth.auth_required(3, page=False)
 @Helper.request_args("id")
 def download_club_datastore(session, id_uf):
+    """
+    GET endpoint which downloads a clubs datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the club datastore
+    :return: send_file object for the datastore
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -309,6 +395,14 @@ def download_club_datastore(session, id_uf):
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_student_datastore(session, id_uf):
+    """
+    POST endpoint which deletes a student datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the student datastore
+    :return: Redirect to /data with flash message
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -345,6 +439,14 @@ def delete_student_datastore(session, id_uf):
 @Auth.csrf_required()
 @Helper.request_form("datastore-id")
 def delete_club_datastore(session, id_uf):
+    """
+    POST endpoint which deletes a club datastore.
+
+    :param session: The current valid user session
+    :param id_uf: The associated ID of the club datastore
+    :return: Redirect to /data with flash message
+    """
+
     try:
         ID = int(id_uf)
     except ValueError:
@@ -380,6 +482,13 @@ def delete_club_datastore(session, id_uf):
 @Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_student_datastore(session):
+    """
+    POST endpoint which reloads the student datastores into active memory.
+
+    :param session: The current valid user session
+    :return: Redirect to /data with flash message
+    """
+
     GlobalContext.STUDENTS_DATASTORE.purge_memory()
     GlobalContext.STUDENTS_DATASTORE.load_directory(Settings.STUDENT_DATASTORE_LOCATION)
 
@@ -393,6 +502,13 @@ def reload_student_datastore(session):
 @Auth.auth_required(3, page=False)
 @Auth.csrf_required()
 def reload_club_datastore(session):
+    """
+    POST endpoint which reloads the club datastores into active memory.
+
+    :param session: The current valid user session
+    :return: Redirect to /data with flash message
+    """
+
     GlobalContext.CLUBS_DATASTORE.purge_memory()
     GlobalContext.CLUBS_DATASTORE.load_directory(Settings.CLUBS_DATASTORE_LOCATION)
 
