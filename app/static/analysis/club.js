@@ -154,6 +154,7 @@ $(document).ready(function() {
     club_valid = false;
     $('#club').autocomplete({
         serviceUrl: '/api/clubs',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#club-id').val(suggestion.data)
             club_valid = true;

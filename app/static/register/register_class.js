@@ -32,6 +32,95 @@ function updateRegister() {
     });
 }
 
+function registerNowHook(event) {
+    event.preventDefault();
+
+    var row = event.originalEvent.srcElement.parentElement.parentElement;
+
+    var date = document.getElementById('date');
+    var club = document.getElementById('club');
+    var club_id = document.getElementById('club-id');
+    if (!date.checkValidity() || !club.checkValidity() || !club_id.checkValidity()) {
+        FailurePopup("Please ensure the date and club name have been filled in before attempting to register", 2000);
+        return;
+    }
+
+    var formData = {
+        'date': $('input[name=date]').val(),
+        'name': row.querySelector('#StudentName').children[0].innerHTML,
+        'name-id': row.querySelector('#StudentID').children[0].innerHTML,
+        'club': $('input[name=club]').val(),
+        'club-id': $('input[name=club-id]').val(),
+        'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr("content")
+    };
+
+    $.ajax({
+        type        : 'POST',
+        url         : 'register_one_form',
+        data        : formData,
+        dataType    : 'json',
+        encode      : true
+    })
+    .done(function(data) {
+        if (!data.success) {
+            if (data.redir) {
+                window.location.replace(data.redir);
+            } else if (data.error){
+                FailurePopup(data.error, 5000);
+            } else {
+                FailurePopup("Something has gone wrong, failed to register student", 5000);
+            }
+        } else {
+            SuccessPopup("Successfully registered student", 1000);
+            row.remove();
+            updateRegister();
+        }
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        FailurePopup("Something has gone wrong, failed to register student", 5000);
+    });
+
+}
+
+function removeHook(event) {
+    var row = event.originalEvent.srcElement.parentElement.parentElement;
+    row.remove();
+    SuccessPopup("Successfully removed student", 1000);
+    updateRegister();
+
+    var table = document.getElementById("RegisterHolder");
+    if ($('#RegisterHolder tr').length == 0) {
+        var row = table.insertRow(0);
+        var cell = row.insertCell(0);
+        cell.innerHTML = "No current entries";
+        $('#RegisterHolder tr').attr("id", "terminal-row");
+        $('#RegisterHolder tr td').attr("class", "text-muted text-center");
+        $('#RegisterHolder tr td').attr("colspan", "4");
+    }
+}
+
+function loadPreset(preset_id) {
+    var formData = {
+        'students': students,
+        'student-ids': student_ids
+   }
+
+    $.ajax({
+        type        : 'GET',
+        url         : 'api/session/persistent-register',
+        data        : formData,
+        dataType    : 'json',
+        encode      : true
+    }).done(function(data) {
+        if (data.redir) {
+            window.location.replace(data.redir);
+        } else if (data.error){
+            FailurePopup(data.error, 5000);
+            return null;
+        }
+    });
+}
+
 $(document).ready(function() {
     $('#add-name-form').submit(function(event) {
         event.preventDefault();
@@ -73,62 +162,8 @@ $(document).ready(function() {
         $('input[name=name-id]').val("");
         name_valid = false;
 
-        $('.register-now').submit(function(event) {
-            event.preventDefault();
-
-            var row = event.originalEvent.srcElement.parentElement.parentElement;
-
-            var date = document.getElementById('date');
-            var club = document.getElementById('club');
-            var club_id = document.getElementById('club-id');
-            if (!date.checkValidity() || !club.checkValidity() || !club_id.checkValidity()) {
-                FailurePopup("Please ensure the date and club name have been filled in before attempting to register", 2000);
-                return;
-            }
-
-            var formData = {
-                'date': $('input[name=date]').val(),
-                'name': row.querySelector('#StudentName').children[0].innerHTML,
-                'name-id': row.querySelector('#StudentID').children[0].innerHTML,
-                'club': $('input[name=club]').val(),
-                'club-id': $('input[name=club-id]').val(),
-                'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr("content")
-            };
-
-            $.ajax({
-                type        : 'POST',
-                url         : 'register_one_form',
-                data        : formData,
-                dataType    : 'json',
-                encode      : true
-            })
-            .done(function(data) {
-                if (!data.success) {
-                    if (data.redir) {
-                        window.location.replace(data.redir);
-                    } else if (data.error){
-                        FailurePopup(data.error, 5000);
-                    } else {
-                        FailurePopup("Something has gone wrong, failed to register student", 5000);
-                    }
-                } else {
-                    SuccessPopup("Successfully registered student", 1000);
-                    row.remove();
-                    updateRegister();
-                }
-            })
-            .fail(function(jqXHR, textStatus, errorThrown) {
-                FailurePopup("Something has gone wrong, failed to register student", 5000);
-            });
-
-        });
-        $('.remove').submit(function(event) {
-            var row = event.originalEvent.srcElement.parentElement.parentElement;
-            row.remove();
-            SuccessPopup("Successfully removed student", 1000);
-            updateRegister();
-        });
-
+        $('.register-now').submit(registerNowHook);
+        $('.remove').submit(removeHook);
         updateRegister();
     });
 
@@ -193,10 +228,16 @@ $(document).ready(function() {
         });
     });
 
+    $('#load-preset').click(function(event) {
+        var preset_to_load = $('#preset-name').val();
+        console.log(preset_to_load);
+    });
+
     name_valid = false;
     club_valid = false;
     $('#name').autocomplete({
         serviceUrl: '/api/names',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#name-id').val(suggestion.data)
             name_valid = true;
@@ -218,6 +259,7 @@ $(document).ready(function() {
 
     $('#club').autocomplete({
         serviceUrl: '/api/clubs',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#club-id').val(suggestion.data)
             club_valid = true;
@@ -235,59 +277,6 @@ $(document).ready(function() {
     });
     $('#club').autocomplete().setOptions({minChars: 1, showNoSuggestionNotice: true});
 
-    $('.register-now').submit(function(event) {
-        event.preventDefault();
-
-        var row = event.originalEvent.srcElement.parentElement.parentElement;
-
-        var date = document.getElementById('date');
-        var club = document.getElementById('club');
-        var club_id = document.getElementById('club-id');
-        if (!date.checkValidity() || !club.checkValidity() || !club_id.checkValidity()) {
-            FailurePopup("Please ensure the date and club name have been filled in before attempting to register", 2000);
-            return;
-        }
-
-        var formData = {
-            'date': $('input[name=date]').val(),
-            'name': row.querySelector('#StudentName').children[0].innerHTML,
-            'name-id': row.querySelector('#StudentID').children[0].innerHTML,
-            'club': $('input[name=club]').val(),
-            'club-id': $('input[name=club-id]').val(),
-            'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr("content")
-        };
-
-        $.ajax({
-            type        : 'POST',
-            url         : 'register_one_form',
-            data        : formData,
-            dataType    : 'json',
-            encode      : true
-        })
-        .done(function(data) {
-            if (!data.success) {
-                if (data.redir) {
-                    window.location.replace(data.redir);
-                } else if (data.error){
-                    FailurePopup(data.error, 5000);
-                } else {
-                    FailurePopup("Something has gone wrong, failed to register student", 5000);
-                }
-            } else {
-                SuccessPopup("Successfully registered student", 1000);
-                row.remove();
-                updateRegister();
-            }
-        })
-        .fail(function(jqXHR, textStatus, errorThrown) {
-            FailurePopup("Something has gone wrong, failed to register student", 5000);
-        });
-
-    });
-    $('.remove').submit(function(event) {
-        var row = event.originalEvent.srcElement.parentElement.parentElement;
-        row.remove();
-        SuccessPopup("Successfully removed student", 1000);
-        updateRegister();
-    });
+    $('.register-now').submit(registerNowHook);
+    $('.remove').submit(removeHook);
 });

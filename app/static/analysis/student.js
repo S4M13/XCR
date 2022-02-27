@@ -180,6 +180,7 @@ $(document).ready(function() {
     name_valid = false;
     $('#name').autocomplete({
         serviceUrl: '/api/names',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#name-id').val(suggestion.data)
             name_valid = true;

@@ -31,3 +31,23 @@ class Record(db.Model):
 
     def __repr__(self):
         return f"<Record entry [{self.student_uid}:{self.club_uid}:{self.attendance_date}]>"
+
+
+class Preset(db.Model):
+    __bind_key__ = 'records'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    entries = db.relationship('PresetEntry', backref='preset', lazy=True)
+
+    def __repr__(self):
+        return f"<Preset [{self.id}:{self.name}]>"
+
+
+class PresetEntry(db.Model):
+    __bind_key__ = 'records'
+    id = db.Column(db.Integer, primary_key=True)
+    student_uid = db.Column(db.Integer, nullable=False)
+    preset_id = db.Column(db.Integer, db.ForeignKey('preset.id'), nullable=False)
+
+    def __repr__(self):
+        return f"<Preset Entry [{self.id}:{self.student_uid}:{self.preset.name}]>"

@@ -42,6 +42,7 @@ $(document).ready(function() {
     club_valid = false;
     $('#name').autocomplete({
         serviceUrl: '/api/names',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#name-id').val(suggestion.data)
             name_valid = true;
@@ -63,6 +64,7 @@ $(document).ready(function() {
 
     $('#club').autocomplete({
         serviceUrl: '/api/clubs',
+        autoSelectFirst: true,
         onSelect: function (suggestion) {
             $('#club-id').val(suggestion.data)
             club_valid = true;
