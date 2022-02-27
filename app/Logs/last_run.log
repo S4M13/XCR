@@ -2692,3 +2692,32 @@
 [2022-01-02 00:23:19,561] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[1858c98c-1627-4a07-a25a-22c6c4dce4a7::127.0.0.1] successfully logged in
 [2022-01-03 17:34:45,548] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - user[1eef48da-899a-46ff-b131-f81211be2423::127.0.0.1] successfully logged in
 [2022-01-03 17:34:54,473] {C:\Users\samdo\Desktop\XCR\app\Util\Auth.py:75} WARNING - user[1eef48da-899a-46ff-b131-f81211be2423::127.0.0.1] attempted to access 'users' view with insufficient permissions
+[2022-01-05 14:56:14,807] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[b672571a-199d-44ff-8fe1-12f3f4496c8d::82.132.235.223] successfully logged in
+[2022-01-05 14:57:35,060] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Admin.py:129} INFO - admin[b672571a-199d-44ff-8fe1-12f3f4496c8d::82.132.235.223] downloaded 'C:\Users\samdo\Desktop\XCR\app\Logs\last_run.log' from the log files
+[2022-01-21 21:49:12,062] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[cead9dd9-3dfa-4e6a-a1ac-a488eb64bf84::192.168.0.21] successfully logged in
+[2022-01-21 21:56:11,098] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_weekly_attendance' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:11,120] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_club_breakdown' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:11,123] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_club_bar_chart' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:11,125] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_flash_cards' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:17,292] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_weekly_attendance' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:17,294] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_club_breakdown' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:17,296] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_club_bar_chart' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:24,293] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_weekly_attendance' which was missing the 'name-id' field and was subsequently rejected
+[2022-01-21 21:56:24,295] {C:\Users\samdo\Desktop\XCR\app\Util\Helper.py:109} WARNING - A GET request was submitted to 'student_club_breakdown' which was missing the 'name-id' field and was subsequently rejected
+[2022-02-06 13:41:14,246] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[d6b433f7-c679-4528-b9c2-5f2dd2d7ca13::127.0.0.1] successfully logged in
+[2022-02-06 13:44:36,086] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[dda32297-df7c-42f4-8c3a-af9316067d77::127.0.0.1] successfully logged in
+[2022-02-06 14:15:08,292] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[91f344e6-e9a9-40b7-8171-2b176e87a097::127.0.0.1] successfully logged in
+[2022-02-06 14:15:41,312] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[ebdc4086-a032-4f92-97b8-4fac9314a506::127.0.0.1] successfully logged in
+[2022-02-06 14:16:00,335] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Preset.py:48} INFO - admin[ebdc4086-a032-4f92-97b8-4fac9314a506::127.0.0.1] just created the new preset bob [ID:2]
+[2022-02-06 15:55:40,435] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[6b416ac3-3099-4e73-be0b-c7164fe2815e::127.0.0.1] successfully logged in
+[2022-02-06 15:55:47,601] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:105} INFO - admin[6b416ac3-3099-4e73-be0b-c7164fe2815e::127.0.0.1] successfully logged out
+[2022-02-06 15:55:49,968] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[291902ef-0f20-4438-a2db-38faeb1272bb::127.0.0.1] successfully logged in
+[2022-02-06 16:25:54,345] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[c56a7fc0-2bf9-4f61-84b6-dd09b2a98bea::127.0.0.1] successfully logged in
+[2022-02-06 16:40:45,224] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[c11f8759-6b3c-4d4c-aef0-3de3eb304c0a::127.0.0.1] successfully logged in
+[2022-02-06 17:10:51,971] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[60b834a6-37a7-4bd6-8c92-953d94b3dfeb::127.0.0.1] successfully logged in
+[2022-02-06 19:23:27,012] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[7598396f-da96-4481-a303-650fc0f5d6f4::127.0.0.1] successfully logged in
+[2022-02-06 19:46:01,955] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[549c9ca6-823b-439f-814e-35dab093af7a::127.0.0.1] successfully logged in
+[2022-02-06 19:46:30,547] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[ba0d7b69-2b0a-4fb8-9c07-33cdb8be140d::127.0.0.1] successfully logged in
+[2022-02-06 19:47:07,045] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[b9247d2b-1626-4ebb-bd49-860958f7fe78::127.0.0.1] successfully logged in
+[2022-02-06 19:50:33,590] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[b721d073-7728-4de8-995b-c19952ad8246::127.0.0.1] successfully logged in
+[2022-02-08 19:33:51,210] {C:\Users\samdo\Desktop\XCR\app\Blueprints\Authenticate.py:85} INFO - admin[ac3514d9-0247-4a4a-9d34-f942ffe5b99f::127.0.0.1] successfully logged in

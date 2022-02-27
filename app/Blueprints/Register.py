@@ -85,10 +85,13 @@ def register_class(session):
         persistent_register = []
         length = 0
 
+    presets = [(p.id, p.name) for p in Database.Preset.query.all()]
+
     return Helper.render_base_template(session,
                                        "register/register_class.html",
                                        persistent_register=persistent_register,
-                                       length=length)
+                                       length=length,
+                                       presets=presets)
 
 
 @Register.route("/register_class_form", methods=["POST"])
@@ -166,3 +169,24 @@ def register_class_form(session, club, club_id, date):
 @Auth.auth_required(1)
 def view_records(session):
     return Helper.render_base_template(session, "register/view_records.html")
+
+
+@Register.route("/create_preset", methods=["POST"])
+@Auth.auth_required(1, page=False)
+@Auth.csrf_required()
+@Helper.request_form("name")
+def create_preset(session, name):
+
+    check = Database.Preset.query.filter_by(name=name).first()
+    if check is not None:
+        flash("A preset already exists with this name, please select another", "error")
+        return redirect("/presets", code=302)
+
+    new_preset = Database.Preset(name=name)
+    Database.db.session.add(new_preset)
+    Database.db.session.commit()
+
+    current_app.logger.info(f"{session} just created the new preset {name} [ID:{new_preset.id}]")
+
+    flash("Successfully created a new preset", "success")
+    return redirect("/presets", code=302)

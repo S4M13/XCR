@@ -53,15 +53,32 @@
 
         <hr class="bg-light">
         <h3 class="text-muted pl-3">Current register</h3>
+
         <form id="register-all" class="register-all">
             <input type="submit" class="btn btn-info" value="Register All">
         </form>
+
+        <form id="preset-controls" class="preset-controls" onsubmit="return false;">
+            <div class="input-group mb-1">
+                <select id="preset-name" name="preset-name" placeholder="Select a preset" class="form-control" required="">
+                    <option class="text-muted" selected="" disabled="disabled">Save this register as a preset</option>
+                    {% for id, name in presets %}
+                    <option value="{{ id }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+                <div class="input-group-append">
+                    <input id="load-preset" type="submit" value="Load" class="btn btn-primary"/>
+                    <input id="save-preset" type="submit" value="Save" class="btn btn-success"/>
+                </div>
+            </div>
+        </form>
+
         <br>
         <table id="register" class="table table-dark table-striped table-hover">
             <thead>
                 <tr class="thead-dark">
-                    <th width="15%" scope="col">ID #</th>
-                    <th width="55%" scope="col">Name</th>
+                    <th width="5%" scope="col">ID #</th>
+                    <th width="65%" scope="col">Name</th>
                     <th width="15%" scope="col" style="text-align: center;">Register Now</th>
                     <th width="15%" scope="col" style="text-align: center;">Remove</th>
                 </tr>

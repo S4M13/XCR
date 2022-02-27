@@ -424,3 +424,10 @@ def persistent_register(session):
     session.session_data["persistent_register_names"] = students
 
     return jsonify({"success": True})
+
+
+@API.route("/fetch_preset_register", methods=["GET"])
+@Auth.auth_required(1, api=True)
+@Helper.request_args("id")
+def fetch_preset_register(session, id):
+    pass  # TODO : Keep going from here
