@@ -1,0 +1,11 @@
+Flask==2.0.2
+Flask_APScheduler==1.12.3
+Flask_SQLAlchemy==2.4.4
+Jinja2==3.0.3
+openpyxl==3.0.5
+requests==2.24.0
+sentry_sdk==0.17.2
+tornado==6.0.4
+waitress==2.0.0
+Werkzeug==2.0.2
+Zope2==4.0
