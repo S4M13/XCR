@@ -2,7 +2,7 @@ import pathlib
 import os
 
 # Settings.py
-CURRENT_VERSION = "Alpha-7.9"
+CURRENT_VERSION = "Alpha-9.0"
 
 CWD = pathlib.Path(os.path.dirname(__file__))
 

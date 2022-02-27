@@ -21,6 +21,13 @@ Register = Blueprint("Register", __name__)
 @Register.route("/register_one", methods=["GET"])
 @Auth.auth_required(1)
 def register_one(session):
+    """
+    GET endpoint for page to register a single student.
+
+    :param session: The current valid user session.
+    :return: Rendered view
+    """
+
     return Helper.render_base_template(session, "register/register_one.html")
 
 
@@ -31,6 +38,18 @@ def register_one(session):
 @Helper.ensure_valid_student_id(2, api=True)
 @Helper.ensure_valid_club_id(4, api=True)
 def register_one_form(session, student, student_id, club, club_id, date):
+    """
+    POST API endpoint which allows a user to register a single student, at a single club, at a given time.
+
+    :param session: The current valid user session.
+    :param student: The name of the associated student.
+    :param student_id: The ID of the associated student.
+    :param club: The name of the associated club.
+    :param club_id: The ID of the associated club.
+    :param date: The ISO 8601 standard date.
+    :return: API compatible JSON indicating success or failure with error messages.
+    """
+
     student_entry = GlobalContext.STUDENTS_DATASTORE.return_specific_entries("UID", student_id)[0]
     student_entry_name = student_entry[1] + " " + student_entry[2]
 
@@ -76,6 +95,13 @@ def register_one_form(session, student, student_id, club, club_id, date):
 @Register.route("/register_class", methods=["GET"])
 @Auth.auth_required(1)
 def register_class(session):
+    """
+    GET endpoint for the page to register multiple students at once.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     if "persistent_register_ids" in session.session_data.keys():
         persistent_register = zip(session.session_data["persistent_register_ids"],
                                   session.session_data["persistent_register_names"])
@@ -97,6 +123,16 @@ def register_class(session):
 @Helper.request_form("club", "club-id", "date")
 @Helper.ensure_valid_club_id(2, api=True)
 def register_class_form(session, club, club_id, date):
+    """
+    POST API endpoint to register multiple students at once, at a given club, at a given time.
+
+    :param session: The current valid user session.
+    :param club: The name of the associated club.
+    :param club_id: The ID of the associated club.
+    :param date: The ISO 8601 standard date.
+    :return: API compatible JSON indicating success or failure with error messages.
+    """
+
     students_uf = request.form.getlist("students[]")
     student_ids_uf = request.form.getlist("student-ids[]")
 
@@ -165,4 +201,11 @@ def register_class_form(session, club, club_id, date):
 @Register.route("/view_records", methods=["GET"])
 @Auth.auth_required(1)
 def view_records(session):
+    """
+    GET endpoint which returns a page allowing user to view the records of a student.
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     return Helper.render_base_template(session, "register/view_records.html")

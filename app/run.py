@@ -18,6 +18,10 @@ container = WSGIContainer(app)
 
 
 def HTTPS_server():
+    """
+    Spawns an instance of the HTTPS server.
+    """
+
     http_server = HTTPServer(container,
                              ssl_options={
                                  'certfile': Settings.CERTFILE_LOCATION,
@@ -29,6 +33,10 @@ def HTTPS_server():
 
 
 def HTTP_server():
+    """
+    Spawns an instance of the HTTP server.
+    """
+
     http_server = HTTPServer(container)
 
     print("[+]Starting insecure server...")
@@ -37,8 +45,11 @@ def HTTP_server():
 
 
 def waitress_server():
-    serve(app, host='0.0.0.0', port=80)
+    """
+    Spawns an instance of a waitress server.
+    """
 
+    serve(app, host='0.0.0.0', port=80)
 
 
 HTTPS_server()

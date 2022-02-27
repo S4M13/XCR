@@ -26,6 +26,13 @@ Authenticate = Blueprint("Authenticate", __name__)
 @Authenticate.route("/login", methods=["GET"])
 @Auth.auth_required(0)
 def login(session):
+    """
+    GET endpoint for users to log in
+
+    :param session: The current valid user session
+    :return: Rendered view
+    """
+
     if session is not None:
         return redirect("/", code=302)
 
@@ -36,6 +43,17 @@ def login(session):
 @Auth.auth_required(0, page=False)
 @Helper.request_form("username", "password")
 def auth(session, username, password):
+    """
+    POST endpoint which takes a username and password and attempts to create a new session for the user.
+    Checks the username and password against records. Also checks user login attempts and whether the account is locked
+    out or not.
+
+    :param session: The current user session (Potentially invalid)
+    :param username: The attempted username
+    :param password: The attempted password
+    :return: Redirect to /login or / with flash message + cookies
+    """
+
     if session is not None:
         return redirect("/", code=302)
 
@@ -90,6 +108,13 @@ def auth(session, username, password):
 @Auth.auth_required(1, page=False)
 @Auth.csrf_required()
 def deauth(session):
+    """
+    POST endpoint which allows users to invalidate their session and logout.
+
+    :param session: The current valid users session
+    :return: Redirect to /login with a flash message
+    """
+
     session.logout()
 
     flash("Successfully logged out", "success")
@@ -109,10 +134,23 @@ def deauth(session):
 @Authenticate.route("/")
 @Auth.auth_required(1)
 def base_dir(session):
+    """
+    GET endpoint for /
+
+    :param session: The current valid user session.
+    :return: Rendered view
+    """
+
     return Helper.render_base_template(session, "base/home.html")
 
 
 @Authenticate.route("/unsupported")
 def unsupported():
+    """
+    GET endpoint for /unsupported - devices will auto-redirect to this site if screen size is too small.
+
+    :return: Rendered view
+    """
+
     return render_template("authenticate/unsupported.html")
 

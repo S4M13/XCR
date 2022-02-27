@@ -23,7 +23,7 @@ from functools import wraps
 from sentry_sdk import configure_scope
 
 
-def auth_required(level: int, api: bool = False, page: bool =True):
+def auth_required(level: int, api: bool = False, page: bool = True):
     """
     Ensures the accessing person has a session and the session has a **authentication level** above or equal to `level`
 
@@ -102,7 +102,6 @@ def csrf_required(api: bool = False):
 
 
     :param api: If true, it returns a JSON error code rather than a 302 with an error message. Default is False
-
     :return: A wrapper function
     """
 

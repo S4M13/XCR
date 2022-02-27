@@ -85,7 +85,7 @@ def overall_weekly_attendance(session):
     GET API endpoint which returns a JSON analysis of the overall weekly attendance.
 
     :param session: The current valid user session
-    :return: Associated JSON data of the analysis.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance"]
@@ -98,7 +98,7 @@ def overall_weekly_attendance_by_club(session):
     GET API endpoint which returns a JSON analysis of the overall weekly attendance by club.
 
     :param session: The current valid user session
-    :return: Associated JSON data of the analysis.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_by_club"]
@@ -111,7 +111,7 @@ def club_breakdown(session):
     GET API endpoint which returns a JSON analysis of the club breakdown attendance.
 
     :param session: The current valid user session
-    :return: Associated JSON data of the analysis.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     return GlobalContext.DATABASE_ANALYSIS["club_breakdown"]
@@ -124,7 +124,7 @@ def overall_weekly_attendance_once(session):
     GET API endpoint which returns a JSON analysis of the weekly attendance for single or more attendances.
 
     :param session: The current valid user session
-    :return: Associated JSON data of the analysis.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     return GlobalContext.DATABASE_ANALYSIS["overall_weekly_attendance_once"]
@@ -153,7 +153,7 @@ def fetch_records(session, student_uid):
 
     :param session: The current valid user session
     :param student_uid: The ID of the associated student
-    :return: Associated JSON data of the analysis.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
@@ -184,8 +184,9 @@ def delete_record(session, student_uid, club_uid, timestamp):
 
     :param session: The current valid user session
     :param student_uid: The ID of the associated student
-    :param club_uid: The 
-    :return: Associated JSON data of the analysis.
+    :param club_uid: The ID of the associated club
+    :param timestamp: The timestamp of the attendance.
+    :return: Associated JSON data of the analysis  - compatible with Charts.js
     """
 
     ts = datetime.datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
@@ -210,6 +211,14 @@ def delete_record(session, student_uid, club_uid, timestamp):
 @Helper.request_args("name", "name-id")
 @Helper.ensure_valid_student_id(2, api=True)
 def student_weekly_attendance(session, name, student_uid):
+    """
+    GET API endpoint which returns a student's attendance broken down by week.
+
+    :param session: The current valid user session session
+    :param name: The name of the student for which to return the information
+    :param student_uid: The ID of the associated student.
+    :return: Associated JSON data of the analysis - compatible with Charts.js
+    """
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
 
     attendance_analysis = {}
@@ -248,6 +257,15 @@ def student_weekly_attendance(session, name, student_uid):
 @Helper.request_args("name", "name-id")
 @Helper.ensure_valid_student_id(2, api=True)
 def student_club_breakdown(session, name, student_uid):
+    """
+    GET API endpoints which gets a breakdown of a student's analysis by club.
+
+    :param session: The current valid user session.
+    :param name: The name of the associated student
+    :param student_uid: The ID of the associated student
+    :return: Associated JSON data of the analysis - compatible with Charts.js
+    """
+
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
 
     club_breakdown_analysis = {}
@@ -280,6 +298,15 @@ def student_club_breakdown(session, name, student_uid):
 @Helper.request_args("name", "name-id")
 @Helper.ensure_valid_student_id(2, api=True)
 def student_club_bar_chart(session, name, student_uid):
+    """
+    GET API endpoint which returns the student's attendance broken down my club in a bar chart.
+
+    :param session: The current valid user session.
+    :param name: The name of the associated student
+    :param student_uid: The ID of the associated student
+    :return: Associated JSON data of the analysis - compatible with Charts.js
+    """
+
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
 
     club_breakdown_analysis = {}
@@ -316,6 +343,15 @@ def student_club_bar_chart(session, name, student_uid):
 @Helper.request_args("name", "name-id")
 @Helper.ensure_valid_student_id(2, api=True)
 def student_flash_cards(session, name, student_uid):
+    """
+    GET API endpoint which returns flash statistics for an individual student.
+
+    :param session: The current valid user session.
+    :param name: The name of the associated student.
+    :param student_uid: The ID of the associated student.
+    :return: Associated JSON data of the analysis - compatible with Charts.js
+    """
+
     records = Database.Record.query.filter_by(student_uid=student_uid).all()
 
     clubs = {}
@@ -346,6 +382,15 @@ def student_flash_cards(session, name, student_uid):
 @Helper.request_args("club", "club-id")
 @Helper.ensure_valid_club_id(2, api=True)
 def club_weekly_attendance(session, club, club_uid):
+    """
+    GET API endpoint which returns a club's attendance broken down by week.
+
+    :param session: The current valid user session.
+    :param club: The name of the associated club.
+    :param club_uid: The ID of the associated club.
+    :return: Associated JSON data of the analysis - compatible with Charts.js
+    """
+
     records = Database.Record.query.filter_by(club_uid=club_uid).all()
     attendance_analysis = {}
     for entry in records:
@@ -383,6 +428,15 @@ def club_weekly_attendance(session, club, club_uid):
 @Helper.request_args("club", "club-id")
 @Helper.ensure_valid_club_id(2, api=True)
 def club_flash_cards(session, club, club_uid):
+    """
+    GET API endpoint which returns flash cards for a individual club.
+
+    :param session: The current valid user session.
+    :param club: The name of the associated club.
+    :param club_uid: The ID of the associated club.
+    :return: Associated JSON data of the analysis.
+    """
+
     records = Database.Record.query.filter_by(club_uid=club_uid).all()
 
     students = {}
@@ -417,6 +471,12 @@ def club_flash_cards(session, club, club_uid):
 @API.route("/session/persistent-register", methods=["GET"])
 @Auth.auth_required(1, api=True)
 def persistent_register(session):
+    """
+    GET API endpoint which saves a user's persistent register into their current session.
+
+    :param session: The valid user session.
+    :return: JSON argument indicating success of update or failure.
+    """
     student_ids = request.args.getlist("student-ids[]")
     students = request.args.getlist("students[]")
 

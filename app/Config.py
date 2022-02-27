@@ -1,9 +1,12 @@
 import Settings
-
 import os
 
 
 class Config(object):
+    """
+    Flask config object, used to load some important configuration options.
+    """
+
     DEBUG = False
     SECRET_KEY = os.urandom(12)
 
