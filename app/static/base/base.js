@@ -47,9 +47,11 @@ function doCanvasAnimation() {
     canvas.height = window.innerHeight;
 
     //Pre-configure variables.
-    var points = [],
-    var FPS = 30,
-    var x = 100,
+    var points = []
+    var FPS = 30
+    var x = screen.width / 19.2
+
+
 
     //Add all the points.
     for (var i = 0; i < x; i++) {
