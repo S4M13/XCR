@@ -119,4 +119,5 @@ if __name__ == "__main__":
     x = lambda: app.logger.info("Overriding DEBUG session logout")
     debug_session.logout = x
 
+    # Run a temporary flaks development server
     app.run('0.0.0.0', 80, debug=True)

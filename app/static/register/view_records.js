@@ -1,52 +1,29 @@
 
-var attempts = 0;
+/**
+ * Loads the data into the table for a given student
+ * 
+ * @param  {Number} student_id - Takes in the ID of the associated student to load the data for
+ * @return {[type]}
+ */
 function getStudentsRecords(student_id) {
     var formData = {
-            'student-id': student_id,
-        };
+        'student-id': student_id,
+    };
 
-    $.ajax({
-        type: 'GET',
-        url: "/api/student/fetch_records",
-        data: formData
-    }).done(function(data) {
-        if (!data.success) {
-            if (data.redir) {
-                window.location.replace(data.redir);
-            } else if (data.error){
-                FailurePopup(data.error, 5000);
-                return null;
-            } else {
-                if (attempts < 5) {
-                    FailurePopup("Something has gone wrong. Will automatically try again in a second.", 5000);
-                    attempts += 1;
-                    setTimeout(function () {
-                        getStudentsRecords(student_id)
-                    }, 6000);
-                }else {
-                    FailurePopup("Something has gone wrong. Please try again later.", 10000);
-                }
-                return null;
-            }
-        } else {
-            attempts = 0;
-            configureTable(student_id, data)
-        }
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-        if (attempts < 5) {
-            FailurePopup("Something has gone wrong. Will automatically try again in a second.", 10000);
-            attempts += 1;
-            setTimeout(function () {
-                getStudentsRecords(student_id)
-            }, 4000);
-        }else {
-            FailurePopup("Something has gone wrong. Please try again later.", 20000);
-        }
-        return null;
+    performAJAXCall('GET', '/api/student/fetch_records', formData, function(response) {
+        configureTable(student_id, response)
     });
 }
 
 
+/**
+ * Deletes a student's record for a given student, at a given club, at a given time.
+ * 
+ * @param  {Number} student_id - The ID of the associated student
+ * @param  {Number} club_id - The ID of the associated club
+ * @param  {string} timestamp - The timestamp of the attendance
+ * @return {boolean} - Whether or not the deletion was successfull
+ */
 function deleteRecord(student_id, club_id, timestamp) {
     var formData = {
         'student-id': student_id,
@@ -55,37 +32,29 @@ function deleteRecord(student_id, club_id, timestamp) {
         'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr("content")
     };
 
-    return $.ajax({
-        type        : 'POST',
-        url         : '/api/student/delete_record',
-        data        : formData,
-        dataType    : 'json',
-        encode      : true
-    }).done(function(data) {
-        if (!data.success) {
-            if (data.redir) {
-                window.location.replace(data.redir);
-            } else if (data.error){
-                FailurePopup(data.error, 5000);
-                return false;
-            } else {
-                FailurePopup("Something has gone wrong. Please try again later.", 10000);
-                return false;
-            }
-        } else {
-            SuccessPopup("Successfully removed the record of attendance", 10000)
-            return true;
-        }
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-        FailurePopup("Something has gone wrong. Please try again later.", 20000);
-        return false;
+
+    performAJAXCall('POST', '/api/student/delete_record', formData, function(response) {
+        SuccessPopup("Successfully removed the record of attendance", STANDARD_POPUP_TIME)
     });
+
+    return true;
 }
 
+
+/**
+ * Clears the table from all of the current data
+ */
 function clearTable() {
     $("#records tr").remove();
 }
 
+
+/**
+ * Takes in a student ID and their associated data and loads it into the table.
+ * 
+ * @param  {Number} student_id - The ID of the associated student
+ * @param  {array} data - The data for the associated student from the server callback
+ */
 function configureTable(student_id, data) {
     $('.hidden').removeAttr("style");
 
@@ -132,8 +101,8 @@ function configureTable(student_id, data) {
 
 
 $(document).ready(function() {
+    // Load the on-click functionality for the student select button
     $('#student-select').submit(function(event) {
-        console.log(1);
         event.preventDefault();
 
         var student = document.getElementById('name');
@@ -146,27 +115,4 @@ $(document).ready(function() {
 
     });
 
-
-    name_valid = false;
-    $('#name').autocomplete({
-        serviceUrl: '/api/names',
-        autoSelectFirst: true,
-        onSelect: function (suggestion) {
-            $('#name-id').val(suggestion.data)
-            name_valid = true;
-        },
-        onInvalidateSelection: function () {
-            if (name_valid) {
-                $('#name').val("");
-                $('#name-id').val("");
-                name_valid = false;
-            }
-        }
-    });
-    $('#name').blur(function () {
-        if (!name_valid) {
-            $('#name').val("");
-        }
-    });
-    $('#name').autocomplete().setOptions({minChars: 3, showNoSuggestionNotice: true})
 });

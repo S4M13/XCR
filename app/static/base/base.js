@@ -1,3 +1,107 @@
+
+
+//GLOBAL CONSTANTS
+
+var STANDARD_POPUP_TIME = 2000;
+var STANDARD_LONG_POPUP_TIME = STANDARD_POPUP_TIME * 2.5;
+
+var AJAX_MAX_RETRIES = 5;
+var AJAX_RETRY_DELAY = 6000;
+
+
+// GLOBAL VARIBALES
+
+var name_valid = false;
+var club_valid = false;
+
+
+// GLOBAL FUNCTIONS
+
+/**
+ * Performs an AJAX call to the server and returns the server's response - automatically handles failed requests.
+ * 
+ * @param  {string} type - The type of request to submit to the server (GET/POST)
+ * @param  {string} endpoint - The endpoint of the server to contact
+ * @param  {array} args - The arguments to pass along in the data field of the request
+ * @param  {Function} callback - Callback function that is called and passed along the response in the first argument 
+ * @param  {Number} attempts - Internal recursive variable which manages how many times the server has been contacted
+ */
+function performAJAXCall(type, endpoint, args, callback, attempts = 0) {
+    return $.ajax({
+        type: type,
+        url: endpoint,
+        data: args
+    }).done(function(data) {
+        if (!data.success) {
+
+            if (data.redir) {
+                window.location.replace(data.redir);
+                return null;
+            }
+
+            if (data.error){
+                FailurePopup(data.error, 5000);
+                return null;
+            }
+
+            if (attempts >= AJAX_MAX_RETRIES) {
+                FailurePopup("Something has gone wrong, some data has failed to load. Please try again later", STANDARD_LONG_POPUP_TIME);
+                return null;
+            }
+
+            FailurePopup("Something has gone wrong, some data has failed to load. Will automatically try again in a second.", STANDARD_POPUP_TIME);
+
+            setTimeout(function () {
+                performAJAXCall(type, endpoint, args, callback, attempts+1)
+            }, AJAX_RETRY_DELAY);
+        }
+
+        callback(data);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        if (attempts >= AJAX_MAX_RETRIES) {
+            FailurePopup("Something has gone wrong, some data has failed to load. Please try again later", STANDARD_LONG_POPUP_TIME);
+            return null;
+        }
+
+        FailurePopup("Something has gone wrong, some data has failed to load. Will automatically try again in a second.", STANDARD_POPUP_TIME);
+
+        setTimeout(function () {
+            performAJAXCall(type, endpoint, args, callback, attempts+1)
+        }, AJAX_RETRY_DELAY);
+    });
+}
+
+
+/**
+ * Configures a chart HTML object with the following settings, fecthing the data from the server.
+ * 
+ * @param  {Number} chart_id - The ID of the chart to configure
+ * @param  {string} chart_type - The type of the chart to create
+ * @param  {array} chart_options - The options to configure the chart with
+ * @param  {string} endpoint - The endpoint on the server to contact for the data.
+ * @param  {array} args - The arguments to pass along in the AJAX request.
+ */
+function configure_chart(chart_id, chart_type, chart_options, endpoint, args) {
+    var response = performAJAXCall('GET', endpoint, args, function (response) {
+
+        var config = {
+            type: chart_type,
+            options: chart_options,
+            data: response
+        }
+
+        var ctx = document.getElementById(chart_id).getContext("2d");
+        new Chart(ctx, config);
+    })
+}
+
+
+/**
+ * Shows a success popup to the user.
+ * 
+ * @param {string} message - The message to show to the user
+ * @param {Number} time - How long to show the popup to the user (Can also be clicked out of)
+ */
 function SuccessPopup(message, time) {
     $('#success-message').text(message)
     $('#success').modal('show');
@@ -6,6 +110,13 @@ function SuccessPopup(message, time) {
     }, time);
 }
 
+
+/**
+ * Shows a failure popup to the user.
+ * 
+ * @param {string} message - The message to show to the user
+ * @param {Number} time - How long to show the popup to the user (Can also be clicked out of)
+ */
 function FailurePopup(message, time) {
     $('#failure-message').text(message)
     $('#failure').modal('show');
@@ -14,6 +125,10 @@ function FailurePopup(message, time) {
     }, time);
 }
 
+
+/**
+ * Toggles the collapsing/rebuilding of the sidebar.
+ */
 function toggleSidebar() {
     if ($('#sidebar').hasClass('active')) {
         $('#sidebar').removeClass('active');
@@ -27,6 +142,18 @@ function toggleSidebar() {
         $('.close-button').addClass('active');
     }
 }
+
+
+/**
+ * Returns whether the user has a mobile sized screen or not.
+ * 
+ * @return {boolean} - Returns whether the screen has a size which is too small for the website to display on
+ */
+function detect_mobile() {
+   return (window.innerWidth <= 800 || window.innerHeight <= 600)
+}
+
+
 
 // The following section of code was library code which Copy+Pasted from the library into the source code.
 // This was done to allow faster loading of the code without having to load the whole library.
@@ -135,11 +262,15 @@ function doCanvasAnimation() {
 
 // END SECTION \\
 
-function detect_mobile() {
-   return (window.innerWidth <= 800 || window.innerHeight <= 600)
-}
 
+
+
+
+
+// Perform certain operations once the document has loaded
 $(document).ready(function(){
+
+    // Insert CSRF tokens into required forms
     $('.csrf-req').each(function(i, obj) {
         $('<input>').attr({
             type: 'hidden',
@@ -148,13 +279,65 @@ $(document).ready(function(){
         }).appendTo(obj)
     });
 
+    // Add functionality to sidebar
     $('.close-button').click(function() {
         toggleSidebar();
     });
 
+    // Perform background animation
     doCanvasAnimation();
 
+    // Check if mobile is currently being used
     if (detect_mobile()) {
         window.location.replace("/unsupported");
+    }
+
+    // Register global functionality for name auto-completion
+    if ($('#club').length) {
+        club_valid = false;
+        $('#club').autocomplete({
+            serviceUrl: '/api/clubs',
+            autoSelectFirst: true,
+            onSelect: function (suggestion) {
+                $('#club-id').val(suggestion.data)
+                club_valid = true;
+            },
+            onInvalidateSelection: function () {
+                $('#club').val("");
+                $('#club-id').val("");
+                club_valid = false;
+            }
+        });
+        $('#club').blur(function () {
+            if (!club_valid) {
+                $('#club').val("");
+            }
+        });
+        $('#club').autocomplete().setOptions({minChars: 1, showNoSuggestionNotice: true});
+    }
+
+    if ($('#name').length) {
+        name_valid = false;
+        $('#name').autocomplete({
+            serviceUrl: '/api/names',
+            autoSelectFirst: true,
+            onSelect: function (suggestion) {
+                $('#name-id').val(suggestion.data)
+                name_valid = true;
+            },
+            onInvalidateSelection: function () {
+                if (name_valid) {
+                    $('#name').val("");
+                    $('#name-id').val("");
+                    name_valid = false;
+                }
+            }
+        });
+        $('#name').blur(function () {
+            if (!name_valid) {
+                $('#name').val("");
+            }
+        });
+        $('#name').autocomplete().setOptions({minChars: 3, showNoSuggestionNotice: true})
     }
 });
