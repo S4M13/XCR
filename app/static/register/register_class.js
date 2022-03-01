@@ -217,7 +217,7 @@ function registerAllHook(event) {
     performAJAXCall('POST', 'register_class_form', formData, function(response) {
         var container = document.getElementById('RegisterHolder');
         container.innerHTML = '';
-        SuccessPopup("Successfully registered students", 1000);
+        SuccessPopup("Successfully registered students", STANDARD_POPUP_TIME);
         updateRegister();
         addTerminalRow();
     });

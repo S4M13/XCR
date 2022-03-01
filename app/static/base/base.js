@@ -40,7 +40,7 @@ function performAJAXCall(type, endpoint, args, callback, attempts = 0) {
             }
 
             if (data.error){
-                FailurePopup(data.error, 5000);
+                FailurePopup(data.error, STANDARD_LONG_POPUP_TIME);
                 return null;
             }
 

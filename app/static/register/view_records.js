@@ -107,7 +107,7 @@ $(document).ready(function() {
 
         var student = document.getElementById('name');
         if (!student.checkValidity()) {
-            FailurePopup("Invalid student selection, please try again.");
+            FailurePopup("Invalid student selection, please try again.", STANDARD_LONG_POPUP_TIME);
             return;
         }
 
