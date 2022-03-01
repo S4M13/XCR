@@ -83,6 +83,7 @@ class MD5:
         """
         self.buffers = MD5.initial_buffers.copy()
 
+    # noinspection PyTypeChecker
     def _digest_buffers(self):
         """
         Performs the standard MD5 hash of the resulting
