@@ -602,7 +602,7 @@ def create_tables(db):
     CREATE User(
         UserID int PRIMARY KEY,
         Username varchar(100) NOT NULL,
-        PasswordHash varchar(200) NO NULL,
+        PasswordHash varchar(200) NOT NULL,
         AccessLevelID int,
         FOREIGN KEY AccessLevelID REFERENCES AccessLevel(AccessLevelID) 
     );

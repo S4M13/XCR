@@ -22,6 +22,11 @@ class User(db.Model):
     auth_level = db.Column(db.Integer, nullable=False)
 
     def set_password(self, password):
+        # Would alternativly use Crypto.MD5 here, however for production reasons MD5 is out of date and now easily broken.
+        # Hence for security reasons this code has been changed to a sha256 hash using pbkdf2.
+        # For the development server the line below is used, for the NEA the commented line should be used [And is used throughout all the tests]
+
+        # self.password_hash = Crypto.MD5(password).digest
         self.password_hash = generate_password_hash(password, method="pbkdf2:sha256:80000")
 
     def check_password(self, password):
