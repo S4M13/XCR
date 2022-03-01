@@ -12,19 +12,17 @@ def rotate_left(x, n):
     :param n: The amount of bits to rotate
     :return: The result of the left rotation
     """
-
     return (x << n) | (x >> (32 - n))
 
 
 def modular_add(a, b):
     """
-    Perform a modular addition between two bitarrays
+    Perform a modular addition between two bit-arrays
 
     :param a: The first operand
     :param b: The second operand
     :return: The result of the modular addition
     """
-
     return (a + b) % pow(2, 32)
 
 
@@ -36,7 +34,6 @@ class MD5:
         'C': 0x98BADCFE,
         'D': 0x10325476,
     }
-
 
     def __init__(self, message: str):
         self.message = message
@@ -53,8 +50,6 @@ class MD5:
         self._digest_buffers()
         self._compute_digest()
 
-
-
     @classmethod
     def _preparation(cls, message):
         """
@@ -62,8 +57,8 @@ class MD5:
         by appending a 1, then enough 0s until it is fully pads. Then appends
         the original length of the message onto the end of the hash.
 
-        :param message: The message to preprocess
-        :return: The preprocessed bitarray
+        :param message: The message to pre-process
+        :return: The preprocessed bit-array
         """
         padded = bitarray(endian="big")
         padded.frombytes(message.encode("utf-8"))
@@ -82,14 +77,11 @@ class MD5:
 
         return padded
 
-
     def _load_buffers(self):
         """
         Loads the standard buffers for MD5 operations into the local buffers
         """
-
         self.buffers = MD5.initial_buffers.copy()
-
 
     def _digest_buffers(self):
         """
@@ -97,11 +89,10 @@ class MD5:
         """
 
         # Create some standard MD5 operations
-        F = lambda x, y, z: ( x & y ) | ( ~x & z )
-        G = lambda x, y, z: ( x & z ) | ( y & ~z )
+        F = lambda x, y, z: (x & y) | (~x & z)
+        G = lambda x, y, z: (x & z) | (y & ~z)
         H = lambda x, y, z: x ^ y ^ z
-        I = lambda x, y, z: y ^ ( x | ~z )
-
+        I = lambda x, y, z: y ^ (x | ~z)
 
         # Load our T values, generate instead of loading from list
         T = [floor(pow(2, 32) * abs(sin(i + 1))) for i in range(64)]
@@ -114,7 +105,6 @@ class MD5:
         B = self.buffers['B']
         C = self.buffers['C']
         D = self.buffers['D']
-
 
         for chunk_index in range(number // 16):
             st = chunk_index * 512
@@ -146,7 +136,7 @@ class MD5:
 
                     k = (7*i) % 16
 
-                # Combine all the results into temporary varibale accoridng to MD5 standard
+                # Combine all the results into temporary variable according to MD5 standard
                 temp = modular_add(_, M[k])
                 temp = modular_add(temp, T[i])
                 temp = modular_add(temp, A)
@@ -159,18 +149,16 @@ class MD5:
                 C = B
                 B = temp
 
-
             # Add the buffers to themselves as MD5 standard
             self.buffers['A'] = modular_add(self.buffers['A'], A)
             self.buffers['B'] = modular_add(self.buffers['B'], B)
             self.buffers['C'] = modular_add(self.buffers['C'], C)
             self.buffers['D'] = modular_add(self.buffers['D'], D)
 
-
     def _compute_digest(self):
         """
-        Computes the final digest based on the buffers once the alogirthm has been run.
-        Unpacks then repacts the buffers switching between little and big endian.
+        Computes the final digest based on the buffers once the algorithm has been run.
+        Unpacks then repacks the buffers switching between little and big endian.
         """
         A = struct.unpack("<I", struct.pack(">I", self.buffers['A']))[0]
         B = struct.unpack("<I", struct.pack(">I", self.buffers['B']))[0]
