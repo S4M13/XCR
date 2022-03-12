@@ -27,7 +27,7 @@ var club_valid = false;
  * @param  {Number} attempts - Internal recursive variable which manages how many times the server has been contacted
  */
 function performAJAXCall(type, endpoint, args, callback, attempts = 0) {
-    return $.ajax({
+    $.ajax({
         type: type,
         url: endpoint,
         data: args
