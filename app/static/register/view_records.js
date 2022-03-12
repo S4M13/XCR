@@ -3,7 +3,6 @@
  * Loads the data into the table for a given student
  * 
  * @param  {Number} student_id - Takes in the ID of the associated student to load the data for
- * @return {[type]}
  */
 function getStudentsRecords(student_id) {
     var formData = {

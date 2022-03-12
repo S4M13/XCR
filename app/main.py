@@ -44,7 +44,6 @@ if "server_name" in GlobalContext.CONFIG:
     GlobalContext.SERVER_NAME = GlobalContext.CONFIG["server_name"]
 
 # Config Sentry SDK
-"""
 sentry_sdk.init(
     release="xcr-register@" + Settings.CURRENT_VERSION,
     server_name=GlobalContext.SERVER_NAME,
@@ -52,7 +51,7 @@ sentry_sdk.init(
     dsn="https://856572d34eac4df094ae709f46bee757@o418385.ingest.sentry.io/5320913",
     integrations=[FlaskIntegration(), TornadoIntegration(), SqlalchemyIntegration()]
     )
-"""
+
 
 # Init Flask APP
 app = Flask(__name__)
